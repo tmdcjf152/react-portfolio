@@ -1,0 +1,176 @@
+footer {
+  width: 100%;
+  border-top: 1px solid #bbb;
+}
+footer .inner {
+  width: 1180px;
+  margin: 0px auto;
+  position: relative;
+  padding: 50px;
+}
+footer .inner p {
+  font: 12px/1.2 "arial";
+  color: #999;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 1179px) {
+  footer .inner {
+    width: 100%;
+  }
+}
+header {
+  width: 100%;
+  background: rgb(255, 255, 255);
+}
+header .inner {
+  width: 1180px;
+  height: 80px;
+  margin: 0px auto;
+  position: relative;
+}
+header .inner h1 {
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+}
+header .inner h1 a {
+  font: bold 24px/1 "arial";
+  color: #000;
+}
+header .inner #gnb {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+header .inner #gnb li {
+  float: left;
+}
+header .inner #gnb li a {
+  display: inline-block;
+  padding: 22px 30px;
+  font: bold 14px/1 "arial";
+  color: #000;
+}
+header .inner .menuMo {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  font-size: 24px;
+  color: #000;
+  display: none;
+}
+header.main {
+  background: transparent;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+}
+
+@media screen and (max-width: 1179px) {
+  header .inner {
+    width: 100%;
+  }
+  header .inner h1 {
+    left: 30px;
+  }
+  header .inner #gnb {
+    display: none;
+  }
+  header .inner .menuMo {
+    display: block;
+  }
+}
+.content figure {
+  width: 100%;
+  height: 300px;
+  background: #bbb;
+  opacity: 0;
+  transition: 1s;
+}
+.content > .inner {
+  width: 1180px;
+  min-height: 400px;
+  margin: 100px auto;
+  position: relative;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 1s;
+}
+.content > .inner h1 {
+  font: normal 30px/1 "arial";
+  color: #777;
+  margin-bottom: 50px;
+}
+.content.on figure {
+  opacity: 1;
+}
+.content.on > .inner {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+@media screen and (max-width: 1179px) {
+  .content figure {
+    height: 200px;
+  }
+  .content > .inner {
+    width: 100%;
+    margin: 80px auto;
+    padding: 0px 30px;
+  }
+}
+@media screen and (max-width: 649px) {
+  .content figure {
+    height: 150px;
+  }
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+figure {
+  width: 100%;
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  overflow: hidden;
+  position: relative;
+}
+
+.Community figure {
+  background: #8B1EF7;
+}
+
+.Department figure {
+  background: #F01A69;
+}
+
+.Gallery figure {
+  background: #2664E0;
+}
+
+.Join figure {
+  background: #FFF101;
+}
+
+.Location figure {
+  background: #4Ef046;
+}
+
+.Youtube figure {
+  background: #1EF7D3;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,21 @@
+//common
+@import 'common/footer';
+@import 'common/header';
+@import  'common/layout';
+@import 'common/reset';
+
+//main
+@import 'main/content';
+@import 'main/visual';
+
+//sub
+@import 'sub/community';
+@import 'sub/department';
+@import 'sub/gallery';
+@import 'sub/join';
+@import 'sub/location';
+@import 'sub/youtube';
+
+// 반응형
+$tablet: 1179px;
+$mp: 639px;

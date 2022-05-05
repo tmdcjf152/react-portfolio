@@ -1,0 +1,76 @@
+header {
+	width: 100%;
+	background: rgb(255, 255, 255);
+
+	.inner {
+		width: 1180px;
+		height: 80px;
+		margin: 0px auto;
+		position: relative;
+
+		h1 {
+			position: absolute;
+			bottom: 15px;
+			left: 0px;
+
+			a {
+				font: bold 50px/1 'arial';
+				color: #000;
+			}
+		}
+
+		#gnb {
+			position: absolute;
+			bottom: 10px;
+			right: 250px;
+
+			li {
+				float: left;
+
+				a {
+					display: inline-block;
+					padding: 22px 30px;
+					font: bold 14px/1 'arial';
+					color: #000;
+				}
+			}
+		}
+
+		.menuMo {
+			position: absolute;
+			right: 30px;
+			bottom: 20px;
+			font-size: 24px;
+			color: #000;
+			display: none;
+		}
+	}
+
+	&.main {
+		background: transparent;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		z-index: 2;
+	}
+}
+
+//tablet
+@media screen and (max-width: 1179px) {
+	header {
+		.inner {
+			width: 100%;
+
+			h1 {
+				left: 30px;
+			}
+
+			#gnb {
+				display: none;
+			}
+			.menuMo {
+				display: block;
+			}
+		}
+	}
+}
