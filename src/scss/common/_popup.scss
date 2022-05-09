@@ -1,0 +1,32 @@
+.pop {
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.9);
+	padding: 5vw;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 5;
+	.con {
+		width: 100%;
+		height: 100%;
+		border: 1px solid #ccc;
+		position: relative;
+
+		img,
+		iframe,
+		video {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		.close {
+			font: 14px/1 'arial';
+			color: #ddd;
+			position: absolute;
+			right: 0px;
+			top: -40px;
+			cursor: pointer;
+		}
+	}
+}

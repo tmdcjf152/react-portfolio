@@ -3,6 +3,7 @@
 @import 'common/header';
 @import  'common/layout';
 @import 'common/reset';
+@import 'common/popup';
 
 //main
 @import 'main/content';
@@ -16,6 +17,5 @@
 @import 'sub/location';
 @import 'sub/youtube';
 
-// 반응형
-$tablet: 1179px;
-$mp: 639px;
+//font
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cherry+Cream+Soda&family=Faster+One&family=Heebo:wght@700&display=swap');
