@@ -15,7 +15,7 @@
 		margin-top: 20px;
 		font-size: 18px;
 		color: #000000;
-		font-family: inherit;
+		font-family: heebo;
 		font-weight: 800;
 		cursor: pointer;
 		position: relative;
@@ -56,13 +56,13 @@
 			left: 80%;
 			top: -450px;
 			margin: 10px 0px;
-			border-bottom: 1px solid #000;
 			text-align: center;
-			font: bold 20px/1.5 'alrial';
+			font: bold 20px/1.5 'heebo';
 			transition: 1s;
 			&.on {
 				color: rgb(43, 124, 74);
 				transform: scale(1.2);
+				border-bottom: 3px solid rgb(43, 124, 74);
 			}
 		}
 	}
