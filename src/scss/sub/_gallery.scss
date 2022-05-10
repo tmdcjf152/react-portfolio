@@ -1,38 +1,342 @@
-
-		.Gallery {
-			figure {
-				background-image: url(../../../public/img/banner3.jpg);
-				background-size: 100%;
-				width: 100%;
-				height: 700px;
+.Gallery {
+	overflow: hidden;
+	figure {
+		background-image: url(../../../public/img/banner5.jpg);
+		background-size: 100%;
+		width: 100%;
+		height: 1070px;
+	}
+	.carprice {
+		width: 100%;
+		h1 {
+			width: 100%;
+			font: bold 90px/1 'heebo';
+			color: #fff;
+			position: relative;
+			bottom: 1100px;
+			right: 300px;
+		}
+		.price {
+			width: 100%;
+			font: 35px/1 'heebo';
+			color: #fff;
+			position: relative;
+			bottom: 1150px;
+			right: 300px;
+		}
+		.carOption {
+			width: 100%;
+			font: 25px/1.4 'heebo';
+			color: #fff;
+			position: relative;
+			bottom: 1100px;
+			right: 300px;
+			span {
+				margin-right: 20px;
 			}
-		
-			ul {
-				&::after {
-					content: '';
-					display: block;
-					clear: both;
+		}
+		h2 {
+			width: 100%;
+			font: bold 50px/1 'heebo';
+			text-align: center;
+			position: relative;
+			bottom: 250px;
+			margin-bottom: 30px;
+		}
+		.forLife {
+			width: 100%;
+			font: 25px/1 'apple';
+			text-align: center;
+			position: relative;
+			bottom: 250px;
+		}
+		&::after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+		.carAdvantages {
+			width: 100px;
+			height: 100px;
+			span {
+				font: 50px/1 'heebo';
+			}
+			.steat {
+				width: 100px;
+				height: 100px;
+				text-align: center;
+				padding: 20px;
+				position: relative;
+				bottom: 150px;
+				left: 200px;
+			}
+			.camera {
+				width: 100px;
+				height: 100px;
+				text-align: center;
+				padding: 20px;
+				position: relative;
+				bottom: 250px;
+				left: 400px;
+			}
+			.performance {
+				width: 100px;
+				height: 100px;
+				text-align: center;
+				padding: 20px;
+				position: relative;
+				bottom: 350px;
+				left: 600px;
+			}
+			.zero {
+				width: 100px;
+				height: 100px;
+				text-align: center;
+				padding: 20px;
+				position: relative;
+				bottom: 450px;
+				left: 900px;
+			}
+		}
+	}
+	.carpic {
+		margin-bottom: 200px;
+		.pic1 {
+			width: 800px;
+			height: 400px;
+			background-image: url(../../../public/img/gallery/trunk1.png);
+			background-size: cover;
+			position: relative;
+			right: 25%;
+			h3 {
+				padding: 10px;
+				font: bold 40px/1 'heebo';
+				color: #fff;
+				position: relative;
+				top: 50px;
+				left: 100%;
+				background: #000;
+			}
+			p {
+				padding: 30px;
+				text-align: left;
+				font: 24px/1 'apple';
+				position: relative;
+				top: 60px;
+				left: 100%;
+			}
+		}
+		.pic2 {
+			width: 800px;
+			height: 400px;
+			background-image: url(../../../public/img/gallery/trunk2.png);
+			background-size: cover;
+			position: relative;
+			left: 55%;
+			transform: scaleX(-1);
+			h3 {
+				padding: 10px;
+				text-align: right;
+				font: bold 40px/1 'heebo';
+				color: #fff;
+				position: relative;
+				top: 50px;
+				left: 100%;
+				background: #000;
+				transform: scaleX(-1);
+			}
+			p {
+				padding: 30px;
+				text-align: left;
+				font: 24px/1 'apple';
+				position: relative;
+				top: 60px;
+				left: 100%;
+				transform: scaleX(-1);
+			}
+		}
+		.pic3 {
+			width: 800px;
+			height: 400px;
+			background-image: url(../../../public/img/gallery/trunk3.png);
+			background-size: cover;
+			position: relative;
+			right: 25%;
+			h3 {
+				padding: 10px;
+				font: bold 40px/1 'heebo';
+				color: #fff;
+				position: relative;
+				top: 50px;
+				left: 100%;
+				background: #000;
+			}
+			p {
+				padding: 30px;
+				text-align: left;
+				font: 24px/1 'apple';
+				position: relative;
+				top: 60px;
+				left: 100%;
+			}
+		}
+	}
+	.internal {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		text-align: center;
+		.feature{
+			display: block;
+			width: 100%;
+			font: bold 50px/1 'heebo';
+		}
+		.featureText{
+			display: block;
+			width: 100%;
+			font: 24px/1 'apple';
+			margin-top: 30px;
+			margin-bottom: 100px;
+		}
+
+		.seatPic {
+			width: 300px;
+			height: 300px;
+			background: url(../../../public/img/gallery/seat.jpeg);
+			background-size: cover;
+			box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+			margin-bottom: 200px;
+			margin-right: 20px;
+			.seatTitle {
+				font: bold 20px/1 'heebo';
+				position: relative;
+				top: 310px;
+			}
+			.seatText {
+				font: 15px/1 'apple';
+				position: relative;
+				top: 310px;
+			}
+		}
+		.internalPic {
+			width: 400px;
+			height: 300px;
+			background: url(../../../public/img/gallery/internal1.jpeg);
+			background-size: cover;
+			box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+			margin-bottom: 200px;
+			margin-right: 20px;
+			.internalTitle {
+				font: bold 20px/1 'heebo';
+				position: relative;
+				top: 310px;
+			}
+			.internalText {
+				font: 15px/1 'apple';
+				position: relative;
+				top: 310px;
+			}
+		}
+		.bonnetPic {
+			width: 300px;
+			height: 300px;
+			background: url(../../../public/img/gallery/bonnet.jpeg);
+			background-size: cover;
+			box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+			margin-bottom: 200px;
+			.bonnetTitle {
+				font: bold 20px/1 'heebo';
+				position: relative;
+				top: 310px;
+			}
+			.bonnetText {
+				font: 15px/1 'apple';
+				position: relative;
+				top: 310px;
+			}
+		}
+		.backPic {
+			width: 500px;
+			height: 300px;
+			background: url(../../../public/img/gallery/back.jpeg);
+			background-size: cover;
+			box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+			margin-bottom: 200px;
+			margin-right: 40px;
+			.backTitle {
+				font: bold 20px/1 'heebo';
+				position: relative;
+				top: 310px;
+			}
+			.backText {
+				font: 15px/1 'apple';
+				position: relative;
+				top: 310px;
+			}
+		}
+		.carPic {
+			width: 500px;
+			height: 300px;
+			background: url(../../../public/img/gallery/car1.jpeg);
+			background-size: cover;
+			box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+			margin-bottom: 200px;
+			.carTitle {
+				font: bold 20px/1 'heebo';
+				position: relative;
+				top: 310px;
+			}
+			.carText {
+				font: 15px/1 'apple';
+				position: relative;
+				top: 310px;
+			}
+		}
+	}
+	.design{
+		.designTitle{
+			display: block;
+			width: 100%;
+			text-align: center;
+			font: bold 50px/1 'heebo';
+		}
+		.designText{
+			display: block;
+			width: 100%;
+			text-align: center;
+			font:  24px/1 'apple';
+			margin: 20px;
+		}
+	}
+
+	ul {
+		&::after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+		li {
+			width: 33%;
+			float: left;
+			padding: 20px;
+
+			.inner {
+				width: 100%;
+				transition: 1s;
+				&:hover {
+					transform: scale(1.1);
 				}
-		
-				li {
-					width: 33%;
-					float: left;
-					padding: 20px;
-		
-					.inner {
-						width: 100%;		
-						transition: 1s;
-						box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
-						&:hover{
-							transform: scale(1.1);
-						}
-						.pic {
-							width: 100%;
-							img {
-								width: 100%;
-							}
-						}
+				.pic {
+					width: 100%;
+					height: 250px;
+					img {
+						width: 100%;
 					}
 				}
 			}
 		}
+	}
+}

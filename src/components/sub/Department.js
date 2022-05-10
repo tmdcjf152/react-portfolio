@@ -16,6 +16,28 @@ function Department() {
 
 	return (
 		<Layout name={'Department'}>
+			<div className="logostory">
+				<div className="pic">
+				</div>
+				<div className="story">
+					<p className="storyTitle">Maximise The Experience While Focussing On The Essential
+					</p>
+					<p className="storyText">
+					The clever solution of commercial design encourages a life<br /> full of meaningful experiences MINI opens the city to personal needs.
+					</p>
+					<p className="storyTitle">MINI EXUDES PASSION
+					</p>
+					<p className="storyText">
+					MINI is honest, sincere and honest. <br />MIN combines creativity and smartness to provide an open platform <br />for people, design, and vibrant urban life. <br />MINI's energetic attitude toward life inspires people
+					</p>
+					<p className="storyTitle">REINVENTING URBAN LIFE - THE MINI WAY
+					</p>
+					<p className="storyText">
+					The clever solution of commercial design encourages a life<br /> full of meaningful experiences MINI opens the city to personal needs.
+					</p>
+
+				</div>
+			</div>
 			<ul className='memberList'>
 				{members.map((member, idx) => {
 					return (
