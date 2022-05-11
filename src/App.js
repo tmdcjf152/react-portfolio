@@ -1,4 +1,4 @@
-import { BrowserRouter, Route} from 'react-router-dom';
+import { HashRouter as Router, Route } from 'react-router-dom';
 
 //common
 import Header from './components/common/Header';
@@ -22,7 +22,7 @@ function App() {
 	return (
 		<>
 
-<BrowserRouter basename={process.env.PUBLIC_URL}>
+<Router>
 			<Route exact path='/'>
 				<Header type={'main'} />
 				<Visual />
@@ -33,7 +33,7 @@ function App() {
 				<Header type={'sub'} />
 
 			</Route>
-			</BrowserRouter>
+			</Router>
 
 			<Route path='/department' component={Department} />
 			<Route path='/community' component={Community} />
