@@ -1,4 +1,4 @@
-import { HashRouter as Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 //common
 import Header from './components/common/Header';
