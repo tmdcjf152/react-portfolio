@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cherry+Cream+Soda&family=Faster+One&family=Heebo:wght@700&display=swap");
 footer {
   width: 100%;
   border-top: 1px solid #bbb;
@@ -32,17 +33,17 @@ header .inner {
 }
 header .inner h1 {
   position: absolute;
-  bottom: 20px;
+  bottom: 15px;
   left: 0px;
 }
 header .inner h1 a {
-  font: bold 24px/1 "arial";
+  font: bold 50px/1 "arial";
   color: #000;
 }
 header .inner #gnb {
   position: absolute;
-  bottom: 0px;
-  right: 0px;
+  bottom: 10px;
+  right: 250px;
 }
 header .inner #gnb li {
   float: left;
@@ -143,6 +144,39 @@ a {
   text-decoration: none;
 }
 
+.pop {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 5vw;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 5;
+}
+.pop .con {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+  position: relative;
+}
+.pop .con img,
+.pop .con iframe,
+.pop .con video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.pop .con .close {
+  font: 14px/1 "arial";
+  color: #ddd;
+  position: absolute;
+  right: 0px;
+  top: -40px;
+  cursor: pointer;
+}
+
 figure {
   width: 100%;
   height: 100vh;
@@ -152,25 +186,715 @@ figure {
 }
 
 .Community figure {
-  background: #8B1EF7;
+  background-image: url(../../../public/img/banner.jpg);
+  background-size: 100%;
+  width: 100%;
+  height: 700px;
 }
 
 .Department figure {
-  background: #F01A69;
+  background-image: url(../../../public/img/banner2.jpg);
+  background-size: 100%;
+  width: 100%;
+  height: 700px;
+}
+.Department .logostory .pic {
+  width: 400px;
+  height: 300px;
+  background-image: url(../../../public/img/Logo.jpeg);
+  position: relative;
+  top: 90px;
+}
+.Department .logostory .story {
+  position: relative;
+  bottom: 230px;
+  left: 500px;
+}
+.Department .logostory .story .storyTitle {
+  font: bold 28px/1 "heebo";
+  color: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #000;
+}
+.Department .logostory .story .storyText {
+  font: bold 20px/1.2 "heebo";
+  margin-bottom: 40px;
+}
+.Department .memberList {
+  overflow: hidden;
+}
+.Department .memberList li {
+  width: 25%;
+  padding: 10px;
+  margin: 0 auto;
+}
+.Department .memberList li .inner {
+  width: 100%;
+  height: 600px;
+  margin-top: 100px;
+}
+.Department .memberList li .inner .department_pic {
+  width: 300px;
+  height: 400px;
+  transition: 1s;
+}
+.Department .memberList li .inner .department_pic:hover {
+  transform: scale(1.2);
+}
+.Department .memberList li .inner .department_pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 5px rgba(112, 112, 112, 0.5);
+}
+.Department .memberList li .inner h2 {
+  margin-top: 5px;
+  font: bold 50px/1 "heebo";
+  color: #000;
+  position: relative;
+  left: -130%;
+  top: -400px;
+}
+.Department .memberList li .inner p {
+  font: 30px/1.2 "heebo";
+  color: #000;
+  margin-bottom: 20px;
+  position: relative;
+  left: -130%;
+  top: -390px;
+}
+.Department .memberList li .inner #history {
+  position: relative;
+  right: -800px;
+  top: -200px;
+}
+.Department .memberList li .inner #history .since {
+  font: bold 50px/1 "heebo";
+  color: #fff;
+  background: #000;
+}
+.Department .memberList li .inner #history .history {
+  font: 25px/1 "heebo";
 }
 
+.Gallery {
+  overflow: hidden;
+}
 .Gallery figure {
-  background: #2664E0;
+  background-image: url(../../../public/img/banner5.jpg);
+  background-size: 100%;
+  width: 100%;
+  height: 1070px;
+}
+.Gallery .carprice {
+  width: 100%;
+}
+.Gallery .carprice h1 {
+  width: 100%;
+  font: bold 90px/1 "heebo";
+  color: #fff;
+  position: relative;
+  bottom: 1100px;
+  right: 300px;
+}
+.Gallery .carprice .price {
+  width: 100%;
+  font: 35px/1 "heebo";
+  color: #fff;
+  position: relative;
+  bottom: 1150px;
+  right: 300px;
+}
+.Gallery .carprice .carOption {
+  width: 100%;
+  font: 25px/1.4 "heebo";
+  color: #fff;
+  position: relative;
+  bottom: 1100px;
+  right: 300px;
+}
+.Gallery .carprice .carOption span {
+  margin-right: 20px;
+}
+.Gallery .carprice h2 {
+  width: 100%;
+  font: bold 50px/1 "heebo";
+  text-align: center;
+  position: relative;
+  bottom: 250px;
+  margin-bottom: 30px;
+}
+.Gallery .carprice .forLife {
+  width: 100%;
+  font: 25px/1 "apple";
+  text-align: center;
+  position: relative;
+  bottom: 250px;
+}
+.Gallery .carprice::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.Gallery .carprice .carAdvantages {
+  width: 100px;
+  height: 100px;
+}
+.Gallery .carprice .carAdvantages span {
+  font: 50px/1 "heebo";
+}
+.Gallery .carprice .carAdvantages .steat {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 150px;
+  left: 200px;
+}
+.Gallery .carprice .carAdvantages .camera {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 250px;
+  left: 400px;
+}
+.Gallery .carprice .carAdvantages .performance {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 350px;
+  left: 600px;
+}
+.Gallery .carprice .carAdvantages .zero {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 450px;
+  left: 900px;
+}
+.Gallery .carpic {
+  margin-bottom: 200px;
+}
+.Gallery .carpic .pic1 {
+  width: 800px;
+  height: 400px;
+  background-image: url(../../../public/img/gallery/trunk1.png);
+  background-size: cover;
+  position: relative;
+  right: 25%;
+}
+.Gallery .carpic .pic1 h3 {
+  padding: 10px;
+  font: bold 40px/1 "heebo";
+  color: #fff;
+  position: relative;
+  top: 50px;
+  left: 100%;
+  background: #000;
+}
+.Gallery .carpic .pic1 p {
+  padding: 30px;
+  text-align: left;
+  font: 24px/1 "apple";
+  position: relative;
+  top: 60px;
+  left: 100%;
+}
+.Gallery .carpic .pic2 {
+  width: 800px;
+  height: 400px;
+  background-image: url(../../../public/img/gallery/trunk2.png);
+  background-size: cover;
+  position: relative;
+  left: 55%;
+  transform: scaleX(-1);
+}
+.Gallery .carpic .pic2 h3 {
+  padding: 10px;
+  text-align: right;
+  font: bold 40px/1 "heebo";
+  color: #fff;
+  position: relative;
+  top: 50px;
+  left: 100%;
+  background: #000;
+  transform: scaleX(-1);
+}
+.Gallery .carpic .pic2 p {
+  padding: 30px;
+  text-align: left;
+  font: 24px/1 "apple";
+  position: relative;
+  top: 60px;
+  left: 100%;
+  transform: scaleX(-1);
+}
+.Gallery .carpic .pic3 {
+  width: 800px;
+  height: 400px;
+  background-image: url(../../../public/img/gallery/trunk3.png);
+  background-size: cover;
+  position: relative;
+  right: 25%;
+}
+.Gallery .carpic .pic3 h3 {
+  padding: 10px;
+  font: bold 40px/1 "heebo";
+  color: #fff;
+  position: relative;
+  top: 50px;
+  left: 100%;
+  background: #000;
+}
+.Gallery .carpic .pic3 p {
+  padding: 30px;
+  text-align: left;
+  font: 24px/1 "apple";
+  position: relative;
+  top: 60px;
+  left: 100%;
+}
+.Gallery .internal {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.Gallery .internal .feature {
+  display: block;
+  width: 100%;
+  font: bold 50px/1 "heebo";
+}
+.Gallery .internal .featureText {
+  display: block;
+  width: 100%;
+  font: 24px/1 "apple";
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+.Gallery .internal .seatPic {
+  width: 300px;
+  height: 300px;
+  background: url(../../../public/img/gallery/seat.jpeg);
+  background-size: cover;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 200px;
+  margin-right: 20px;
+}
+.Gallery .internal .seatPic .seatTitle {
+  font: bold 20px/1 "heebo";
+  position: relative;
+  top: 310px;
+}
+.Gallery .internal .seatPic .seatText {
+  font: 15px/1 "apple";
+  position: relative;
+  top: 310px;
+}
+.Gallery .internal .internalPic {
+  width: 400px;
+  height: 300px;
+  background: url(../../../public/img/gallery/internal1.jpeg);
+  background-size: cover;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 200px;
+  margin-right: 20px;
+}
+.Gallery .internal .internalPic .internalTitle {
+  font: bold 20px/1 "heebo";
+  position: relative;
+  top: 310px;
+}
+.Gallery .internal .internalPic .internalText {
+  font: 15px/1 "apple";
+  position: relative;
+  top: 310px;
+}
+.Gallery .internal .bonnetPic {
+  width: 300px;
+  height: 300px;
+  background: url(../../../public/img/gallery/bonnet.jpeg);
+  background-size: cover;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 200px;
+}
+.Gallery .internal .bonnetPic .bonnetTitle {
+  font: bold 20px/1 "heebo";
+  position: relative;
+  top: 310px;
+}
+.Gallery .internal .bonnetPic .bonnetText {
+  font: 15px/1 "apple";
+  position: relative;
+  top: 310px;
+}
+.Gallery .internal .backPic {
+  width: 500px;
+  height: 300px;
+  background: url(../../../public/img/gallery/back.jpeg);
+  background-size: cover;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 200px;
+  margin-right: 40px;
+}
+.Gallery .internal .backPic .backTitle {
+  font: bold 20px/1 "heebo";
+  position: relative;
+  top: 310px;
+}
+.Gallery .internal .backPic .backText {
+  font: 15px/1 "apple";
+  position: relative;
+  top: 310px;
+}
+.Gallery .internal .carPic {
+  width: 500px;
+  height: 300px;
+  background: url(../../../public/img/gallery/car1.jpeg);
+  background-size: cover;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 200px;
+}
+.Gallery .internal .carPic .carTitle {
+  font: bold 20px/1 "heebo";
+  position: relative;
+  top: 310px;
+}
+.Gallery .internal .carPic .carText {
+  font: 15px/1 "apple";
+  position: relative;
+  top: 310px;
+}
+.Gallery .design .designTitle {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font: bold 50px/1 "heebo";
+}
+.Gallery .design .designText {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font: 24px/1 "apple";
+  margin: 20px;
+}
+.Gallery ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.Gallery ul li {
+  width: 33%;
+  float: left;
+  padding: 20px;
+}
+.Gallery ul li .inner {
+  width: 100%;
+  transition: 1s;
+}
+.Gallery ul li .inner:hover {
+  transform: scale(1.1);
+}
+.Gallery ul li .inner .pic {
+  width: 100%;
+  height: 250px;
+}
+.Gallery ul li .inner .pic img {
+  width: 100%;
 }
 
 .Join figure {
-  background: #FFF101;
+  background-image: url(../../../public/img/banner4.jpg);
+  background-size: 100%;
+  width: 100%;
+  height: 700px;
+}
+.Join .stepBox .campaignTitle {
+  font: bold 70px/1 "heebo";
+  margin-top: 50px;
+  text-transform: uppercase;
+}
+.Join .stepBox .stepTitle {
+  font: 25px/1.2 "heebo";
+  margin: 20px 0px;
+}
+.Join .stepBox .selectCar {
+  font: 70px/1 "heebo";
+  margin: 50px 0px;
+  text-decoration: underline;
+}
+.Join .carCategory {
+  margin: 100px 0px;
+}
+.Join .carCategory::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.Join .carCategory li {
+  width: 250px;
+  height: 120px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  float: left;
+  background: #ccc;
+  font: bold 20px/1 "heebo";
+  color: #fff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.Join .carCategory li .categoryNameMINI {
+  position: relative;
+  top: 40px;
+  font-size: 30px;
+}
+.Join .carCategory li:hover:nth-of-type(1) {
+  background: rgb(24, 21, 160);
+}
+.Join .carCategory li:hover:nth-of-type(2) {
+  background: rgb(163, 14, 14);
+}
+.Join .carCategory li:hover:nth-of-type(3) {
+  background: rgb(12, 78, 37);
+}
+.Join .carCategory li:hover:nth-of-type(4) {
+  background: rgb(134, 114, 76);
+}
+.Join .carCategory li:hover:nth-of-type(5) {
+  background: rgb(206, 255, 71);
+}
+.Join .carCategory li:hover:nth-of-type(6) {
+  background: #ff41b6;
+}
+.Join .carCategory li:hover:nth-of-type(7) {
+  background: rgb(88, 230, 255);
+}
+.Join .carCategory li .categoryName {
+  position: relative;
+  top: 40px;
+}
+.Join fieldset {
+  border: none;
+}
+.Join fieldset legend {
+  font: bold 70px/1 "heebo";
+  text-decoration: underline;
+  margin-bottom: 40px;
+}
+.Join fieldset tbody {
+  width: 100%;
+  border: none;
+}
+.Join fieldset tbody tr th {
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding-top: 30px;
+  font: bold 30px/1 "heebo";
+  text-align: left;
+}
+.Join fieldset tbody tr td {
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+.Join fieldset tbody tr td input[type=text] {
+  width: 300px;
+  height: 40px;
+  border: none;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.Join fieldset tbody tr td input[type=tel] {
+  width: 300px;
+  height: 40px;
+  border: none;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.Join fieldset tbody tr td select {
+  width: 300px;
+  height: 40px;
+  border: none;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.Join fieldset tbody::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.Join fieldset tbody .btn {
+  float: left;
+  position: absolute;
+  left: 30%;
+}
+.Join fieldset tbody .btn input[type=reset] {
+  width: 200px;
+  height: 40px;
+  border: none;
+  border: 1px solid #ddd;
+  margin-right: 30px;
+  text-align: center;
+  cursor: pointer;
+  font: bold 20px/1 "heebo";
+}
+.Join fieldset tbody .btn input[type=submit] {
+  width: 200px;
+  height: 40px;
+  border: none;
+  border: 1px solid #ddd;
+  text-align: center;
+  cursor: pointer;
+  font: bold 20px/1 "heebo";
+}
+.Join fieldset .agree {
+  width: 600px;
+  padding: 30px;
+  border: 1px solid #ddd;
+  position: absolute;
+  left: 50%;
+  bottom: 100px;
+  text-align: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.Join fieldset .agree .fieldGroup {
+  font: bold 50px/1 "heebo";
+  margin-bottom: 40px;
+}
+.Join fieldset .agree .fieldGroupDescription {
+  width: 100%;
+  font: 20px/1.5 "heebo";
+  margin-bottom: 40px;
+}
+.Join fieldset .agree .agreement {
+  text-align: left;
+}
+.Join fieldset .agree .agreement .th {
+  margin-bottom: 20px;
+}
+.Join fieldset .agree .agreement .th span {
+  font: bold 19px/1 "heebo";
+}
+.Join fieldset .agree .agreement .th input[type=checkbox] {
+  margin-right: 10px;
+  cursor: pointer;
 }
 
 .Location figure {
-  background: #4Ef046;
+  background-image: url(../../../public/img/banner5.jpg);
+  background-size: 100%;
+  width: 100%;
+  height: 700px;
+}
+.Location #map {
+  width: 900px;
+  height: 400px;
+  background: #000;
+  border: 2px solid #000;
+}
+.Location button {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #000000;
+  font-family: heebo;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+.Location button:focus, .Location button:hover {
+  color: rgb(0, 0, 0);
+}
+.Location button:focus::after, .Location button:hover::after {
+  width: 100%;
+  left: 0%;
+}
+.Location button::after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+.Location .branch li {
+  display: block;
+  width: 250px;
+  height: 30px;
+  position: relative;
+  left: 80%;
+  top: -450px;
+  margin: 10px 0px;
+  text-align: center;
+  font: bold 20px/1.5 "heebo";
+  transition: 1s;
+}
+.Location .branch li.on {
+  color: rgb(43, 124, 74);
+  transform: scale(1.2);
+  border-bottom: 3px solid rgb(43, 124, 74);
 }
 
 .Youtube figure {
-  background: #1EF7D3;
+  background-image: url(../../../public/img/banner6.jpg);
+  background-size: 1430px;
+  width: 100%;
+  height: 700px;
+}
+.Youtube .inner {
+  width: 1180px;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.Youtube .inner::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.Youtube .inner h1 {
+  width: 100%;
+}
+.Youtube .inner article {
+  margin-left: 20px;
+}
+.Youtube .inner article .pic {
+  width: 300px;
+  height: 220px;
+}
+.Youtube .inner article .pic img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */
