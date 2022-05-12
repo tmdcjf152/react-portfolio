@@ -10,7 +10,7 @@ function Layout(props) {
 
 	return (
 		<section className={`content ${props.name}`} ref={frame}>
-			<figure></figure>
+<figure></figure>
 			<div className='inner'>
 				{props.children}
 			</div>

@@ -185,11 +185,96 @@ figure {
   position: relative;
 }
 
-.Community figure {
-  background-image: url(../../../public/img/banner.jpg);
-  background-size: 100%;
+.Community .communityBanner {
   width: 100%;
-  height: 700px;
+  height: 200px;
+  border-bottom: 5px solid #000;
+  margin-bottom: 100px;
+}
+.Community .communityBanner .bannerTitle {
+  font: bold 70px/1 "heebo";
+}
+.Community .communityBanner .bannerText {
+  font: 40px/1 "apple";
+}
+.Community .Box {
+  display: flex;
+  justify-content: space-between;
+}
+.Community .Box .inputBox {
+  width: 49%;
+  height: 500px;
+  padding: 30px;
+  border: 1px solid #000;
+  text-align: center;
+}
+.Community .Box .inputBox h2 {
+  font: bold 30px/1 "heebo";
+  margin-bottom: 10px;
+}
+.Community .Box .inputBox input[type=text] {
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  margin: 20px 0px;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+.Community .Box .inputBox textarea {
+  width: 500px;
+  resize: none;
+  text-align: center;
+}
+.Community .Box .inputBox button {
+  width: 250px;
+  height: 30px;
+  margin-top: 20px;
+}
+.Community .Box .inputBox span {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  font: 18px/1 "apple";
+  color: #bbb;
+}
+.Community .Box .showBox {
+  width: 49%;
+  height: 100%;
+  border: 1px solid #bbb;
+  padding: 20px;
+}
+.Community .Box .showBox .showBoxTitle {
+  text-align: center;
+  font: bold 30px/1 "heebo";
+  margin-bottom: 30px;
+}
+.Community .Box .showBox article {
+  border-bottom: 2px solid #000;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+.Community .Box .showBox article h2 {
+  width: 108.1%;
+  background: #000;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.Community .Box .showBox article p {
+  font: 15px/1 "heebo";
+  margin-bottom: 20px;
+}
+.Community .Box .showBox article .btns {
+  width: 100%;
+}
+.Community .Box .showBox article .btns button {
+  width: 100px;
+  height: 20px;
+  margin-right: 10px;
+  font: 15px/1 "heebo";
+  background: #fff;
+  position: relative;
+  left: 300px;
 }
 
 .Department figure {
@@ -289,32 +374,39 @@ figure {
 }
 .Gallery .carprice {
   width: 100%;
+  height: 100%;
 }
-.Gallery .carprice h1 {
+.Gallery .carprice .pricepic {
+  width: 200%;
+  height: 900px;
+  background: url(../../../public/img/banner5.jpg);
+  background-size: cover;
+  background-position-y: 100%;
+  position: relative;
+  left: -50%;
+  top: -100px;
+}
+.Gallery .carprice .pricepic h1 {
   width: 100%;
+  padding-left: 250px;
+  padding-top: 20px;
   font: bold 90px/1 "heebo";
   color: #fff;
-  position: relative;
-  bottom: 1100px;
-  right: 300px;
 }
-.Gallery .carprice .price {
+.Gallery .carprice .pricepic .price {
   width: 100%;
+  padding-left: 250px;
   font: 35px/1 "heebo";
   color: #fff;
-  position: relative;
-  bottom: 1150px;
-  right: 300px;
 }
-.Gallery .carprice .carOption {
+.Gallery .carprice .pricepic .carOption {
   width: 100%;
+  padding-left: 250px;
+  padding-top: 20px;
   font: 25px/1.4 "heebo";
   color: #fff;
-  position: relative;
-  bottom: 1100px;
-  right: 300px;
 }
-.Gallery .carprice .carOption span {
+.Gallery .carprice .pricepic .carOption span {
   margin-right: 20px;
 }
 .Gallery .carprice h2 {
@@ -324,6 +416,7 @@ figure {
   position: relative;
   bottom: 250px;
   margin-bottom: 30px;
+  margin-top: 350px;
 }
 .Gallery .carprice .forLife {
   width: 100%;
@@ -798,11 +891,98 @@ figure {
   cursor: pointer;
 }
 
-.Location figure {
-  background-image: url(../../../public/img/banner5.jpg);
-  background-size: 100%;
+.Location .locationBanner {
   width: 100%;
-  height: 700px;
+  height: 200px;
+  border-bottom: 5px solid #000;
+  margin-bottom: 100px;
+}
+.Location .locationBanner .bannerTitle {
+  font: bold 70px/1 "heebo";
+}
+.Location .locationBanner .bannerText {
+  font: 40px/1 "apple";
+}
+.Location .showRoom {
+  width: 100%;
+  margin-bottom: 100px;
+}
+.Location .showRoom .showRoom1 {
+  width: 100%;
+  height: 400px;
+  margin: 50px 0px;
+  border-bottom: 2px solid #000;
+}
+.Location .showRoom .showRoom1 .showRoomPic1 {
+  width: 50%;
+  height: 350px;
+  background: url(../../../public/img/location/showroom1.jpeg);
+  background-size: cover;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.Location .showRoom .showRoom1 .showRoomText1 {
+  position: relative;
+  bottom: 85%;
+  left: 52%;
+  font: bold 30px/1 "heebo";
+}
+.Location .showRoom .showRoom1 .showRoomText1 span {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  font: 20px/1.3 "apple";
+}
+.Location .showRoom .showRoom2 {
+  width: 100%;
+  height: 400px;
+  margin: 50px 0px;
+  border-bottom: 2px solid #000;
+}
+.Location .showRoom .showRoom2 .showRoomPic2 {
+  width: 50%;
+  height: 350px;
+  background: url(../../../public/img/location/showroom2.jpeg);
+  background-size: cover;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  left: 50%;
+}
+.Location .showRoom .showRoom2 .showRoomText2 {
+  position: relative;
+  bottom: 85%;
+  right: 0%;
+  font: bold 30px/1 "heebo";
+}
+.Location .showRoom .showRoom2 .showRoomText2 span {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  font: 20px/1.3 "apple";
+}
+.Location .showRoom .showRoom3 {
+  width: 100%;
+  height: 400px;
+  margin: 50px 0px;
+  border-bottom: 2px solid #000;
+}
+.Location .showRoom .showRoom3 .showRoomPic3 {
+  width: 50%;
+  height: 350px;
+  background: url(../../../public/img/location/showroom3.jpeg);
+  background-size: cover;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.Location .showRoom .showRoom3 .showRoomText3 {
+  position: relative;
+  bottom: 85%;
+  left: 52%;
+  font: bold 30px/1 "heebo";
+}
+.Location .showRoom .showRoom3 .showRoomText3 span {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  font: 20px/1.3 "apple";
 }
 .Location #map {
   width: 900px;
@@ -845,33 +1025,332 @@ figure {
   transition-duration: 400ms;
   transition-property: width, left;
 }
+.Location .branch {
+  width: 200px;
+  position: relative;
+  top: -450px;
+  left: 80%;
+}
 .Location .branch li {
   display: block;
-  width: 250px;
-  height: 30px;
-  position: relative;
-  left: 80%;
-  top: -450px;
-  margin: 10px 0px;
-  text-align: center;
-  font: bold 20px/1.5 "heebo";
-  transition: 1s;
+  width: 100%;
+  height: 50px;
+  font: bold 15px/1 "heebo";
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.Location .branch li.on {
-  color: rgb(43, 124, 74);
-  transform: scale(1.2);
-  border-bottom: 3px solid rgb(43, 124, 74);
+.Location .branch li.on:nth-of-type(1) {
+  background: linear-gradient(white, rgba(49, 224, 255, 0.596), white);
+  border-radius: 50%;
+  font: bold 16px/1 "heebo";
+  color: #fff;
+}
+.Location .branch li.on:nth-of-type(1)::before {
+  width: 700px;
+  height: 100px;
+  text-align: left;
+  position: absolute;
+  top: 420px;
+  right: 300px;
+  content: "ADDRESS : 223 Baekma-ro, Ilsandong-gu, Goyang-si, Gyeonggi-do \aTEL : 031-8076-4600 \aOPENING HOURS :Mon-Fri 0830 to 2100  Sun-Holidays 0830 to 2100 \aOpen 365 days a year";
+  white-space: pre;
+  font: 20px/1.3 "apple";
+  color: #000;
+}
+.Location .branch li.on:nth-of-type(2) {
+  background: linear-gradient(white, rgba(49, 224, 255, 0.596), white);
+  border-radius: 50%;
+  text-align: center;
+  font: bold 16px/1 "heebo";
+  color: #fff;
+}
+.Location .branch li.on:nth-of-type(2)::before {
+  width: 700px;
+  height: 100px;
+  text-align: left;
+  position: absolute;
+  top: 420px;
+  right: 300px;
+  content: "ADDRESS : 405-205 Mok-dong, Yangcheon-gu, Seoul \aTEL : 02-2646-4600 \aOPENING HOURS :Mon-Fri 0900 to 2100  Sun-Holidays 0830 to 2100 \aOpen 365 days a year";
+  white-space: pre;
+  font: 20px/1.3 "apple";
+  color: #000;
+}
+.Location .branch li.on:nth-of-type(3) {
+  background: linear-gradient(white, rgba(49, 224, 255, 0.596), white);
+  border-radius: 50%;
+  text-align: center;
+  font: bold 16px/1 "heebo";
+  color: #fff;
+}
+.Location .branch li.on:nth-of-type(3)::before {
+  width: 700px;
+  height: 100px;
+  text-align: left;
+  position: absolute;
+  top: 420px;
+  right: 300px;
+  content: "ADDRESS : 6 Seounsandan-ro 2-gil, Gyeyang-gu, Incheon \aTEL : 032-713-4601 \aOPENING HOURS :Mon-Fri 0900 to 2000  Sun-Holidays 0900 to 2000 \aOpen 365 days a year";
+  white-space: pre;
+  font: 20px/1.3 "apple";
+  color: #000;
+}
+.Location .branch li.on:nth-of-type(4) {
+  background: linear-gradient(white, rgba(49, 224, 255, 0.596), white);
+  border-radius: 50%;
+  text-align: center;
+  font: bold 16px/1 "heebo";
+  color: #fff;
+}
+.Location .branch li.on:nth-of-type(4)::before {
+  width: 700px;
+  height: 100px;
+  text-align: left;
+  position: absolute;
+  top: 420px;
+  right: 300px;
+  content: "ADDRESS : 79 Banpo-daero, Seocho-gu, Seoul, Republic of Korea \aTEL : 02-2146-8900 \aOPENING HOURS :All Days 0900 to 2000 \aOpen 365 days a year";
+  white-space: pre;
+  font: 20px/1.3 "apple";
+  color: #000;
+}
+.Location .branch li.on:nth-of-type(5) {
+  background: linear-gradient(white, rgba(49, 224, 255, 0.596), white);
+  border-radius: 50%;
+  text-align: center;
+  font: bold 16px/1 "heebo";
+  color: #fff;
+}
+.Location .branch li.on:nth-of-type(5)::before {
+  width: 700px;
+  height: 100px;
+  text-align: left;
+  position: absolute;
+  top: 420px;
+  right: 300px;
+  content: "ADDRESS : 140 The State Shopping Center, Sinheung-ro, Wonmi-gu, Bucheon-si, Gyeonggi-do \aTEL : 032-285-4600 \aOPENING HOURS :Mon-Fri 0830 to 2100  Sun-Holidays 0830 to 2100 \aOpen 365 days a year";
+  white-space: pre;
+  font: 20px/1.3 "apple";
+  color: #000;
+}
+.Location .branch li.on:nth-of-type(6) {
+  background: linear-gradient(white, rgba(49, 224, 255, 0.596), white);
+  border-radius: 50%;
+  text-align: center;
+  font: bold 16px/1 "heebo";
+  color: #fff;
+}
+.Location .branch li.on:nth-of-type(6)::before {
+  width: 700px;
+  height: 100px;
+  text-align: left;
+  position: absolute;
+  top: 420px;
+  right: 300px;
+  content: "ADDRESS : 301 Yeongdong-daero, Gangnam-gu, Seoul, Republic of Korea \aTEL : 02-2191-7400 \aOPENING HOURS :Mon-Fri 0900 to 2100  Sun-Holidays 0900 to 2100 \aOpen 365 days a year";
+  white-space: pre;
+  font: 20px/1.3 "apple";
+  color: #000;
+}
+.Location .branch li.on:nth-of-type(7) {
+  background: linear-gradient(white, rgba(49, 224, 255, 0.596), white);
+  border-radius: 50%;
+  text-align: center;
+  font: bold 16px/1 "heebo";
+  color: #fff;
+}
+.Location .branch li.on:nth-of-type(7)::before {
+  width: 700px;
+  height: 100px;
+  text-align: left;
+  position: absolute;
+  top: 420px;
+  right: 300px;
+  content: "ADDRESS : 1F, Eonju-ro, Gangnam-gu, Seoul, Republic of Korea \aTEL : 02-549-3400 \aOPENING HOURS :Mon-Fri 0830 to 2100  Sun-Holidays 0900 to 2100 \aOpen 365 days a year";
+  white-space: pre;
+  font: 20px/1.3 "apple";
+  color: #000;
+}
+.Location .branch li.on:nth-of-type(8) {
+  background: linear-gradient(white, rgba(49, 224, 255, 0.596), white);
+  border-radius: 50%;
+  text-align: center;
+  font: bold 16px/1 "heebo";
+  color: #fff;
+}
+.Location .branch li.on:nth-of-type(8)::before {
+  width: 700px;
+  height: 100px;
+  text-align: left;
+  position: absolute;
+  top: 420px;
+  right: 300px;
+  content: "ADDRESS : 120 Hangang-daero, Yongsan-gu, Seoul, Republic of Korea \aTEL : 02-3409-3400 \aOPENING HOURS :Mon-Fri 0830 to 2100  Sun-Holidays 0900 to 2100 \aOpen 365 days a year";
+  white-space: pre;
+  font: 20px/1.3 "apple";
+  color: #000;
+}
+.Location .branch li.on:nth-of-type(9) {
+  background: linear-gradient(white, rgba(49, 224, 255, 0.596), white);
+  border-radius: 50%;
+  text-align: center;
+  font: bold 16px/1 "heebo";
+  color: #fff;
+}
+.Location .branch li.on:nth-of-type(9)::before {
+  width: 700px;
+  height: 100px;
+  text-align: left;
+  position: absolute;
+  top: 420px;
+  right: 300px;
+  content: "ADDRESS : 327-10 Geumgok-dong, Bundang-gu, Seongnam-si, Gyeonggi-do \aTEL : 031-709-4600 \aOPENING HOURS :Mon-Fri 0830 to 2100  Sun-Holidays 0900 to 2100 \aOpen 365 days a year";
+  white-space: pre;
+  font: 20px/1.3 "apple";
+  color: #000;
 }
 
-.Youtube figure {
-  background-image: url(../../../public/img/banner6.jpg);
-  background-size: 1430px;
+.Youtube .youtubeBanner {
   width: 100%;
-  height: 700px;
+  height: 200px;
+  border-bottom: 5px solid #000;
+  margin-bottom: 100px;
+}
+.Youtube .youtubeBanner .bannerTitle {
+  font: bold 70px/1 "heebo";
+}
+.Youtube .youtubeBanner .bannerText {
+  font: 40px/1 "apple";
+}
+.Youtube .youtubeOption {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+.Youtube .youtubeOption .optionPic {
+  width: 45%;
+  height: 300px;
+  background: url(../../../public/img/youtube/pic1.jpeg);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.Youtube .youtubeOption .optionsBox {
+  width: 50%;
+  position: relative;
+  left: 5%;
+}
+.Youtube .youtubeOption .optionsBox .optionTitle {
+  font: bold 40px/1 "heebo";
+  position: relative;
+}
+.Youtube .youtubeOption .optionsBox .optionText {
+  font: bold 25px/1.3 "heebo";
+}
+.Youtube .options {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Youtube .options .option1 {
+  width: 100%;
+}
+.Youtube .options .option1 .option1Pic {
+  width: 300px;
+  height: 300px;
+  background: url(../../../public/img/youtube/youtubepic0.png);
+  background-size: cover;
+  background-position-x: -100px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.Youtube .options .option1 .option1Text {
+  width: 300px;
+  height: 300px;
+}
+.Youtube .options .option1 .option1Text p {
+  text-align: center;
+  font: 20px/1 "heebo";
+  margin-top: 30px;
+}
+.Youtube .options .option2 {
+  width: 100%;
+}
+.Youtube .options .option2 .option2Pic {
+  width: 300px;
+  height: 300px;
+  background: url(../../../public/img/youtube/youtubepic1.png);
+  background-size: cover;
+  background-position-x: -140px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.Youtube .options .option2 .option2Text {
+  width: 300px;
+  height: 300px;
+}
+.Youtube .options .option2 .option2Text p {
+  text-align: center;
+  font: 20px/1 "heebo";
+  margin-top: 30px;
+}
+.Youtube .options .option3 {
+  width: 100%;
+}
+.Youtube .options .option3 .option3Pic {
+  width: 300px;
+  height: 300px;
+  background: url(../../../public/img/youtube/youtubepic2.png);
+  background-size: cover;
+  background-position-x: -270px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.Youtube .options .option3 .option3Text {
+  width: 300px;
+  height: 300px;
+}
+.Youtube .options .option3 .option3Text p {
+  text-align: center;
+  font: 20px/1 "heebo";
+  margin-top: 30px;
+}
+.Youtube .options .option4 {
+  width: 100%;
+}
+.Youtube .options .option4 .option4Pic {
+  width: 300px;
+  height: 300px;
+  background: url(../../../public/img/youtube/youtubepic3.png);
+  background-size: cover;
+  background-position-x: -150px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.Youtube .options .option4Text {
+  width: 300px;
+  height: 300px;
+}
+.Youtube .options .option4Text p {
+  text-align: center;
+  font: 20px/1 "heebo";
+  margin-top: 30px;
+}
+.Youtube .optionvideo {
+  width: 100%;
+}
+.Youtube .optionvideo .videoTitle {
+  display: block;
+  text-align: center;
+  font: bold 50px/1 "heebo";
+}
+.Youtube .optionvideo .videoText {
+  display: block;
+  text-align: center;
+  font: 20px/1 "apple";
+  margin: 20px;
 }
 .Youtube .inner {
   width: 1180px;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

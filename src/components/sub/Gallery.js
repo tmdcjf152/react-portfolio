@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCouch } from '@fortawesome/free-solid-svg-icons';
 import { faSuitcase } from '@fortawesome/free-solid-svg-icons';
 import { faGaugeHigh } from '@fortawesome/free-solid-svg-icons';
+import carPic1 from '../../src_assets/banner5.jpg';
 
 
 
@@ -20,7 +21,6 @@ function Gallery() {
 		const userid = "195602470@N06"
 		const url = `https://www.flickr.com/services/rest/?method=${method_interest}&per_page=${num}&api_key=${key}&user_id=${userid}&nojsoncallback=1&format=json`;
 		axios.get(url).then((json) => {
-			console.log(json.data.photos.photo);
 			setPics(json.data.photos.photo);
 		});
 	}, []);
@@ -28,6 +28,8 @@ function Gallery() {
 		<>
 			<Layout name={'Gallery'}>
 				<div className="carprice">
+					<div className="pricepic">
+						<img src={carPic1} alt="" />
 					<h1>MINI COUNTRYMAN.</h1>
 					<p className="price">￦ 40,300,000 ~</p>
 					<p className="carOption">
@@ -37,7 +39,7 @@ function Gallery() {
 						1,390L Trunk space<br />
 						<span><FontAwesomeIcon icon={faGaugeHigh} /></span>
 						136hp ~ 306hp
-					</p>
+					</p></div>
 					<h2>For Life</h2>
 					<p className="forLife">Experience the amazing speed limit of SUVs that are small but not small.</p>
 					<div className="carAdvantages">
