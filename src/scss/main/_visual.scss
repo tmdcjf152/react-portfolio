@@ -31,31 +31,32 @@ figure {
 		.pricepic {
 			width: 100%;
 			position: absolute;
-			bottom: 55%;
+			top: 40%;
 			h1 {
-				width: 1200px;
+				width: 100%;
 				text-align: left;
-				position: absolute;
-				bottom: 150px;
-				right:26%;
+				position: relative;
+				bottom: 250px;
+				right:8%;
 				padding-left: 250px;
 				padding-top: 20px;
 				font: bold 90px/1 'heebo';
 				color: #fff;
 			}
 			.price {
-				width: 300px;
-				position: absolute;
-				bottom:100px;
-				right: 73%;
+				width: 100%;
+				text-align: left;
+				position: relative;
+				bottom:225px;
+				left:6%;
 				font: 35px/1 'heebo';
 				color: #fff;
 			}
 			.carOption {
 				text-align: left;
-				width: 500px;
+				width: 100%;
 				position: relative;
-				top: 20px;
+				bottom: 200px;
 				left: 120px;
 				font: 25px/1.4 'heebo';
 				color: #fff;
