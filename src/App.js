@@ -1,4 +1,8 @@
-import { Switch, Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { setYoutube, setMembers, setFlickr } from './redux/action';
+import axios from 'axios';
 
 //common
 import Header from './components/common/Header';
@@ -17,7 +21,46 @@ import Youtube from './components/sub/Youtube';
 
 import './scss/style.scss'
 
+const path = process.env.PUBLIC_URL;
+
 function App() {
+	const dispatch = useDispatch();
+	const fetchYoutube = async () => {
+		const key = "AIzaSyDHMuI6MNXA_9ecFqq_7CR3fVWz4BB0Wa0"
+		const playlistID = "PLtbEPiJjCvI9LqUerSq35hNB5BT9auspw"
+		const num = "9"
+		const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${playlistID}&maxResults=${num}`;
+
+		await axios.get(url).then((json) => {
+			dispatch(setYoutube(json.data.items));
+		});
+	};
+
+	const fetchMembers = async () => {
+		const url = path + '/DB/member.json';
+		await axios.get(url).then((json) => {
+			dispatch(setMembers(json.data.members));
+		});
+	};
+
+	const fetchFlickr = async () => {
+		const key = '2b04d14206c0e0aa5938cef71f040bfc';
+		const method_interest = 'flickr.favorites.getList';
+		const num = 6;
+		const userid = "195602470@N06"
+		const url = `https://www.flickr.com/services/rest/?method=${method_interest}&per_page=${num}&api_key=${key}&user_id=${userid}&nojsoncallback=1&format=json`;
+
+		await axios.get(url).then((json) => {
+			dispatch(setFlickr(json.data.photos.photo));
+		});
+	};
+
+
+	useEffect(() => {
+		fetchYoutube();
+		fetchMembers();
+		fetchFlickr();
+	}, []);
 	return (
 		<>
 

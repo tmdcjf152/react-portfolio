@@ -7,26 +7,16 @@ URL : https://www.googleapis.com/youtube/v3/playlistItems
 */
 
 import Layout from '../common/Layout';
-import { useEffect, useState } from 'react';
-import axios from 'axios';
+import { useState, useRef } from 'react';
 import Popup from '../common/Popup';
+import { useSelector } from 'react-redux';
 
 function Youtube() {
+	const vidData = useSelector((store) => store.youtubeReducer.youtube);
+	console.log(vidData);
 
-	const [vids, setVids] = useState([]);
-	const [open, setOpen] = useState(false);
+	const pop = useRef(null);
 	const [index, setIndex] = useState(0);
-
-	useEffect(() => {
-		const key = "AIzaSyDHMuI6MNXA_9ecFqq_7CR3fVWz4BB0Wa0"
-		const playlistID = "PLtbEPiJjCvI9LqUerSq35hNB5BT9auspw"
-		const num = "9"
-		const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${playlistID}&maxResults=${num}`;
-
-		axios.get(url).then((json) => {
-			setVids(json.data.items);
-		});
-	}, []);
 
 	return (
 		<>
@@ -65,39 +55,49 @@ function Youtube() {
 					</div>
 				</div>
 
-		<div className="optionvideo">
-			<span className='videoTitle'>Quality-of-Life Options</span>
-			<span className='videoText'>
-			The options that can maximize its convenience will significantly improve the quality of life of you. Only this all mini with option.<br/><br/>* Click on the image to learn more about MINI Countryman.
-			</span>
-			
-		</div>
+				<div className="optionvideo">
+					<span className='videoTitle'>Quality-of-Life Options</span>
+					<span className='videoText'>
+						The options that can maximize its convenience will significantly improve the quality of life of you. Only this all mini with option.<br /><br />* Click on the image to learn more about MINI Countryman.
+					</span>
+
+				</div>
 
 
 
-				{vids.map((vid, idx) => {
+				{vidData.map((vid, idx) => {
+					const tit = vid.snippet.title;
+					const desc = vid.snippet.description;
+					const date = vid.snippet.publishedAt;
 					return (
 						<article
 							key={idx}
 							onClick={() => {
-								setOpen(true);
+								pop.current.open();
 								setIndex(idx);
 							}}>
 							<div className='pic'>
 								<img src={vid.snippet.thumbnails.standard.url} />
-
 							</div>
+							<h2>{tit.length > 50 ? tit.substr(0, 50) + '...' : tit}</h2>
+							<p>{desc.length > 150 ? desc.substr(0, 150) + '...' : desc}</p>
+							<span>{date.split('T')[0]}</span>
 						</article>
 					);
 				})}
 			</Layout>
-			{open ? (
-				<Popup setOpen={setOpen}>
-					<iframe
-						src={`https://www.youtube.com/embed/${vids[index].snippet.resourceId.videoId}`}
-						frameBorder='0'></iframe>
-				</Popup>
-			) : null}
+			<Popup ref={pop}>
+				{vidData.length !== 0 && (
+					<>
+						<iframe
+							src={`https://www.youtube.com/embed/${vidData[index].snippet.resourceId.videoId}`}
+							frameBorder='0'></iframe>
+						<span className='close' onClick={() => pop.current.close()}>
+							close
+						</span>
+					</>
+				)}
+			</Popup>
 		</>
 	);
 }

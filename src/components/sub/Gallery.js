@@ -1,6 +1,6 @@
 import Layout from '../common/Layout';
-import { useEffect, useState } from 'react';
-import axios from 'axios';
+import { useState, useRef } from 'react';
+import { useSelector } from 'react-redux';
 import Popup from '../common/Popup';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCouch } from '@fortawesome/free-solid-svg-icons';
@@ -11,19 +11,21 @@ import carPic1 from '../../src_assets/banner5.jpg';
 
 
 function Gallery() {
-	const [pics, setPics] = useState([]);
-	const [open, setOpen] = useState(false);
 	const [index, setIndex] = useState(0);
-	useEffect(() => {
-		const key = '2b04d14206c0e0aa5938cef71f040bfc';
-		const method_interest = 'flickr.favorites.getList';
-		const num = 6;
-		const userid = "195602470@N06"
-		const url = `https://www.flickr.com/services/rest/?method=${method_interest}&per_page=${num}&api_key=${key}&user_id=${userid}&nojsoncallback=1&format=json`;
-		axios.get(url).then((json) => {
-			setPics(json.data.photos.photo);
-		});
-	}, []);
+	const pics = useSelector((store) => store.flickrReducer.flickr);
+	const pop = useRef(null);
+
+	// useEffect(() => {
+		// const key = '2b04d14206c0e0aa5938cef71f040bfc';
+		// const method_interest = 'flickr.favorites.getList';
+		// const num = 6;
+		// const userid = "195602470@N06"
+		// const url = `https://www.flickr.com/services/rest/?method=${method_interest}&per_page=${num}&api_key=${key}&user_id=${userid}&nojsoncallback=1&format=json`;
+	// 	axios.get(url).then((json) => {
+	// 		setPics(json.data.photos.photo);
+	// 	});
+	// }, []);
+
 	return (
 		<>
 			<Layout name={'Gallery'}>
@@ -107,12 +109,12 @@ function Gallery() {
 						* Click on the image to learn more about MINI Countryman.</span>
 				</div>
 				<ul>
-					{pics.map((pic, idx) => {
+				{pics.map((pic, idx) => {
 						return (
 							<li
 								key={idx}
 								onClick={() => {
-									setOpen(true);
+									pop.current.open();
 									setIndex(idx);
 								}}>
 								<div className='inner'>
@@ -121,6 +123,13 @@ function Gallery() {
 											src={`https://live.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}_m.jpg`}
 										/>
 									</div>
+									<p>{pic.title}</p>
+									<div className='profile'>
+										<img
+											src={`http://farm${pic.farm}.staticflickr.com/${pic.server}/buddyicons/${pic.owner}.jpg`}
+										/>
+										<span>{pic.owner}</span>
+									</div>
 								</div>
 							</li>
 						);
@@ -128,15 +137,16 @@ function Gallery() {
 				</ul>
 			</Layout>
 
-			{
-				open ? (
-					<Popup setOpen={setOpen}>
-						<img
-							src={`https://live.staticflickr.com/${pics[index].server}/${pics[index].id}_${pics[index].secret}_b.jpg`}
-						/>
-					</Popup>
-				) : null
-			}
+			{pics.length !== 0 && (
+				<Popup ref={pop}>
+					<img
+						src={`https://live.staticflickr.com/${pics[index].server}/${pics[index].id}_${pics[index].secret}_b.jpg`}
+					/>
+					<span className='close' onClick={() => pop.current.close()}>
+						close
+					</span>
+				</Popup>
+			)}
 		</>
 	);
 }
