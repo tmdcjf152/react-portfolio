@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.42b9f660.css",
+    "main.js": "/react-portfolio/static/js/main.75377181.js",
+    "static/media/youtubepic0.png": "/react-portfolio/static/media/youtubepic0.62225c5aeb3ce007c0c4.png",
+    "static/media/youtubepic2.png": "/react-portfolio/static/media/youtubepic2.817aceefd5bec4a3025d.png",
+    "static/media/trunk2.png": "/react-portfolio/static/media/trunk2.480b657b8b56b0afe36c.png",
+    "static/media/trunk3.png": "/react-portfolio/static/media/trunk3.027a640dc5d1647e8f28.png",
+    "static/media/showroom1.jpeg": "/react-portfolio/static/media/showroom1.1efc726017fcb0a68fb8.jpeg",
+    "static/media/youtubepic1.png": "/react-portfolio/static/media/youtubepic1.9cdf6efec526f93138c0.png",
+    "static/media/trunk1.png": "/react-portfolio/static/media/trunk1.cead7913e1a5d216d8b5.png",
+    "static/media/youtubepic3.png": "/react-portfolio/static/media/youtubepic3.cc65582030a2435e0ee0.png",
+    "static/media/car1.jpeg": "/react-portfolio/static/media/car1.e9733e6cf1b4090ca36f.jpeg",
+    "static/media/showroom2.jpeg": "/react-portfolio/static/media/showroom2.f308f779d3c62e64872f.jpeg",
+    "static/media/showroom3.jpeg": "/react-portfolio/static/media/showroom3.d45faa80381007ab1cb4.jpeg",
+    "static/media/internal1.jpeg": "/react-portfolio/static/media/internal1.d0216de3969a65ed1385.jpeg",
+    "static/media/bonnet.jpeg": "/react-portfolio/static/media/bonnet.9d17fb38072826984a2d.jpeg",
+    "static/media/banner3.jpg": "/react-portfolio/static/media/banner3.ccc1efdc79d1e79a36c7.jpg",
+    "static/media/seat.jpeg": "/react-portfolio/static/media/seat.eecf0a1741944dbc445a.jpeg",
+    "static/media/back.jpeg": "/react-portfolio/static/media/back.d57eece740b788e4d253.jpeg",
+    "static/media/banner5.jpg": "/react-portfolio/static/media/banner5.e2684bab381b4a2845ab.jpg",
+    "static/media/banner6.jpg": "/react-portfolio/static/media/banner6.4f0d53b48449bed9a770.jpg",
+    "static/media/banner2.jpg": "/react-portfolio/static/media/banner2.e4ffeaa97d5a1bc841e6.jpg",
+    "static/media/banner1.jpg": "/react-portfolio/static/media/banner1.b16ace78c9ca7853e740.jpg",
+    "static/media/banner4.jpg": "/react-portfolio/static/media/banner4.5bed880ee33cec50f06e.jpg",
+    "static/media/pic1.jpeg": "/react-portfolio/static/media/pic1.4e09729d1325941a9fbc.jpeg",
+    "index.html": "/react-portfolio/index.html",
+    "main.42b9f660.css.map": "/react-portfolio/static/css/main.42b9f660.css.map",
+    "main.75377181.js.map": "/react-portfolio/static/js/main.75377181.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.42b9f660.css",
+    "static/js/main.75377181.js"
+  ]
+}
