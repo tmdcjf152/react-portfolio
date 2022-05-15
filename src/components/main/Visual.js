@@ -17,7 +17,7 @@ import { faGaugeHigh } from '@fortawesome/free-solid-svg-icons';
 
 function Visual() {
   return (
-    <figure className="myScroll">
+    <figure className="myScroll on">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}

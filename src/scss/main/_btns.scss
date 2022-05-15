@@ -1,21 +1,22 @@
-// .scroll_navi {
-// 	position: fixed;
-// 	top: 50%;
-// 	right: 50px;
-// 	transform: translateY(-50%);
+.scroll_navi {
+	position: fixed;
+	top: 50%;
+	right: 50px;
+	transform: translateY(-50%);
+	z-index: 2;
 
-// 	li {
-// 		width: 10px;
-// 		height: 10px;
-// 		background: #fff;
-// 		border: 1px solid #777;
-// 		margin-bottom: 20px;
-// 		cursor: pointer;
-// 		transition: 0.5s;
+	li {
+		width: 10px;
+		height: 10px;
+		background: #fff;
+		border: 1px solid #777;
+		margin-bottom: 20px;
+		cursor: pointer;
+		transition: 0.5s;
 
-// 		&.on {
-// 			height: 100px;
-// 			background: #333;
-// 		}
-// 	}
-// }
+		&.on {
+			height: 100px;
+			background: #333;
+		}
+	}
+}
