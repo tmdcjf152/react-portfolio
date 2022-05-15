@@ -2,22 +2,73 @@
 	width: 100%;
 	height: 100vh;
 	padding: 5vw;
-	background: lavender;
+	background: #eee;
 	overflow: hidden;
-	h2 {
-		font: bold 200px/1 'arial';
+	h1 {
+		font: bold 150px/1 'arial';
 		color: rgba(0, 0, 0, 0.3);
+		margin-bottom: 50px;
 	}
-	p {
-		font: bold 130px/1 'arial';
-		color: rgba(0, 0, 0, 0.7);
+	.picBox1 {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+
+		#PicsTextBox1 {
+			width: 400px;
+		}
+		#PicsTextBox2 {
+			width: 400px;
+		}
+		#PicsTextBox3 {
+			width: 400px;
+		}
+		.PicsTitle {
+			font: bold 30px/1 'arial';
+			color: #000;
+			margin: 20px 0px;
+		}
+		.PicsText {
+			font: bold 20px/1 'arial';
+			color: #000;
+		}
+	}
+
+	a{
+		display: block;
+		width: 300px;
+		height: 50px;
+		margin: 0 auto;
+		margin-top: 50px;
+		font: bold 20px/1 'heebo';
+		color: #000;
+		border: 1px solid #ddd;
+		box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.2);
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		position: relative;
-		top: -100px;
+		transition: 1s;	
+		&:hover {
+		transform: scale(1.2);
+		background: rgb(255, 231, 11);
 	}
+	}
+
 	.list {
+		display: flex;
+		justify-content: space-between;
 		li {
 			display: inline-block;
 			cursor: pointer;
+			img {
+				width: 400px;
+				height: 250px;
+				transition: 1s;
+			}
+			:hover{
+				transform: scale(1.2);
+			}
 		}
 	}
 }

@@ -1,32 +1,40 @@
 import { useSelector } from 'react-redux';
 import { useState, useRef } from 'react';
 import Popup from '../common/Popup';
+import accPic from '../../src_assets/youtubepic0.png';
 
 function Vids() {
 	const vidData = useSelector((store) => store.youtubeReducer.youtube);
-  const pop = useRef(null);
+	const pop = useRef(null);
 	const [index, setIndex] = useState(0);
 
-return (
+	return (
 		<>
 			<section id='vids' className='myScroll'>
-				<h2>Recent Youtube</h2>
-				<ul>
-					{vidData.map((vid, idx) => {
-						if (idx < 3) {
-							return (
-								<li
-									key={idx}
-									onClick={() => {
-										setIndex(idx);
-										pop.current.open();
-									}}>
-									<img src={vid.snippet.thumbnails.medium.url} />
-								</li>
-							);
-						}
-					})}
-				</ul>
+			
+				<section className='accessoriesBox'>
+					<img src={accPic} alt="" />
+					<p className='accTitle'>LIFESTYLE.
+					<a href="">MINI original accessories with stylish design and unique sensibility that make your everyday life special</a></p>
+			<a href=""></a>
+				</section>	<section className='youtubeBox'>
+					<ul>
+						{vidData.map((vid, idx) => {
+							if (idx < 4) {
+								return (
+									<li
+										key={idx}
+										onClick={() => {
+											setIndex(idx);
+											pop.current.open();
+										}}>
+										<img src={vid.snippet.thumbnails.medium.url} />
+									</li>
+								);
+							}
+						})}
+					</ul>
+				</section>
 			</section>
 
 			<Popup ref={pop}>

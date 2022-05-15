@@ -4,9 +4,9 @@ import News from './News';
 import Pics from './Pics';
 import Vids from './Vids';
 import Btns from './Btns';
-import Mem from './Member';
 import Anime from '../../class/anime.js';
 import { useRef, useEffect, useState } from 'react';
+
 
 function Main() {
 	const main = useRef(null);
@@ -66,10 +66,10 @@ function Main() {
 		<main ref={main}>
 			<Header type={'main'} />
 			<Visual />
+
 			<News />
 			<Pics scrolled={scrolled} start={pos.current[2]} />
 			<Vids />
-			<Mem />
 			<Btns setIndex={setIndex} num={num} />
 		</main>
 	);

@@ -66,9 +66,7 @@ function Youtube() {
 
 
 				{vidData.map((vid, idx) => {
-					const tit = vid.snippet.title;
-					const desc = vid.snippet.description;
-					const date = vid.snippet.publishedAt;
+		
 					return (
 						<article
 							key={idx}
@@ -79,9 +77,6 @@ function Youtube() {
 							<div className='pic'>
 								<img src={vid.snippet.thumbnails.standard.url} />
 							</div>
-							<h2>{tit.length > 50 ? tit.substr(0, 50) + '...' : tit}</h2>
-							<p>{desc.length > 150 ? desc.substr(0, 150) + '...' : desc}</p>
-							<span>{date.split('T')[0]}</span>
 						</article>
 					);
 				})}
