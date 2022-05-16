@@ -150,6 +150,7 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			transition: 0.5s;
 			&.on {
 				&:nth-of-type(1) {
 					background: linear-gradient(white, rgba(49, 224, 255, 0.596), white);

@@ -10,7 +10,7 @@ function News() {
 				<section id='newsBanner'>
 					<article className='bestCarPic'>
 					</article>
-					<a href="#">Application for a test drive</a>
+					<a href="http://localhost:3000/react-portfolio#/gallery">View Best MINI</a>
 				</section>
 			</section>
 

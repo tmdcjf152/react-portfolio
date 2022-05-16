@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 import { useState, useRef } from 'react';
 import Popup from '../common/Popup';
-import accPic from '../../src_assets/youtubepic0.png';
+
 
 function Vids() {
 	const vidData = useSelector((store) => store.youtubeReducer.youtube);
@@ -11,16 +11,18 @@ function Vids() {
 	return (
 		<>
 			<section id='vids' className='myScroll'>
-			
+
 				<section className='accessoriesBox'>
-					<img src={accPic} alt="" />
+
 					<p className='accTitle'>LIFESTYLE.
-					<a href="">MINI original accessories with stylish design and unique sensibility that make your everyday life special</a></p>
-			<a href=""></a>
-				</section>	<section className='youtubeBox'>
+					</p>
+					<p className="accText">MINI's accessories will fill in the gaps in your life. <br/> By addressing minor inconveniences, your quality of life will have a tremendous boost.</p>
+				</section>	
+
+				<section className='youtubeBox'>
 					<ul>
 						{vidData.map((vid, idx) => {
-							if (idx < 4) {
+							if (idx < 8) {
 								return (
 									<li
 										key={idx}
@@ -34,6 +36,7 @@ function Vids() {
 							}
 						})}
 					</ul>
+					<a href="http://localhost:3000/react-portfolio#/youtube">VIEW MORE 	&rarr;</a>
 				</section>
 			</section>
 

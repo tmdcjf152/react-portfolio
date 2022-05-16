@@ -9,44 +9,42 @@
 			align-items: center;
 			flex-wrap: wrap;
 			cursor: pointer;
-			li{
+			li {
 				transition: 1s;
-				&:hover{transform: scale(1.2);}
+				margin-right: 50px;
+				margin-bottom: 50px;
+				&:hover {
+					transform: scale(1.2);
+				}
 			}
 		}
 	}
-
 	.accessoriesBox {
 		width: 100%;
-		display: flex;
-		justify-content: space-between;
-
-		img {
-			width: 600px;
-			height: 400px;
-			margin-bottom: 100px;
-		}
 		.accTitle {
-			width: 100%;
-			height: 65px;
-			font: 70px/1 'heebo';
-			position: relative;
-			left: 50px;
-			background-color: #000;
+			font: 100px/1 'heebo';
 			color: #fff;
-			a {
-				height: 300px;
-				display: block;
-				margin-top: 20px;
-				padding-right: 50px;
-				font: 30px/1 'heebo';
-				background: #000;
-				color: #fff;
-				transition: 1s;
-				&:hover{
-					background: rgb(255, 231, 11);
-				}
-			}
+			background: #000;
+			margin-bottom: 50px;
+		}
+		.accText {
+			font: 30px/1 'heebo';
+			color: #000;
+			margin-bottom: 50px;
+		}
+	}
+	a {
+		display: block;
+		width: 200px;
+		height: 30px;
+		text-align: center;
+		font: 20px/1.5 'heebo';
+		color: #fff;
+		background: #000;
+		transition: 0.5s;
+		&:hover {
+			transform: scale(1.1);
+			transform: translateX(50px);
 		}
 	}
 }
