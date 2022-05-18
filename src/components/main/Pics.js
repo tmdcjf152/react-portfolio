@@ -41,29 +41,26 @@ function Pics(props) {
 						}
 					})}
 				</ul>
-				<section className="picBox1">
+				<section className="picBox">
 					<article id='PicsTextBox1'>
 						<p className='PicsTitle'>INTERIOR</p>
-						<p className='PicsText'>With MINI's unique interface design, <br/>you can feel a unique sensibility <br/>that is different from others.
+						<p className='PicsText'>With MINI's unique interface design, <br />you can feel a unique sensibility <br />that is different from others.
 						</p>
-						<a href="http://localhost:3000/react-portfolio#/gallery">VIEW INTERIOR</a>
+
 					</article>
 					<article id='PicsTextBox2'>
 						<p className='PicsTitle'>SPACE</p>
-						<p className='PicsText'>The vehicle is small, the space is wide, and the MINI is not small in the vehicle. You'll know when you experience it.
-						<a href="http://localhost:3000/react-portfolio#/gallery">VIEW SPACE</a>
-						</p>
+						<p className='PicsText'>The vehicle is small, the space is wide, and the MINI is not small in the vehicle. You'll know when you experience it.</p>
 					</article>
 					<article id='PicsTextBox3'>
 						<p className='PicsTitle'>DESIGN</p>
-						<p className='PicsText'>MINI's unique design always attracts attention wherever you go. Experience your own MINI that is not similar at all
-						<a href="http://localhost:3000/react-portfolio#/gallery">VIEW DESIGN</a>
-						</p>
+						<p className='PicsText'>MINI's unique design always attracts attention wherever you go. Experience your own MINI that is not similar at all</p>
 					</article>
-
-				</section>
-
+					
+				</section>			
+				<a href="http://localhost:3000/react-portfolio#/youtube">VIEW MORE </a>
 			</section>
+
 
 			<Popup ref={pop}>
 				{pics.length !== 0 && (

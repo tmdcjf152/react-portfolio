@@ -3,6 +3,8 @@
 	height: 100vh;
 	padding: 5vw;
 	.youtubeBox {
+		width: 100%;
+		padding: 5vw;
 		ul {
 			display: flex;
 			justify-content: space-between;
@@ -11,8 +13,8 @@
 			cursor: pointer;
 			li {
 				transition: 1s;
-				margin-right: 50px;
-				margin-bottom: 50px;
+				margin-bottom: 10px;
+				margin-right: 5vw;
 				&:hover {
 					transform: scale(1.2);
 				}
@@ -22,13 +24,13 @@
 	.accessoriesBox {
 		width: 100%;
 		.accTitle {
-			font: 100px/1 'heebo';
+			font: 100px/1 'Hind';
 			color: #fff;
 			background: #000;
 			margin-bottom: 50px;
 		}
 		.accText {
-			font: 30px/1 'heebo';
+			font: 30px/1 'Hind';
 			color: #000;
 			margin-bottom: 50px;
 		}
@@ -37,14 +39,164 @@
 		display: block;
 		width: 200px;
 		height: 30px;
+		margin: 0 auto;
 		text-align: center;
-		font: 20px/1.5 'heebo';
+		font: 20px/1.5 'Hind';
 		color: #fff;
 		background: #000;
 		transition: 0.5s;
 		&:hover {
 			transform: scale(1.1);
-			transform: translateX(50px);
 		}
 	}
 }
+
+@media screen and (max-width: 1440px) {
+	#vids {
+		.youtubeBox {
+			margin-left: 50px;
+			padding: 0vw;
+		}
+		a {
+			margin-top: 50px;
+		}
+	}
+}
+
+@media screen and (max-width: 1179px) {
+	#vids {
+		padding: 0vw;
+		height: 800px;
+		.youtubeBox {
+			margin-left: 20px;
+			padding: 0vw;
+			ul {
+				li {
+				
+				}
+			}
+		}
+		.accessoriesBox {
+			width: 100%;
+			.accTitle {
+				font: 100px/1 'Hind';
+				color: #fff;
+				background: #000;
+				margin-bottom: 50px;
+			}
+			.accText {
+				font: 30px/1 'Hind';
+				color: #000;
+				margin-bottom: 50px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	#vids {
+		padding: 0vw;
+		height: 1000px;
+
+		.youtubeBox {
+			margin-left: 0px;
+			margin-right: 0px;
+
+			ul {
+				width: 100%;
+				li {
+				width: 25%;
+				height: 100%;
+				}
+			}
+		}
+		.accessoriesBox {
+			width: 100%;
+			.accTitle {
+				font: 80px/1 'Hind';
+				color: #fff;
+				background: #000;
+				margin-bottom: 50px;
+			}
+			.accText {
+				font: 27px/1 'Hind';
+				color: #000;
+				margin-bottom: 50px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#vids {
+		padding: 0vw;
+		height: 1000px;
+
+		.youtubeBox {
+			margin-left: 35px;
+			padding: 0vw;
+
+			ul {
+				width: 600px;
+				li {
+				width: 30%;
+				height: 100%;
+				}
+			}
+		}
+		.accessoriesBox {
+			width: 100%;
+			.accTitle {
+				font: 80px/1 'Hind';
+				color: #fff;
+				background: #000;
+				margin-bottom: 50px;
+			}
+			.accText {
+				font: 27px/1 'Hind';
+				color: #000;
+				margin-bottom: 50px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 600px) {
+	#vids {
+		display: none;
+	}
+}
+@media screen and (max-width: 425px) {
+	#vids {
+		padding: 0vw;
+		height: 1000px;
+
+		.youtubeBox {
+			margin-left: 0px;
+			padding: 0vw;
+
+			ul {
+				width: 550px;
+				li {
+				width: 45%;
+				height: 100%;
+				}
+			}
+		}
+		.accessoriesBox {
+			width: 100%;
+			.accTitle {
+				font: 60px/1 'Hind';
+				color: #fff;
+				background: #000;
+				margin-bottom: 50px;
+			}
+			.accText {
+				font: 20px/1 'Hind';
+				color: #000;
+				margin-bottom: 50px;
+			}
+		}
+	}
+
+}
+

@@ -4,70 +4,347 @@
 	padding: 5vw;
 	overflow: hidden;
 	h1 {
-		font: bold 150px/1 'arial';
+		font: bold 150px/1 'Hind';
 		color: rgba(0, 0, 0, 0.3);
 		margin-bottom: 100px;
 	}
-	.picBox1 {
+	.picBox {
 		width: 100%;
+		height: 200px;
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 		text-align: center;
 		#PicsTextBox1 {
 			width: 400px;
+			height: 100px;
 		}
 		#PicsTextBox2 {
 			width: 400px;
+			height: 100px;
 		}
 		#PicsTextBox3 {
 			width: 400px;
+			height: 100px;
 		}
 		.PicsTitle {
-			font: bold 30px/1 'arial';
+			font: bold 30px/1 'Hind';
 			color: #000;
+			text-align: left;
 			margin: 20px 0px;
 		}
 		.PicsText {
-			font: bold 20px/1 'arial';
+			font: bold 18px/1 'Hind';
 			color: #000;
+			text-align: left;
 		}
 	}
-
-	a{
+	a {
 		display: block;
-		width: 250px;
+		width: 200px;
 		height: 30px;
 		margin: 0 auto;
-		margin-top: 100px;
-		font: bold 20px/1 'heebo';
+		text-align: center;
+		font: 20px/1.5 'Hind';
 		color: #fff;
 		background: #000;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		position: relative;
-		transition: 0.5s;	
+		transition: 0.5s;
+
 		&:hover {
-		transform: scale(1.1);
-		color: #fff
-	}
+			transform: scale(1.1);
+		}
 	}
 
 	.list {
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 		li {
 			display: inline-block;
 			cursor: pointer;
+
 			img {
 				width: 400px;
-				height: 250px;
+				height: 280px;
 				transition: 1s;
-				border : 1px solid #ddd;
+				border: 1px solid #ddd;
 			}
-			:hover{
+			:hover {
 				transform: scale(1.1);
 			}
+		}
+	}
+}
+
+@media screen and (max-width: 1179px) {
+	#pics {
+		.picBox {
+			#PicsTextBox {
+				text-align: center;
+			}
+			.PicsTitle {
+				font: bold 30px/1 'Hind';
+				text-align: center;
+			}
+			.PicsText {
+				font: bold 18px/1 'Hind';
+				color: #000;
+				text-align: center;
+			}
+		}
+		.list {
+			li {
+				img {
+					width: 340px;
+					height: 250px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	#pics {
+		.picBox {
+			width: 100%;
+			.PicsTitle {
+				font: bold 25px/1 'Hind';
+				text-align: left;
+			}
+			.PicsText {
+				font: bold 18px/1 'Hind';
+				color: #000;
+				text-align: left;
+			}
+		}
+		.list {
+			li {
+				img {
+					width: 320px;
+					height: 250px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#pics {
+		h1 {
+			font: bold 70px/1 'Hind';
+			margin-bottom: 50px;
+		}
+		.picBox {
+			#PicsTextBox1 {
+				width: 400px;
+				height: 100px;
+			}
+			#PicsTextBox2 {
+				width: 400px;
+				height: 100px;
+			}
+			#PicsTextBox3 {
+				width: 400px;
+				height: 100px;
+			}
+			.PicsTitle {
+				font: bold 25px/1 'Hind';
+				color: #000;
+				text-align: left;
+				margin: 20px 0px;
+			}
+			.PicsText {
+				font: bold 13px/1 'Hind';
+				color: #000;
+				text-align: left;
+			}
+		}
+		a {
+			display: block;
+			width: 200px;
+			height: 30px;
+			margin: 0 auto;
+			text-align: center;
+			font: 20px/1.5 'Hind';
+			color: #fff;
+			background: #000;
+			transition: 0.5s;
+	
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	
+		.list {
+			display: flex;
+			justify-content: space-around;
+			li {
+				display: inline-block;
+				cursor: pointer;
+	
+				img {
+					width: 220px;
+					height: 180px;
+					transition: 1s;
+					border: 1px solid #ddd;
+				}
+				:hover {
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#pics {
+		h1 {
+			font: bold 70px/1 'Hind';
+			margin-bottom: 50px;
+		}
+		.picBox {
+			#PicsTextBox1 {
+				width: 400px;
+				height: 100px;
+			}
+			#PicsTextBox2 {
+				width: 400px;
+				height: 100px;
+				margin-right: 15px;
+			}
+			#PicsTextBox3 {
+				width: 400px;
+				height: 100px;
+			}
+			.PicsTitle {
+				font: bold 22px/1 'Hind';
+				color: #000;
+				text-align: left;
+				margin: 10px 0px;
+			}
+			.PicsText {
+				font: bold 11px/1 'Hind';
+				color: #000;
+				text-align: left;
+			}
+		}
+		a {
+			display: block;
+			width: 200px;
+			height: 30px;
+			margin: 0 auto;
+			text-align: center;
+			font: 20px/1.5 'Hind';
+			color: #fff;
+			background: #000;
+			transition: 0.5s;
+	
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	
+		.list {
+			display: flex;
+			justify-content: space-around;
+			li {
+				display: inline-block;
+				cursor: pointer;
+	
+				img {
+					width: 195px;
+					height: 180px;
+					transition: 1s;
+					border: 1px solid #ddd;
+
+				}
+				:hover {
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 425px) {
+	#pics {
+		width: 520px;
+		h1 {
+			font: bold 70px/1 'Hind';
+			margin-bottom: 50px;
+		}
+		.picBox {
+			#PicsTextBox1 {
+				width: 400px;
+				height: 100px;
+			}
+			#PicsTextBox2 {
+				width: 400px;
+				height: 100px;
+				margin-right: 15px;
+				margin-left: 15px;
+			}
+			#PicsTextBox3 {
+				width: 400px;
+				height: 100px;
+			}
+			.PicsTitle {
+				font: bold 22px/1 'Hind';
+				color: #000;
+				text-align: left;
+				margin: 10px 0px;
+			}
+			.PicsText {
+				font: bold 11px/1 'Hind';
+				color: #000;
+				text-align: left;
+			}
+		}
+		a {
+			display: block;
+			width: 200px;
+			height: 30px;
+			margin: 0 auto;
+			text-align: center;
+			font: 20px/1.5 'Hind';
+			color: #fff;
+			background: #000;
+			transition: 0.5s;
+	
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	
+		.list {
+			display: flex;
+			justify-content: space-around;
+			li {
+				display: inline-block;
+				cursor: pointer;
+	
+				img {
+					width: 170px;
+					height: 180px;
+					transition: 1s;
+					border: 1px solid #ddd;
+
+				}
+				:hover {
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 375px) {
+	#pics {
+		height: 550px;
+		background: #ddd;
+		.picBox {
+		}
+		a {
+			position: relative;
+			bottom: 60px;
 		}
 	}
 }

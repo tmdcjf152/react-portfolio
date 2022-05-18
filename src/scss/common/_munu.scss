@@ -1,0 +1,35 @@
+nav {
+	width: 280px;
+	height: 100vh;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	background: #fff;
+	z-index: 5;
+	padding: 50px;
+
+	h1 {
+		font: bold 50px/1 'Playfair Display SC';
+		margin-bottom: 50px;
+	}
+	span{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 30px;
+		height: 30px;
+		border: 1px solid #000;
+		font-size: 25px;
+		position: absolute;
+		right: 25px;
+		top: 29px;
+		cursor: pointer;
+	}
+	a {
+		display: block;
+		width: 100%;
+		height: 40px;
+		font: bold 20px/1 'Hind';
+		color: #000;
+	}
+}

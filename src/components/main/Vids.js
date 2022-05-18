@@ -22,7 +22,7 @@ function Vids() {
 				<section className='youtubeBox'>
 					<ul>
 						{vidData.map((vid, idx) => {
-							if (idx < 8) {
+							if (idx < 6) {
 								return (
 									<li
 										key={idx}
@@ -36,8 +36,9 @@ function Vids() {
 							}
 						})}
 					</ul>
-					<a href="http://localhost:3000/react-portfolio#/youtube">VIEW MORE 	&rarr;</a>
-				</section>
+					
+	
+				</section>				<a href="http://localhost:3000/react-portfolio#/youtube">VIEW MORE </a>
 			</section>
 
 			<Popup ref={pop}>

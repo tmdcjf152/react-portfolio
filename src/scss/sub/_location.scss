@@ -5,10 +5,10 @@
 		border-bottom: 5px solid #000;
 		margin-bottom: 100px;
 		.bannerTitle {
-			font: bold 70px/1 'heebo';
+			font: bold 70px/1 'Hind';
 		}
 		.bannerText {
-			font: 40px/1 'apple';
+			font: 40px/1 'Hind';
 		}
 	}
 	.showRoom {
@@ -30,12 +30,12 @@
 				position: relative;
 				bottom: 85%;
 				left: 52%;
-				font: bold 30px/1 'heebo';
+				font: bold 30px/1 'Hind';
 				span {
 					display: block;
 					width: 100%;
 					margin-top: 20px;
-					font: 20px/1.3 'apple';
+					font: 20px/1.3 'Hind';
 				}
 			}
 		}
@@ -57,12 +57,12 @@
 				position: relative;
 				bottom: 85%;
 				right: 0%;
-				font: bold 30px/1 'heebo';
+				font: bold 30px/1 'Hind';
 				span {
 					display: block;
 					width: 100%;
 					margin-top: 20px;
-					font: 20px/1.3 'apple';
+					font: 20px/1.3 'Hind';
 				}
 			}
 		}
@@ -82,24 +82,30 @@
 				position: relative;
 				bottom: 85%;
 				left: 52%;
-				font: bold 30px/1 'heebo';
+				font: bold 30px/1 'Hind';
 				span {
 					display: block;
 					width: 100%;
 					margin-top: 20px;
-					font: 20px/1.3 'apple';
+					font: 20px/1.3 'Hind';
 				}
 			}
 		}
 	}
+
+	.centerTitle{
+		text-align: center;
+		font: bold 50px/1 'Hind';
+		margin-bottom: 50px;
+	}
 	#map {
 		width: 900px;
-		height: 400px;
+		height: 600px;
 		background: #000;
 		border: 2px solid #000;
 	}
 	button {
-		margin-top: 20px;
+		margin-top: 0px;
 		font-size: 18px;
 		color: #000000;
 		font-family: heebo;
@@ -137,15 +143,15 @@
 	}
 
 	.branch {
-		width: 200px;
+		width: 300px;
 		position: relative;
-		top: -450px;
+		top: -600px;
 		left: 80%;
 		li {
 			display: block;
 			width: 100%;
-			height: 50px;
-			font: bold 15px/1 'heebo';
+			height: 60px;
+			font: bold 20px/1 'Hind';
 			float: left;
 			display: flex;
 			align-items: center;
@@ -153,174 +159,49 @@
 			transition: 0.5s;
 			&.on {
 				&:nth-of-type(1) {
-					background: linear-gradient(white, rgba(49, 224, 255, 0.596), white);
-					border-radius: 50%;
-					font: bold 16px /1 'heebo';
-					color: #fff;
-					&::before {
-						width: 700px;
-						height: 100px;
-						text-align: left;
-						position: absolute;
-						top: 420px;
-						right: 300px;
-						content: 'ADDRESS : 223 Baekma-ro, Ilsandong-gu, Goyang-si, Gyeonggi-do \a TEL : 031-8076-4600 \a OPENING HOURS :Mon-Fri 0830 to 2100  Sun-Holidays 0830 to 2100 \a Open 365 days a year';
-						white-space: pre;
-						font: 20px/1.3 'apple';
-						color: #000;
-					}
+					color: #000;
+					transform: scale(1.1);
+					border-bottom: 1px solid #000;
 				}
 				&:nth-of-type(2) {
-					background: linear-gradient(white, rgba(49, 224, 255, 0.596), white);
-					border-radius: 50%;
-					text-align: center;
-					font: bold 16px /1 'heebo';
-					color: #fff;
-					&::before {
-						width: 700px;
-						height: 100px;
-						text-align: left;
-						position: absolute;
-						top: 420px;
-						right: 300px;
-						content: 'ADDRESS : 405-205 Mok-dong, Yangcheon-gu, Seoul \a TEL : 02-2646-4600 \a OPENING HOURS :Mon-Fri 0900 to 2100  Sun-Holidays 0830 to 2100 \a Open 365 days a year';
-						white-space: pre;
-						font: 20px/1.3 'apple';
-						color: #000;
-					}
+					color: #000;
+					transform: scale(1.1);
+					border-bottom: 1px solid #000;
 				}
 				&:nth-of-type(3) {
-					background: linear-gradient(white, rgba(49, 224, 255, 0.596), white);
-					border-radius: 50%;
-					text-align: center;
-					font: bold 16px /1 'heebo';
-					color: #fff;
-					&::before {
-						width: 700px;
-						height: 100px;
-						text-align: left;
-						position: absolute;
-						top: 420px;
-						right: 300px;
-						content: 'ADDRESS : 6 Seounsandan-ro 2-gil, Gyeyang-gu, Incheon \a TEL : 032-713-4601 \a OPENING HOURS :Mon-Fri 0900 to 2000  Sun-Holidays 0900 to 2000 \a Open 365 days a year';
-						white-space: pre;
-						font: 20px/1.3 'apple';
-						color: #000;
-					}
+					color: #000;
+					transform: scale(1.1);
+					border-bottom: 1px solid #000;
 				}
 				&:nth-of-type(4) {
-					background: linear-gradient(white, rgba(49, 224, 255, 0.596), white);
-					border-radius: 50%;
-					text-align: center;
-					font: bold 16px /1 'heebo';
-					color: #fff;
-					&::before {
-						width: 700px;
-						height: 100px;
-						text-align: left;
-						position: absolute;
-						top: 420px;
-						right: 300px;
-						content: 'ADDRESS : 79 Banpo-daero, Seocho-gu, Seoul, Republic of Korea \a TEL : 02-2146-8900 \a OPENING HOURS :All Days 0900 to 2000 \a Open 365 days a year';
-						white-space: pre;
-						font: 20px/1.3 'apple';
-						color: #000;
-					}
+					color: #000;
+					transform: scale(1.1);
+					border-bottom: 1px solid #000;
 				}
 				&:nth-of-type(5) {
-					background: linear-gradient(white, rgba(49, 224, 255, 0.596), white);
-					border-radius: 50%;
-					text-align: center;
-					font: bold 16px /1 'heebo';
-					color: #fff;
-					&::before {
-						width: 700px;
-						height: 100px;
-						text-align: left;
-						position: absolute;
-						top: 420px;
-						right: 300px;
-						content: 'ADDRESS : 140 The State Shopping Center, Sinheung-ro, Wonmi-gu, Bucheon-si, Gyeonggi-do \a TEL : 032-285-4600 \a OPENING HOURS :Mon-Fri 0830 to 2100  Sun-Holidays 0830 to 2100 \a Open 365 days a year';
-						white-space: pre;
-						font: 20px/1.3 'apple';
-						color: #000;
-					}
+					color: #000;
+					transform: scale(1.1);
+					border-bottom: 1px solid #000;
 				}
 				&:nth-of-type(6) {
-					background: linear-gradient(white, rgba(49, 224, 255, 0.596), white);
-					border-radius: 50%;
-					text-align: center;
-					font: bold 16px /1 'heebo';
-					color: #fff;
-					&::before {
-						width: 700px;
-						height: 100px;
-						text-align: left;
-						position: absolute;
-						top: 420px;
-						right: 300px;
-						content: 'ADDRESS : 301 Yeongdong-daero, Gangnam-gu, Seoul, Republic of Korea \a TEL : 02-2191-7400 \a OPENING HOURS :Mon-Fri 0900 to 2100  Sun-Holidays 0900 to 2100 \a Open 365 days a year';
-						white-space: pre;
-						font: 20px/1.3 'apple';
-						color: #000;
-					}
+					color: #000;
+					transform: scale(1.1);
+					border-bottom: 1px solid #000;
 				}
 				&:nth-of-type(7) {
-					background: linear-gradient(white, rgba(49, 224, 255, 0.596), white);
-					border-radius: 50%;
-					text-align: center;
-					font: bold 16px /1 'heebo';
-					color: #fff;
-					&::before {
-						width: 700px;
-						height: 100px;
-						text-align: left;
-						position: absolute;
-						top: 420px;
-						right: 300px;
-						content: 'ADDRESS : 1F, Eonju-ro, Gangnam-gu, Seoul, Republic of Korea \a TEL : 02-549-3400 \a OPENING HOURS :Mon-Fri 0830 to 2100  Sun-Holidays 0900 to 2100 \a Open 365 days a year';
-						white-space: pre;
-						font: 20px/1.3 'apple';
-						color: #000;
-					}
+					color: #000;
+					transform: scale(1.1);
+					border-bottom: 1px solid #000;
 				}
 				&:nth-of-type(8) {
-					background: linear-gradient(white, rgba(49, 224, 255, 0.596), white);
-					border-radius: 50%;
-					text-align: center;
-					font: bold 16px /1 'heebo';
-					color: #fff;
-					&::before {
-						width: 700px;
-						height: 100px;
-						text-align: left;
-						position: absolute;
-						top: 420px;
-						right: 300px;
-						content: 'ADDRESS : 120 Hangang-daero, Yongsan-gu, Seoul, Republic of Korea \a TEL : 02-3409-3400 \a OPENING HOURS :Mon-Fri 0830 to 2100  Sun-Holidays 0900 to 2100 \a Open 365 days a year';
-						white-space: pre;
-						font: 20px/1.3 'apple';
-						color: #000;
-					}
+					color: #000;
+					transform: scale(1.1);
+					border-bottom: 1px solid #000;
 				}
 				&:nth-of-type(9) {
-					background: linear-gradient(white, rgba(49, 224, 255, 0.596), white);
-					border-radius: 50%;
-					text-align: center;
-					font: bold 16px /1 'heebo';
-					color: #fff;
-					&::before {
-						width: 700px;
-						height: 100px;
-						text-align: left;
-						position: absolute;
-						top: 420px;
-						right: 300px;
-						content: 'ADDRESS : 327-10 Geumgok-dong, Bundang-gu, Seongnam-si, Gyeonggi-do \a TEL : 031-709-4600 \a OPENING HOURS :Mon-Fri 0830 to 2100  Sun-Holidays 0900 to 2100 \a Open 365 days a year';
-						white-space: pre;
-						font: 20px/1.3 'apple';
-						color: #000;
-					}
+					color: #000;
+					transform: scale(1.1);
+					border-bottom: 1px solid #000;
 				}
 			}
 		}

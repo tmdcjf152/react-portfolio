@@ -151,8 +151,9 @@ function Locaition() {
 					<div className="showRoomText3">Try a test drive before you buy it<span>If you book a test drive experience in a nearby exhibition hall, <br/>we will help you with the 1:1 coaching service. Let's experience <br/>why people all over the world ride MINI</span></div>
 				</div>
 			</div>
-
-			<div id='map' ref={container}></div>
+			<p className='centerTitle'>EXHIBITION HALL</p>
+			<div id='map' ref={container}>
+			</div>
 			<button onClick={() => setTraffic(!traffic)}>
 				{traffic ? 'Traffic OFF' : 'Traffic ON'}
 			</button>

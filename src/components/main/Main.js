@@ -66,7 +66,7 @@ function Main() {
 
 		<main ref={main}>
 			<Header type={'main'} />
-			<Visual />
+			<Visual  />
 			<News />
 			<Pics scrolled={scrolled} start={pos.current[2]} />
 			<Vids />

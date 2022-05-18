@@ -1,3 +1,4 @@
+
 import { useEffect, useRef } from 'react';
 const path = process.env.PUBLIC_URL;
 function Layout(props) {
@@ -8,6 +9,7 @@ function Layout(props) {
 	}, []);
 
 	return (
+		<>
 		<section className={`content ${props.name}`} ref={frame}>
 			<figure></figure>
 			<div className='inner'>
@@ -15,6 +17,7 @@ function Layout(props) {
 				{props.children}
 			</div>
 		</section>
+		</>
 	);
 }
 export default Layout;

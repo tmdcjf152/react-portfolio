@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCouch } from '@fortawesome/free-solid-svg-icons';
 import { faSuitcase } from '@fortawesome/free-solid-svg-icons';
 import { faGaugeHigh } from '@fortawesome/free-solid-svg-icons';
-import carPic1 from '../../src_assets/banner5.jpg';
+import carPic1 from '../../src_assets/car4.webp';
 
 
 
@@ -20,6 +20,12 @@ function Gallery() {
 	return (
 		<>
 			<Layout name={'Gallery'}>
+			<div className="galleryBanner">
+					<h2 className="bannerTitle">
+						MINI COUNTRYMAN.
+					</h2>
+					<p className="bannerText">MINI's unique SUV.</p>
+				</div>
 				<div className="carprice">
 					<div className="pricepic">
 						<img src={carPic1} alt="" />
@@ -33,6 +39,33 @@ function Gallery() {
 						<span><FontAwesomeIcon icon={faGaugeHigh} /></span>
 						136hp ~ 306hp
 					</p></div>
+
+					<div className="design">
+					<span className="designTitle">COMPELLING. BY DESIGN.</span>
+					<span className="designText">The combination of strong, firm charm and free spirit has created a versatile MINI that fits both city and off-road.<br /><br/>
+						* Click on the image to learn more about MINI Countryman.</span>
+				</div>
+					<ul>
+				{pics.map((pic, idx) => {
+						return (
+							<li
+								key={idx}
+								onClick={() => {
+									pop.current.open();
+									setIndex(idx);
+								}}>
+								<div className='inner'>
+									<div className='pic'>
+										<img
+											src={`https://live.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}_m.jpg`}
+										/>
+									</div>
+								</div>
+							</li>
+						);
+					})}
+				</ul>
+
 					<h2>For Life</h2>
 					<p className="forLife">Experience the amazing speed limit of SUVs that are small but not small.</p>
 					<div className="carAdvantages">
@@ -94,31 +127,7 @@ function Gallery() {
 							So far, small cars will let you get rid of the notion of slowness.</p>
 					</div>
 				</div>
-				<div className="design">
-					<span className="designTitle">COMPELLING. BY DESIGN.</span>
-					<span className="designText">The combination of strong, firm charm and free spirit has created a versatile MINI that fits both city and off-road.<br /><br/>
-						* Click on the image to learn more about MINI Countryman.</span>
-				</div>
-				<ul>
-				{pics.map((pic, idx) => {
-						return (
-							<li
-								key={idx}
-								onClick={() => {
-									pop.current.open();
-									setIndex(idx);
-								}}>
-								<div className='inner'>
-									<div className='pic'>
-										<img
-											src={`https://live.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}_m.jpg`}
-										/>
-									</div>
-								</div>
-							</li>
-						);
-					})}
-				</ul>
+
 			</Layout>
 
 			{pics.length !== 0 && (

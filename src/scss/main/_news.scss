@@ -3,7 +3,7 @@
 	height: 100vh;
 	padding: 5vw;
 	h1 {
-		font: 100px/1 'heebo';
+		font: bold 100px/1 'Hind';
 		text-align: center;
 	}
 	#newsBanner {
@@ -13,7 +13,7 @@
 			width: 100%;
 			height: 100%;
 			position: relative;
-			bottom: 200px;
+			bottom: 150px;
 			background: url(../../src_assets/car1.webp);
 			background-size: cover;
 			background-position-x: center;
@@ -29,8 +29,8 @@
 			justify-content: center;
 			align-items: center;
 			position: relative;
-			bottom: 300px;
-			font: bold 20px/1 'heebo';
+			bottom: 250px;
+			font: bold 20px/1 'Hind';
 			color: #fff;
 			background: #000;
 			transition: 0.5s;
@@ -63,3 +63,146 @@
 		background-position-x: center;
 	}
 }
+
+@media screen and (max-width: 1179px) {
+	#news {
+
+		h1 {
+			font: 50px/1 'Hind';
+			position: relative;
+			top: 100px;
+		}
+		#newsBanner {
+			width: 100%;
+			height: 100%;
+			.bestCarPic {
+				width: 100%;
+				height: 100%;
+				bottom: 0px;
+			}
+			a {
+				bottom: 100px;
+			}
+			&:hover a {
+				transform: scale(1.1);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	#news {
+
+		h1 {
+			font: 50px/1 'Hind';
+			position: relative;
+			top: 100px;
+		}
+		#newsBanner {
+			width:100%;
+			height: 80%;
+			.bestCarPic {
+				width: 100%;
+				height: 100%;
+				bottom: 0px;
+			}
+			a {
+				bottom: 100px;
+			}
+			&:hover a {
+				transform: scale(1.1);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#news {
+		h1 {
+			font: 50px/1 'Hind';
+			position: relative;
+			top: 100px;
+		}
+		#newsBanner {
+			width:100%;
+			height: 60%;
+			.bestCarPic {
+				width: 100%;
+				height: 100%;
+				bottom: -30px;
+			}
+			a {
+				bottom: 0px;
+			}
+			&:hover a {
+				transform: scale(1.1);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#news {
+		position: relative;
+		top: 100px;
+		h1 {
+			font: 50px/1 'Hind';
+			position: relative;
+			top: 100px;
+		}
+		#newsBanner {
+			width:100%;
+			height: 45%;
+			.bestCarPic {
+				width: 100%;
+				height: 100%;
+				bottom: -30px;
+			}
+			a {
+				bottom: 0px;
+			}
+			&:hover a {
+				transform: scale(1.1);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 425px) {
+	#news {
+		h1 {
+			font: 40px/1 'Hind';
+			left: 50px;
+		}
+		#newsBanner {
+			height: 35%;
+			.bestCarPic {
+				left: 50px;
+			}
+			a {
+				left: 50px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 375px) {
+	#news {
+		height: 500px;
+		h1 {
+			top: -50px;
+		}
+		#newsBanner {
+			position: relative;
+			height: 200px;
+			top: -100px;
+			.bestCarPic {
+				left: 50px;
+			}
+			a {
+				top: 50px;
+			}
+		}
+	}
+}
+

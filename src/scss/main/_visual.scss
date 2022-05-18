@@ -33,23 +33,22 @@ figure {
 			position: absolute;
 			top: 40%;
 			h1 {
-				width: 100%;
 				text-align: left;
 				position: relative;
-				bottom: 250px;
-				right:8%;
+				bottom: 240px;
+				right: 130px;
 				padding-left: 250px;
 				padding-top: 20px;
-				font: bold 90px/1 'heebo';
+				font: 90px/1 'Hind';
 				color: #fff;
 			}
 			.price {
-				width: 100%;
 				text-align: left;
+				width: 100%;
 				position: relative;
-				bottom:225px;
-				left:6%;
-				font: 35px/1 'heebo';
+				bottom: 250px;
+				left: 120px;
+				font: 45px/1.4 'Hind';
 				color: #fff;
 			}
 			.carOption {
@@ -58,14 +57,13 @@ figure {
 				position: relative;
 				bottom: 200px;
 				left: 120px;
-				font: 25px/1.4 'heebo';
+				font: 25px/1.4 'Hind';
 				color: #fff;
 				span {
 					margin-right: 20px;
 				}
 			}
 		}
-
 	}
 
 	.swiper-slide img {
@@ -74,11 +72,117 @@ figure {
 		height: 100%;
 		object-fit: cover;
 	}
-	.swiper-button-prev{
+	.swiper-button-prev {
 		display: none;
 	}
-	.swiper-button-next{
+	.swiper-button-next {
 		display: none;
 	}
+}
 
+@media screen and (max-width: 1179px) {
+	figure {
+		.swiper-slide {
+			.pricepic {
+				h1 {
+					font: bold 70px/1 'Hind';
+				}
+				.price {
+					font: 35px/1.4 'Hind';
+				}
+				.carOption {
+					font: 20px/1.4 'Hind';
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
+	figure {
+		.swiper-slide {
+			.pricepic {
+				left: -40px;
+				h1 {
+					font: bold 50px/1 'Hind';
+				}
+				.price {
+					font: 30px/1.4 'Hind';
+				}
+				.carOption {
+					font: 20px/1.4 'Hind';
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	figure {
+		.swiper-slide {
+			.pricepic {
+				h1 {
+					width: 500px;
+					padding-left: 150px;
+					font: bold 30px/1 'Hind';
+				}
+				.price {
+					bottom: 240px;
+					left: 20px;
+					font: 20px/1.4 'Hind';
+				}
+				.carOption {
+					bottom: 220px;
+					left: 20px;
+					font: 17px/1.4 'Hind';
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 425px) {
+	main {
+		width: 100%;
+		figure {
+			width: 125%;
+			height: 500px;
+			.swiper {
+				width: 100%;
+				height: 500px;
+			}
+			.swiper-slide {
+				.pricepic {
+					top: 65%;
+					left:0px;
+					h1 {
+						width: 900px;
+						font: 40px/1 'Hind';
+					}
+					.price {
+						left: 25px;
+						font: 25px/1.4 'Hind';
+					}
+					.carOption {
+						left: 25px;
+						font: 15px/1.4 'Hind';
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 375px) {
+	main {
+		width: 100%;
+		
+		figure {
+			width: 136%;
+			height: 400px;
+		}
+	}
 }
