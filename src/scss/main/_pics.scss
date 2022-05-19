@@ -72,13 +72,17 @@
 			width: 200px;
 			height: 30px;
 			margin: 0 auto;
+			margin-bottom: 20px;
 			font: bold 25px/1 'Arapey';
 			color: #fff;
 			background: #000;
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			
+			transition: 0.5s;
+			&:hover{
+				transform: scale(1.1);
+			}
 		}
 	}
 }

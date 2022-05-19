@@ -1,6 +1,7 @@
 import { useSelector } from 'react-redux';
 import { useState, useRef } from 'react';
 import Popup from '../common/Popup';
+import accImg from '../../src_assets/youtubepic0.png'
 
 
 function Vids() {
@@ -11,34 +12,45 @@ function Vids() {
 	return (
 		<>
 			<section id='vids' className='myScroll'>
+				<h1>LIFESTYLE ACC
+				</h1>
 
-				<section className='accessoriesBox'>
 
-					<p className='accTitle'>LIFESTYLE.
-					</p>
-					<p className="accText">MINI's accessories will fill in the gaps in your life. <br/> By addressing minor inconveniences, your quality of life will have a tremendous boost.</p>
-				</section>	
+				<div className='vidBox'>
+					{/* 텍스트영역 */}
+					<div className='box1'>
+						<div className='imgBox'>
+							<img src={accImg} alt="" />
+							</div>
+						<div className='accTextBox'>
+							<h2>Accessories improve the quality of life</h2>
+							<a href="http://localhost:3000/react-portfolio#/youtube">VIEW MORE </a>
+							</div>
+					</div>
+					{/* 비디오영역 */}
+					<div className='box2'>
+						<ul>
+							{vidData.map((vid, idx) => {
+								if (idx < 4) {
+									return (
+										<li
+											key={idx}
+											onClick={() => {
+												setIndex(idx);
+												pop.current.open();
+											}}>
+											<img src={vid.snippet.thumbnails.medium.url} />
+										</li>
+									);
+								}
+							})}
+						</ul>
 
-				<section className='youtubeBox'>
-					<ul>
-						{vidData.map((vid, idx) => {
-							if (idx < 6) {
-								return (
-									<li
-										key={idx}
-										onClick={() => {
-											setIndex(idx);
-											pop.current.open();
-										}}>
-										<img src={vid.snippet.thumbnails.medium.url} />
-									</li>
-								);
-							}
-						})}
-					</ul>
-					
-	
-				</section>				<a href="http://localhost:3000/react-portfolio#/youtube">VIEW MORE </a>
+					</div>
+
+				</div>
+
+
 			</section>
 
 			<Popup ref={pop}>
