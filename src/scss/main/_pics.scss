@@ -3,6 +3,7 @@
 	height: 100vh;
 	padding: 3vw;
 	overflow: hidden;
+
 	h1 {
 		font: bold 100px/1 'Playfair Display SC';
 		color: rgb(0, 0, 0);
@@ -12,7 +13,6 @@
 		height: 100%;
 		padding:20px;
 		display: flex;
-		background: #ddd;
 		.Box1 {
 			width: 60%;
 			height: 100%;

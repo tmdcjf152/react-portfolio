@@ -3,6 +3,7 @@ figure {
 	height: 100vh;
 	overflow: hidden;
 	position: relative;
+	
 	h1 {
 		position: absolute;
 		z-index: 5;
@@ -48,7 +49,7 @@ figure {
 				position: relative;
 				bottom: 250px;
 				left: 120px;
-				font: 45px/1.4 'Hind';
+				font: 45px/1.4 'Arapey';
 				color: #fff;
 			}
 			.carOption {
@@ -57,7 +58,7 @@ figure {
 				position: relative;
 				bottom: 200px;
 				left: 120px;
-				font: 25px/1.4 'Hind';
+				font: 25px/1.4 'Arapey';
 				color: #fff;
 				span {
 					margin-right: 20px;
@@ -85,13 +86,13 @@ figure {
 		.swiper-slide {
 			.pricepic {
 				h1 {
-					font: bold 70px/1 'Hind';
+					font: bold 70px/1 'Arapey';
 				}
 				.price {
-					font: 35px/1.4 'Hind';
+					font: 35px/1.4 'Arapey';
 				}
 				.carOption {
-					font: 20px/1.4 'Hind';
+					font: 20px/1.4 'Arapey';
 				}
 			}
 		}
@@ -107,13 +108,13 @@ figure {
 			.pricepic {
 				left: -40px;
 				h1 {
-					font: bold 50px/1 'Hind';
+					font: bold 50px/1 'Arapey';
 				}
 				.price {
-					font: 30px/1.4 'Hind';
+					font: 30px/1.4 'Arapey';
 				}
 				.carOption {
-					font: 20px/1.4 'Hind';
+					font: 20px/1.4 'Arapey';
 				}
 			}
 		}
@@ -127,17 +128,17 @@ figure {
 				h1 {
 					width: 500px;
 					padding-left: 150px;
-					font: bold 30px/1 'Hind';
+					font: bold 30px/1 'Arapey';
 				}
 				.price {
 					bottom: 240px;
 					left: 20px;
-					font: 20px/1.4 'Hind';
+					font: 20px/1.4 'Arapey';
 				}
 				.carOption {
 					bottom: 220px;
 					left: 20px;
-					font: 17px/1.4 'Hind';
+					font: 17px/1.4 'Arapey';
 				}
 			}
 		}
@@ -160,15 +161,15 @@ figure {
 					left:0px;
 					h1 {
 						width: 900px;
-						font: 40px/1 'Hind';
+						font: 40px/1 'Arapey';
 					}
 					.price {
 						left: 25px;
-						font: 25px/1.4 'Hind';
+						font: 25px/1.4 'Arapey';
 					}
 					.carOption {
 						left: 25px;
-						font: 15px/1.4 'Hind';
+						font: 15px/1.4 'Arapey';
 					}
 				}
 			}
