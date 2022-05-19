@@ -10,7 +10,16 @@ function Community() {
 
 	const getLocalData = () => {
 		const data = localStorage.getItem('post');
-		return JSON.parse(data);
+		const dummyPosts = [
+			{title: 'Hello3', content: 'Here comes content description in detail.'},
+			{title: 'Hello2', content: 'Here comes content description in detail.'},
+			{title: 'Hello1', content: 'Here comes content description in detail.'}
+		];
+		if(data) {
+			return JSON.parse(data);
+		}else{
+			return dummyPosts;
+		}
 	};
 
 	const [posts, setPosts] = useState(getLocalData());

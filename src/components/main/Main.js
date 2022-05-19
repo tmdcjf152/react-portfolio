@@ -5,7 +5,7 @@ import Pics from './Pics';
 import Vids from './Vids';
 import As from './As';
 import Btns from './Btns';
-import Anime from '../../class/anime.js';
+import Anime from '../../class/Anime.js';
 import { useRef, useEffect, useState } from 'react';
 
 
