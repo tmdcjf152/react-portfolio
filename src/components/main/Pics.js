@@ -21,44 +21,55 @@ function Pics(props) {
 						? { transform: `translateX(${position / 1.2}px)` }
 						: null
 				}>WHY MINI ? </h1>
-				<ul className='list'>
-					{pics.map((pic, idx) => {
-						if (idx < 3) {
-							return (
-								<>
-									<li
-										key={idx}
-										onClick={() => {
-											setIndex(idx);
-											pop.current.open();
-										}}>
-										<img
-											src={`https://live.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}_m.jpg`}
-										/>
-									</li>
-								</>
-							);
-						}
-					})}
-				</ul>
-				<section className="picBox">
-					<article id='PicsTextBox1'>
-						<p className='PicsTitle'>INTERIOR</p>
-						<p className='PicsText'>With MINI's unique interface design, <br />you can feel a unique sensibility <br />that is different from others.
-						</p>
 
-					</article>
-					<article id='PicsTextBox2'>
-						<p className='PicsTitle'>SPACE</p>
-						<p className='PicsText'>The vehicle is small, the space is wide, and the MINI is not small in the vehicle. You'll know when you experience it.</p>
-					</article>
-					<article id='PicsTextBox3'>
-						<p className='PicsTitle'>DESIGN</p>
-						<p className='PicsText'>MINI's unique design always attracts attention wherever you go. Experience your own MINI that is not similar at all</p>
-					</article>
-					
-				</section>			
-				<a href="http://localhost:3000/react-portfolio#/youtube">VIEW MORE </a>
+
+				<div className='picBox'>
+					<div className="Box2">
+						<ul className='list'>
+							{pics.map((pic, idx) => {
+								if (idx < 6) {
+									return (
+										<>
+
+											<div className="Box3">
+												<li
+													key={idx}
+													onClick={() => {
+														setIndex(idx);
+														pop.current.open();
+													}}>
+													<img
+														src={`https://live.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}_m.jpg`}
+													/>
+												</li>
+
+											</div>
+
+										</>
+									);
+								}
+							})}
+						</ul>
+						<a href="#">VIEW MORE</a>
+					</div>
+					<div className="Box1">
+						<div className="textBox1">
+							<p className='picTitle'>1. SAFETY</p>
+							<p className='picText'> MINI, who has been rated first in safety, will protect your body from accidents.</p>
+						</div>
+
+						<div className="textBox2">
+							<p className='picTitle'>2. SPACE</p>
+							<p className='picText'>MINI is small, but it can free up a large space. You can hold up to 1,390L of your luggage.</p>
+						</div>
+
+						<div className="textBox3">
+							<p className='picTitle'>3. DESIGN</p>
+							<p className='picText'> MINI has its own design. It's a car with a unique design that can't be seen by any brand and a compact design.</p>
+						</div>
+
+					</div>
+				</div>
 			</section>
 
 

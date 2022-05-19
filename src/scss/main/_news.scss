@@ -1,208 +1,79 @@
 #news {
 	width: 100%;
 	height: 100vh;
-	padding: 5vw;
+	padding: 50px;
 	h1 {
-		font: bold 100px/1 'Hind';
+		font: bold 80px/1 'Playfair Display SC';
 		text-align: center;
+		.underline {
+			text-decoration: underline;
+		}
 	}
-	#newsBanner {
+	#newsBox {
 		width: 100%;
-		height: 100vh;
-		.bestCarPic {
-			width: 100%;
-			height: 100%;
-			position: relative;
-			bottom: 150px;
-			background: url(../../src_assets/car1.webp);
-			background-size: cover;
-			background-position-x: center;
-			animation: car 5s ease-in-out infinite alternate;
-		}
-		a {
+		height: 100%;
+		padding: 25px;
+		&::after {
+			content: '';
 			display: block;
-			margin: 0 auto;
-			width: 300px;
-			height: 50px;
-			border: 1px solid #ddd;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			position: relative;
-			bottom: 250px;
-			font: bold 20px/1 'Hind';
-			color: #fff;
-			background: #000;
-			transition: 0.5s;
+			clear: both;
 		}
-		&:hover a {
-			transform: scale(1.1);
-		}
-	}
-}
-
-@keyframes car {
-	0% {
-		background: url(../../src_assets/car1.webp);
-		background-size: cover;
-		background-position-x: center;
-	}
-	25% {
-		background: url(../../src_assets/car5.webp);
-		background-size: cover;
-		background-position-x: center;
-	}
-	50% {
-		background: url(../../src_assets/car2.webp);
-		background-size: cover;
-		background-position-x: center;
-	}
-	100% {
-		background: url(../../src_assets/car3.webp);
-		background-size: cover;
-		background-position-x: center;
-	}
-}
-
-@media screen and (max-width: 1179px) {
-	#news {
-
-		h1 {
-			font: 50px/1 'Hind';
-			position: relative;
-			top: 100px;
-		}
-		#newsBanner {
-			width: 100%;
-			height: 100%;
-			.bestCarPic {
+		article {
+			width: 33.33%;
+			height: 50%;
+			padding: 50px;
+			float: left;
+			img{
 				width: 100%;
 				height: 100%;
-				bottom: 0px;
+				object-fit: cover;
+				transition: 1s;
+				&:hover{
+					transform: scale(1.2);
+				}
 			}
+			h2 {
+				font: bold 40px/1 'Arapey';
+				margin-bottom: 20px;
+			}
+			span{
+				font: 20px/1 'Arapey';
+			}
+		}
+		.textBox1 {
+			width: 60%;
+			height: 40%;
+			h2 {
+				font: bold 40px/1 'Playfair Display SC';
+				margin-bottom: 20px;
+			}
+			span {
+				font: 25px/1 'Arapey';
+			}
+			img {
+				width: 600px;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		.textBox2 {
+			width: 40%;
+			height: 40%;
 			a {
-				bottom: 100px;
-			}
-			&:hover a {
-				transform: scale(1.1);
-			}
-		}
-	}
-}
-
-@media screen and (max-width: 1024px) {
-	#news {
-
-		h1 {
-			font: 50px/1 'Hind';
-			position: relative;
-			top: 100px;
-		}
-		#newsBanner {
-			width:100%;
-			height: 80%;
-			.bestCarPic {
+				display: flex;
+				justify-content: center;
+				align-items: center;
 				width: 100%;
 				height: 100%;
-				bottom: 0px;
-			}
-			a {
-				bottom: 100px;
-			}
-			&:hover a {
-				transform: scale(1.1);
-			}
-		}
-	}
-}
-
-@media screen and (max-width: 768px) {
-	#news {
-		h1 {
-			font: 50px/1 'Hind';
-			position: relative;
-			top: 100px;
-		}
-		#newsBanner {
-			width:100%;
-			height: 60%;
-			.bestCarPic {
-				width: 100%;
-				height: 100%;
-				bottom: -30px;
-			}
-			a {
-				bottom: 0px;
-			}
-			&:hover a {
-				transform: scale(1.1);
+				font: bold 50px/1 'Playfair Display SC';
+				color: #000;
+				transition: 1s;
+				border: 1px solid #000;
+				&:hover{
+					text-decoration: underline;
+					transform: scale(1.1);
+				}
 			}
 		}
 	}
 }
-
-@media screen and (max-width: 600px) {
-	#news {
-		position: relative;
-		top: 100px;
-		h1 {
-			font: 50px/1 'Hind';
-			position: relative;
-			top: 100px;
-		}
-		#newsBanner {
-			width:100%;
-			height: 45%;
-			.bestCarPic {
-				width: 100%;
-				height: 100%;
-				bottom: -30px;
-			}
-			a {
-				bottom: 0px;
-			}
-			&:hover a {
-				transform: scale(1.1);
-			}
-		}
-	}
-}
-
-@media screen and (max-width: 425px) {
-	#news {
-		h1 {
-			font: 40px/1 'Hind';
-			left: 50px;
-		}
-		#newsBanner {
-			height: 35%;
-			.bestCarPic {
-				left: 50px;
-			}
-			a {
-				left: 50px;
-			}
-		}
-	}
-}
-
-@media screen and (max-width: 375px) {
-	#news {
-		height: 500px;
-		h1 {
-			top: -50px;
-		}
-		#newsBanner {
-			position: relative;
-			height: 200px;
-			top: -100px;
-			.bestCarPic {
-				left: 50px;
-			}
-			a {
-				top: 50px;
-			}
-		}
-	}
-}
-

@@ -9,7 +9,6 @@ header {
 		margin: 0px auto;
 		position: relative;
 		background: #fff;
-		position: fixed;
 
 		h1 {
 			position: absolute;
@@ -35,6 +34,11 @@ header {
 					padding: 22px 30px;
 					font: bold 15px/1 'Hind';
 					color: #000;
+					transition: 0.5s;
+					&:hover{
+						transform: scale(1.2);
+						text-decoration: underline;
+					}
 				}
 			}
 		}
