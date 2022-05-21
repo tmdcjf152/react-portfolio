@@ -1,4 +1,6 @@
 .Community {
+	background: rgb(117, 136, 128);
+
 	.communityBanner {
 		width: 100%;
 		height: 200px;
@@ -6,9 +8,13 @@
 		margin-bottom: 100px;
 		.bannerTitle {
 			font: bold 70px/1 'Arapey';
+			color: rgb(254, 255, 226);
+			text-shadow: 2px 2px 5px rgb(0, 88, 62);
 		}
 		.bannerText {
 			font: 40px/1 'Arapey';
+			color: rgb(254, 255, 226);
+			text-shadow: 2px 2px 5px rgb(0, 88, 62);
 		}
 	}
 	.Box {
@@ -22,6 +28,8 @@
 			text-align: center;
 			h2{
 				font: bold 30px/1 'Arapey';
+				color: rgb(254, 255, 226);
+				text-shadow: 2px 2px 5px rgb(0, 88, 62);
 				margin-bottom: 10px;
 			}
 			input[type='text'] {
@@ -31,24 +39,31 @@
 				margin: 20px 0px;
 				text-align: center;
 				border: none;
+				background: rgb(254, 255, 226);
+				color: rgb(0, 88, 62);
 				border-bottom: 1px solid #000;
 			}
 			textarea {
 				width: 500px;
 				resize: none;
 				text-align: center;
+				background: rgb(254, 255, 226);
+				color: rgb(0, 88, 62);
 			}
 			button{
 				width: 250px;
 				height: 30px;
 				margin-top: 20px;
+				background: rgb(254, 255, 226);
+				color: rgb(0, 88, 62);
 			}
 			span{
 				display: block;
 				width: 100%;
 				margin-top: 20px;
 				font: 18px/1 'Arapey';
-				color: #bbb;
+				color: rgb(254, 255, 226);
+				text-shadow: 2px 2px 5px rgb(0, 88, 62);
 			}
 		}
 
@@ -60,6 +75,8 @@
 			.showBoxTitle {
 				text-align: center;
 				font: bold 30px/1 'Arapey';
+				color: rgb(254, 255, 226);
+				text-shadow: 2px 2px 5px rgb(0, 88, 62);
 				margin-bottom: 30px;
 			}
 			article {
@@ -67,14 +84,18 @@
 				margin-bottom: 10px;
 				padding: 20px;
 				h2{
-					width: 108.1%;
-					background: #000;
+					width: 100%;
 					color: #fff;
 					margin-bottom: 10px;
 					font-family: 'Arapey';
+					color: rgb(254, 255, 226);
+					background: rgb(78, 119, 107);
+					box-shadow: 5px 5px 2px 1px rgba(136, 180, 144, 0.726);
 				}
 				p{
 					font: 15px/1 'Arapey';
+					color: rgb(254, 255, 226);
+					text-shadow: 2px 2px 5px rgb(0, 88, 62);
 					margin-bottom: 20px;
 				}
 				.btns{
@@ -84,7 +105,9 @@
 						height: 20px;
 						margin-right: 10px;
 						font: 15px/1 'Arapey';
-						background: #fff;
+						color: rgb(254, 255, 226);
+						background: rgb(78, 119, 107);
+						box-shadow: 5px 7px 2px 1px rgba(136, 180, 144, 0.726);
 						position: relative;
 						left: 300px;
 					}

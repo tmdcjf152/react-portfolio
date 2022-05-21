@@ -1,11 +1,17 @@
 .Location {
+	background: rgb(117, 136, 128);
+	color: rgb(254, 255, 226);
+	text-shadow: 2px 2px 5px rgb(0, 88, 62);
 	.locationBanner {
 		width: 100%;
 		height: 200px;
 		border-bottom: 5px solid #000;
 		margin-bottom: 100px;
+		color: rgb(254, 255, 226);
+		text-shadow: 2px 2px 5px rgb(0, 88, 62);
 		.bannerTitle {
 			font: bold 70px/1 'Arapey';
+			
 		}
 		.bannerText {
 			font: 40px/1 'Arapey';
@@ -14,6 +20,7 @@
 	.showRoom {
 		width: 100%;
 		margin-bottom: 100px;
+		overflow: hidden;
 		.showRoom1 {
 			width: 100%;
 			height: 400px;

@@ -1,4 +1,5 @@
 .Youtube {
+	background: rgb(117, 136, 128);
 	.youtubeBanner {
 		width: 100%;
 		height: 200px;
@@ -6,9 +7,13 @@
 		margin-bottom: 100px;
 		.bannerTitle {
 			font: bold 70px/1 'Arapey';
+			color: rgb(254, 255, 226);
+			text-shadow: 2px 2px 5px rgb(0, 88, 62);
 		}
 		.bannerText {
 			font: 40px/1 'Arapey';
+			color: rgb(254, 255, 226);
+			text-shadow: 2px 2px 5px rgb(0, 88, 62);
 		}
 	}
 	.youtubeOption {
@@ -20,7 +25,7 @@
 			width: 45%;
 			height: 300px;
 			background: url(../../../public/img/youtube/pic1.jpeg);
-			box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.5);
+			box-shadow: 12px 12px 2px 1px rgba(255, 255, 255, 0.726);
 		}
 		.optionsBox {
 			width: 50%;
@@ -29,117 +34,121 @@
 
 			.optionTitle {
 				font: bold 40px/1 'Arapey';
+				color: rgb(254, 255, 226);
+				text-shadow: 2px 2px 5px rgb(0, 88, 62);
 				position: relative;
 			}
 			.optionText {
 				font: bold 25px/1.3 'Arapey';
+				color: rgb(254, 255, 226);
+				text-shadow: 2px 2px 5px rgb(0, 88, 62);
 			}
 		}
 	}
-	.options{
+	.options {
 		width: 100%;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
-		.option1{
+		color: rgb(254, 255, 226);
+		text-shadow: 2px 2px 5px rgb(0, 88, 62);
+		.option1 {
 			width: 100%;
-
-			.option1Pic{
+			.option1Pic {
 				width: 300px;
 				height: 300px;
-				background:url(../../../public/img/youtube/youtubepic0.png);
+				background: url(../../../public/img/youtube/youtubepic0.png);
 				background-size: cover;
 				background-position-x: -100px;
-				box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.5);
+				box-shadow: 12px 12px 2px 1px rgba(255, 255, 255, 0.726);
 			}
-			.option1Text{
+			.option1Text {
 				width: 300px;
 				height: 300px;
-				p{
+				p {
 					text-align: center;
 					font: 20px/1 'Arapey';
-					margin-top : 30px
+					margin-top: 30px;
 				}
 			}
 		}
-		.option2{
+		.option2 {
 			width: 100%;
-			.option2Pic{
+			.option2Pic {
 				width: 300px;
 				height: 300px;
-				background:url(../../../public/img/youtube/youtubepic1.png);
+				background: url(../../../public/img/youtube/youtubepic1.png);
 				background-size: cover;
 				background-position-x: -140px;
-				box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.5);
+				box-shadow: 12px 12px 2px 1px rgba(255, 255, 255, 0.726);
 			}
-			.option2Text{
+			.option2Text {
 				width: 300px;
 				height: 300px;
-				p{
+				p {
 					text-align: center;
 					font: 20px/1 'Arapey';
-					margin-top : 30px
+					margin-top: 30px;
 				}
-
 			}
 		}
-		.option3{
+		.option3 {
 			width: 100%;
-			.option3Pic{
+			.option3Pic {
 				width: 300px;
 				height: 300px;
-				background:url(../../../public/img/youtube/youtubepic2.png);
+				background: url(../../../public/img/youtube/youtubepic2.png);
 				background-size: cover;
 				background-position-x: -270px;
-				box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.5);
+				box-shadow: 12px 12px 2px 1px rgba(255, 255, 255, 0.726);
 			}
-			.option3Text{
+			.option3Text {
 				width: 300px;
 				height: 300px;
-				p{
+				p {
 					text-align: center;
 					font: 20px/1 'Arapey';
-					margin-top : 30px
+					margin-top: 30px;
 				}
 			}
 		}
-		.option4{
+		.option4 {
 			width: 100%;
-			.option4Pic{
+			.option4Pic {
 				width: 300px;
 				height: 300px;
-				background:url(../../../public/img/youtube/youtubepic3.png);
+				background: url(../../../public/img/youtube/youtubepic3.png);
 				background-size: cover;
 				background-position-x: -150px;
-				box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.5);
+				box-shadow: 12px 12px 2px 1px rgba(255, 255, 255, 0.726);
 			}
 		}
-		.option4Text{
+		.option4Text {
 			width: 300px;
 			height: 300px;
-			p{
+			p {
 				text-align: center;
 				font: 20px/1 'Arapey';
-				margin-top : 30px
+				margin-top: 30px;
 			}
 		}
 	}
-	.optionvideo{
+	.optionvideo {
 		width: 100%;
-		.videoTitle{
+		color: rgb(254, 255, 226);
+		text-shadow: 2px 2px 5px rgb(0, 88, 62);
+		.videoTitle {
 			display: block;
 			text-align: center;
 			font: bold 50px/1 'Arapey';
-
 		}
-		.videoText{
+		.videoText {
 			display: block;
 			text-align: center;
 			font: 20px/1 'Arapey';
 			margin: 20px;
 		}
 	}
-
 
 	.inner {
 		width: 1180px;
@@ -158,14 +167,21 @@
 		}
 		article {
 			margin-left: 20px;
+
 			.pic {
 				width: 300px;
-				height: 220px;
+				height: 150px;
+				margin: 20px;
 
 				img {
 					width: 100%;
 					height: 100%;
 					object-fit: cover;
+					box-shadow: 12px 12px 2px 1px rgba(255, 255, 255, 0.726);
+					transition: 1s;
+					&:hover{
+						transform: scale(1.1);
+					}
 				}
 			}
 		}

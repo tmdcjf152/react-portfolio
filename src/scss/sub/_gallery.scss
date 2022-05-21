@@ -1,5 +1,6 @@
 .Gallery {
 	overflow: hidden;
+	background: rgb(117, 136, 128);
 	figure {
 	}
 	.galleryBanner {
@@ -9,9 +10,13 @@
 		margin-bottom: 100px;
 		.bannerTitle {
 			font: bold 70px/1 'Arapey';
+			color: rgb(254, 255, 226);
+			text-shadow: 2px 2px 5px rgb(0, 88, 62);
 		}
 		.bannerText {
 			font: 40px/1 'Arapey';
+			color: rgb(254, 255, 226);
+			text-shadow: 2px 2px 5px rgb(0, 88, 62);
 		}
 	}
 	.carprice {
@@ -35,7 +40,8 @@
 				padding-left: 250px;
 				padding-top: 20px;
 				font: bold 90px/1 'Arapey';
-				color: #000;
+				color: rgb(254, 255, 226);
+				text-shadow: 2px 2px 5px rgb(0, 88, 62);
 				position: absolute;
 				bottom: 75%;
 				left: 12%;
@@ -44,7 +50,8 @@
 				width: 100%;
 				padding-left: 250px;
 				font: 35px/1 'Arapey';
-				color: #000;
+				color: rgb(254, 255, 226);
+				text-shadow: 2px 2px 5px rgb(0, 88, 62);
 				position: absolute;
 				bottom: 75%;
 				left: 12%;
@@ -54,7 +61,8 @@
 				padding-left: 250px;
 				padding-top: 20px;
 				font: 25px/1.4 'Arapey';
-				color: #000;
+				color: rgb(254, 255, 226);
+				text-shadow: 2px 2px 5px rgb(0, 88, 62);
 				position: absolute;
 				bottom: 60%;
 				left: 12%;
@@ -67,6 +75,8 @@
 		h2 {
 			width: 100%;
 			font: bold 50px/1 'Arapey';
+			color: rgb(254, 255, 226);
+			text-shadow: 2px 2px 5px rgb(0, 88, 62);
 			text-align: center;
 			position: relative;
 			bottom: 250px;
@@ -76,6 +86,8 @@
 		.forLife {
 			width: 100%;
 			font: 25px/1 'Arapey';
+			color: rgb(254, 255, 226);
+			text-shadow: 2px 2px 5px rgb(0, 88, 62);
 			text-align: center;
 			position: relative;
 			bottom: 250px;
@@ -90,6 +102,8 @@
 			height: 100px;
 			span {
 				font: 50px/1 'Arapey';
+				color: rgb(254, 255, 226);
+				text-shadow: 2px 2px 5px rgb(0, 88, 62);
 			}
 			.steat {
 				width: 100px;
@@ -99,6 +113,8 @@
 				position: relative;
 				bottom: 150px;
 				left: 200px;
+				color: rgb(254, 255, 226);
+				text-shadow: 2px 2px 5px rgb(0, 88, 62);
 			}
 			.camera {
 				width: 100px;
@@ -108,6 +124,8 @@
 				position: relative;
 				bottom: 250px;
 				left: 400px;
+				color: rgb(254, 255, 226);
+				text-shadow: 2px 2px 5px rgb(0, 88, 62);
 			}
 			.performance {
 				width: 100px;
@@ -117,6 +135,8 @@
 				position: relative;
 				bottom: 350px;
 				left: 600px;
+				color: rgb(254, 255, 226);
+				text-shadow: 2px 2px 5px rgb(0, 88, 62);
 			}
 			.zero {
 				width: 100px;
@@ -126,6 +146,8 @@
 				position: relative;
 				bottom: 450px;
 				left: 900px;
+				color: rgb(254, 255, 226);
+				text-shadow: 2px 2px 5px rgb(0, 88, 62);
 			}
 		}
 	}
@@ -134,23 +156,27 @@
 		.pic1 {
 			width: 800px;
 			height: 400px;
-			background-image: url(../../../public/img/gallery/trunk1.png);
+			background-image: url(../../src_assets/trunk1.png);
 			background-size: cover;
 			position: relative;
 			right: 25%;
 			h3 {
 				padding: 10px;
 				font: bold 40px/1 'Arapey';
-				color: #fff;
+				color: rgb(254, 255, 226);
+				background: rgb(78, 119, 107);
+				box-shadow: 12px 12px 2px 1px rgba(136, 180, 144, 0.726);
 				position: relative;
 				top: 50px;
 				left: 100%;
-				background: #000;
+
 			}
 			p {
 				padding: 30px;
 				text-align: left;
 				font: 24px/1 'Arapey';
+				color: rgb(254, 255, 226);
+				text-shadow: 2px 2px 5px rgb(0, 88, 62);
 				position: relative;
 				top: 60px;
 				left: 100%;
@@ -159,7 +185,7 @@
 		.pic2 {
 			width: 800px;
 			height: 400px;
-			background-image: url(../../../public/img/gallery/trunk2.png);
+			background-image: url(../../src_assets/trunk2.png);
 			background-size: cover;
 			position: relative;
 			left: 55%;
@@ -168,17 +194,20 @@
 				padding: 10px;
 				text-align: right;
 				font: bold 40px/1 'Arapey';
-				color: #fff;
+				color: rgb(254, 255, 226);
+				background: rgb(78, 119, 107);
+				box-shadow: 12px 12px 2px 1px rgba(136, 180, 144, 0.726);
 				position: relative;
 				top: 50px;
 				left: 100%;
-				background: #000;
 				transform: scaleX(-1);
 			}
 			p {
 				padding: 30px;
 				text-align: left;
 				font: 24px/1 'Arapey';
+				color: rgb(254, 255, 226);
+				text-shadow: 2px 2px 5px rgb(0, 88, 62);
 				position: relative;
 				top: 60px;
 				left: 100%;
@@ -188,23 +217,27 @@
 		.pic3 {
 			width: 800px;
 			height: 400px;
-			background-image: url(../../../public/img/gallery/trunk3.png);
+			background-image: url(../../src_assets/trunk3.png);
 			background-size: cover;
 			position: relative;
 			right: 25%;
 			h3 {
 				padding: 10px;
 				font: bold 40px/1 'Arapey';
-				color: #fff;
+				color: rgb(254, 255, 226);
+				background: rgb(78, 119, 107);
+				box-shadow: 12px 12px 2px 1px rgba(136, 180, 144, 0.726);
 				position: relative;
 				top: 50px;
 				left: 100%;
-				background: #000;
+
 			}
 			p {
 				padding: 30px;
 				text-align: left;
 				font: 24px/1 'Arapey';
+				color: rgb(254, 255, 226);
+				text-shadow: 2px 2px 5px rgb(0, 88, 62);
 				position: relative;
 				top: 60px;
 				left: 100%;
@@ -222,11 +255,15 @@
 			display: block;
 			width: 100%;
 			font: bold 50px/1 'Arapey';
+			color: rgb(254, 255, 226);
+			text-shadow: 2px 2px 5px rgb(0, 88, 62);
 		}
 		.featureText {
 			display: block;
 			width: 100%;
 			font: 24px/1 'Arapey';
+			color: rgb(254, 255, 226);
+			text-shadow: 2px 2px 5px rgb(0, 88, 62);
 			margin-top: 30px;
 			margin-bottom: 100px;
 		}
@@ -236,16 +273,20 @@
 			height: 300px;
 			background: url(../../../public/img/gallery/seat.jpeg);
 			background-size: cover;
-			box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+			box-shadow: 12px 12px 2px 1px rgba(136, 180, 144, 0.726);
 			margin-bottom: 200px;
 			margin-right: 20px;
 			.seatTitle {
 				font: bold 20px/1 'Arapey';
+				color: rgb(254, 255, 226);
+				text-shadow: 2px 2px 5px rgb(0, 88, 62);
 				position: relative;
 				top: 310px;
 			}
 			.seatText {
 				font: 15px/1 'Arapey';
+				color: rgb(254, 255, 226);
+				text-shadow: 2px 2px 5px rgb(0, 88, 62);
 				position: relative;
 				top: 310px;
 			}
@@ -255,16 +296,20 @@
 			height: 300px;
 			background: url(../../../public/img/gallery/internal1.jpeg);
 			background-size: cover;
-			box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+			box-shadow: 12px 12px 2px 1px rgba(136, 180, 144, 0.726);
 			margin-bottom: 200px;
 			margin-right: 20px;
 			.internalTitle {
 				font: bold 20px/1 'Arapey';
+				color: rgb(254, 255, 226);
+				text-shadow: 2px 2px 5px rgb(0, 88, 62);
 				position: relative;
 				top: 310px;
 			}
 			.internalText {
 				font: 15px/1 'Arapey';
+				color: rgb(254, 255, 226);
+				text-shadow: 2px 2px 5px rgb(0, 88, 62);
 				position: relative;
 				top: 310px;
 			}
@@ -274,15 +319,19 @@
 			height: 300px;
 			background: url(../../../public/img/gallery/bonnet.jpeg);
 			background-size: cover;
-			box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+			box-shadow: 12px 12px 2px 1px rgba(136, 180, 144, 0.726);
 			margin-bottom: 200px;
 			.bonnetTitle {
 				font: bold 20px/1 'Arapey';
+				color: rgb(254, 255, 226);
+				text-shadow: 2px 2px 5px rgb(0, 88, 62);
 				position: relative;
 				top: 310px;
 			}
 			.bonnetText {
 				font: 15px/1 'Arapey';
+				color: rgb(254, 255, 226);
+				text-shadow: 2px 2px 5px rgb(0, 88, 62);
 				position: relative;
 				top: 310px;
 			}
@@ -292,16 +341,20 @@
 			height: 300px;
 			background: url(../../../public/img/gallery/back.jpeg);
 			background-size: cover;
-			box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+			box-shadow: 12px 12px 2px 1px rgba(136, 180, 144, 0.726);
 			margin-bottom: 200px;
 			margin-right: 40px;
 			.backTitle {
 				font: bold 20px/1 'Arapey';
+				color: rgb(254, 255, 226);
+				text-shadow: 2px 2px 5px rgb(0, 88, 62);
 				position: relative;
 				top: 310px;
 			}
 			.backText {
 				font: 15px/1 'Arapey';
+				color: rgb(254, 255, 226);
+				text-shadow: 2px 2px 5px rgb(0, 88, 62);
 				position: relative;
 				top: 310px;
 			}
@@ -311,15 +364,19 @@
 			height: 300px;
 			background: url(../../../public/img/gallery/car1.jpeg);
 			background-size: cover;
-			box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+			box-shadow: 12px 12px 2px 1px rgba(136, 180, 144, 0.726);
 			margin-bottom: 200px;
 			.carTitle {
 				font: bold 20px/1 'Arapey';
+				color: rgb(254, 255, 226);
+				text-shadow: 2px 2px 5px rgb(0, 88, 62);
 				position: relative;
 				top: 310px;
 			}
 			.carText {
 				font: 15px/1 'Arapey';
+				color: rgb(254, 255, 226);
+				text-shadow: 2px 2px 5px rgb(0, 88, 62);
 				position: relative;
 				top: 310px;
 			}
@@ -331,12 +388,16 @@
 			width: 100%;
 			text-align: center;
 			font: bold 50px/1 'Arapey';
+			color: rgb(254, 255, 226);
+			text-shadow: 2px 2px 5px rgb(0, 88, 62);
 		}
 		.designText {
 			display: block;
 			width: 100%;
 			text-align: center;
 			font: 24px/1 'Arapey';
+				color: rgb(254, 255, 226);
+				text-shadow: 2px 2px 5px rgb(0, 88, 62);
 			margin: 20px;
 		}
 	}
@@ -356,14 +417,17 @@
 			.inner {
 				width: 100%;
 				transition: 1s;
+				filter: grayscale(1.0);
 				&:hover {
 					transform: scale(1.1);
+					filter: grayscale(0);
 				}
 				.pic {
 					width: 100%;
 					height: 250px;
 					img {
 						width: 100%;
+						box-shadow: 12px 12px 2px 1px rgba(136, 180, 144, 0.726);
 					}
 				}
 			}

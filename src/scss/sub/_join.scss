@@ -1,10 +1,14 @@
 .Join {
+	background: rgb(117, 136, 128);
+	color: rgb(254, 255, 226);
+	text-shadow: 2px 2px 5px rgb(0, 88, 62);
 	figure {
 
 	}
 	.stepBox {
 		.campaignTitle {
 			font: bold 70px/1 'Arapey';
+			color: rgb(254, 255, 226);
 			margin-top: 50px;
 			text-transform: uppercase;
 		}
@@ -34,7 +38,6 @@
 			float: left;
 			background: #ccc;
 			font: bold 20px/1 'Arapey';
-			color: #fff;
 			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 			cursor: pointer;
 			.categoryNameMINI {
