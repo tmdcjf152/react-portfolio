@@ -1,34 +1,32 @@
 .Gallery {
 	overflow: hidden;
 	background: rgb(117, 136, 128);
-	figure {
-	}
+	color: rgb(254, 255, 226);
+	text-shadow: 2px 2px 5px rgb(0, 88, 62);
 	.galleryBanner {
 		width: 100%;
 		height: 200px;
-		border-bottom: 5px solid #000;
-		margin-bottom: 100px;
+		border-bottom: 5px solid rgb(254, 255, 226);
+		margin: 100px 0px;
 		.bannerTitle {
 			font: bold 70px/1 'Arapey';
-			color: rgb(254, 255, 226);
-			text-shadow: 2px 2px 5px rgb(0, 88, 62);
 		}
 		.bannerText {
 			font: 40px/1 'Arapey';
-			color: rgb(254, 255, 226);
-			text-shadow: 2px 2px 5px rgb(0, 88, 62);
 		}
 	}
 	.carprice {
 		width: 100%;
 		height: 100%;
+		
 		.pricepic {
 			width: 100%;
 			height: 100%;
 			position: relative;
 			left: -31.5%;
 			top: -100px;
-			img{
+			
+			img {
 				width: 100%;
 				height: 100%;
 				position: relative;
@@ -41,7 +39,6 @@
 				padding-top: 20px;
 				font: bold 90px/1 'Arapey';
 				color: rgb(254, 255, 226);
-				text-shadow: 2px 2px 5px rgb(0, 88, 62);
 				position: absolute;
 				bottom: 75%;
 				left: 12%;
@@ -50,8 +47,7 @@
 				width: 100%;
 				padding-left: 250px;
 				font: 35px/1 'Arapey';
-				color: rgb(254, 255, 226);
-				text-shadow: 2px 2px 5px rgb(0, 88, 62);
+
 				position: absolute;
 				bottom: 75%;
 				left: 12%;
@@ -61,8 +57,7 @@
 				padding-left: 250px;
 				padding-top: 20px;
 				font: 25px/1.4 'Arapey';
-				color: rgb(254, 255, 226);
-				text-shadow: 2px 2px 5px rgb(0, 88, 62);
+
 				position: absolute;
 				bottom: 60%;
 				left: 12%;
@@ -75,8 +70,7 @@
 		h2 {
 			width: 100%;
 			font: bold 50px/1 'Arapey';
-			color: rgb(254, 255, 226);
-			text-shadow: 2px 2px 5px rgb(0, 88, 62);
+
 			text-align: center;
 			position: relative;
 			bottom: 250px;
@@ -86,8 +80,7 @@
 		.forLife {
 			width: 100%;
 			font: 25px/1 'Arapey';
-			color: rgb(254, 255, 226);
-			text-shadow: 2px 2px 5px rgb(0, 88, 62);
+
 			text-align: center;
 			position: relative;
 			bottom: 250px;
@@ -102,8 +95,6 @@
 			height: 100px;
 			span {
 				font: 50px/1 'Arapey';
-				color: rgb(254, 255, 226);
-				text-shadow: 2px 2px 5px rgb(0, 88, 62);
 			}
 			.steat {
 				width: 100px;
@@ -113,8 +104,6 @@
 				position: relative;
 				bottom: 150px;
 				left: 200px;
-				color: rgb(254, 255, 226);
-				text-shadow: 2px 2px 5px rgb(0, 88, 62);
 			}
 			.camera {
 				width: 100px;
@@ -124,8 +113,6 @@
 				position: relative;
 				bottom: 250px;
 				left: 400px;
-				color: rgb(254, 255, 226);
-				text-shadow: 2px 2px 5px rgb(0, 88, 62);
 			}
 			.performance {
 				width: 100px;
@@ -135,8 +122,6 @@
 				position: relative;
 				bottom: 350px;
 				left: 600px;
-				color: rgb(254, 255, 226);
-				text-shadow: 2px 2px 5px rgb(0, 88, 62);
 			}
 			.zero {
 				width: 100px;
@@ -146,8 +131,6 @@
 				position: relative;
 				bottom: 450px;
 				left: 900px;
-				color: rgb(254, 255, 226);
-				text-shadow: 2px 2px 5px rgb(0, 88, 62);
 			}
 		}
 	}
@@ -169,14 +152,12 @@
 				position: relative;
 				top: 50px;
 				left: 100%;
-
 			}
 			p {
 				padding: 30px;
 				text-align: left;
 				font: 24px/1 'Arapey';
-				color: rgb(254, 255, 226);
-				text-shadow: 2px 2px 5px rgb(0, 88, 62);
+
 				position: relative;
 				top: 60px;
 				left: 100%;
@@ -206,8 +187,7 @@
 				padding: 30px;
 				text-align: left;
 				font: 24px/1 'Arapey';
-				color: rgb(254, 255, 226);
-				text-shadow: 2px 2px 5px rgb(0, 88, 62);
+
 				position: relative;
 				top: 60px;
 				left: 100%;
@@ -230,14 +210,12 @@
 				position: relative;
 				top: 50px;
 				left: 100%;
-
 			}
 			p {
 				padding: 30px;
 				text-align: left;
 				font: 24px/1 'Arapey';
-				color: rgb(254, 255, 226);
-				text-shadow: 2px 2px 5px rgb(0, 88, 62);
+
 				position: relative;
 				top: 60px;
 				left: 100%;
@@ -255,15 +233,12 @@
 			display: block;
 			width: 100%;
 			font: bold 50px/1 'Arapey';
-			color: rgb(254, 255, 226);
-			text-shadow: 2px 2px 5px rgb(0, 88, 62);
 		}
 		.featureText {
 			display: block;
 			width: 100%;
 			font: 24px/1 'Arapey';
-			color: rgb(254, 255, 226);
-			text-shadow: 2px 2px 5px rgb(0, 88, 62);
+
 			margin-top: 30px;
 			margin-bottom: 100px;
 		}
@@ -278,15 +253,13 @@
 			margin-right: 20px;
 			.seatTitle {
 				font: bold 20px/1 'Arapey';
-				color: rgb(254, 255, 226);
-				text-shadow: 2px 2px 5px rgb(0, 88, 62);
+
 				position: relative;
 				top: 310px;
 			}
 			.seatText {
 				font: 15px/1 'Arapey';
-				color: rgb(254, 255, 226);
-				text-shadow: 2px 2px 5px rgb(0, 88, 62);
+
 				position: relative;
 				top: 310px;
 			}
@@ -301,15 +274,13 @@
 			margin-right: 20px;
 			.internalTitle {
 				font: bold 20px/1 'Arapey';
-				color: rgb(254, 255, 226);
-				text-shadow: 2px 2px 5px rgb(0, 88, 62);
+
 				position: relative;
 				top: 310px;
 			}
 			.internalText {
 				font: 15px/1 'Arapey';
-				color: rgb(254, 255, 226);
-				text-shadow: 2px 2px 5px rgb(0, 88, 62);
+
 				position: relative;
 				top: 310px;
 			}
@@ -323,15 +294,13 @@
 			margin-bottom: 200px;
 			.bonnetTitle {
 				font: bold 20px/1 'Arapey';
-				color: rgb(254, 255, 226);
-				text-shadow: 2px 2px 5px rgb(0, 88, 62);
+
 				position: relative;
 				top: 310px;
 			}
 			.bonnetText {
 				font: 15px/1 'Arapey';
-				color: rgb(254, 255, 226);
-				text-shadow: 2px 2px 5px rgb(0, 88, 62);
+
 				position: relative;
 				top: 310px;
 			}
@@ -346,8 +315,7 @@
 			margin-right: 40px;
 			.backTitle {
 				font: bold 20px/1 'Arapey';
-				color: rgb(254, 255, 226);
-				text-shadow: 2px 2px 5px rgb(0, 88, 62);
+
 				position: relative;
 				top: 310px;
 			}
@@ -368,15 +336,13 @@
 			margin-bottom: 200px;
 			.carTitle {
 				font: bold 20px/1 'Arapey';
-				color: rgb(254, 255, 226);
-				text-shadow: 2px 2px 5px rgb(0, 88, 62);
+
 				position: relative;
 				top: 310px;
 			}
 			.carText {
 				font: 15px/1 'Arapey';
-				color: rgb(254, 255, 226);
-				text-shadow: 2px 2px 5px rgb(0, 88, 62);
+
 				position: relative;
 				top: 310px;
 			}
@@ -388,16 +354,13 @@
 			width: 100%;
 			text-align: center;
 			font: bold 50px/1 'Arapey';
-			color: rgb(254, 255, 226);
-			text-shadow: 2px 2px 5px rgb(0, 88, 62);
 		}
 		.designText {
 			display: block;
 			width: 100%;
 			text-align: center;
 			font: 24px/1 'Arapey';
-				color: rgb(254, 255, 226);
-				text-shadow: 2px 2px 5px rgb(0, 88, 62);
+
 			margin: 20px;
 		}
 	}
@@ -417,7 +380,7 @@
 			.inner {
 				width: 100%;
 				transition: 1s;
-				filter: grayscale(1.0);
+				filter: grayscale(1);
 				&:hover {
 					transform: scale(1.1);
 					filter: grayscale(0);

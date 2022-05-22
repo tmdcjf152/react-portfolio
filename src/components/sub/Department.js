@@ -16,7 +16,16 @@ function Department() {
 	}, []);
 
 	return (
+
+		
 		<Layout name={'Department'}>
+	<div className="departmentBanner">
+					<h2 className="departmentTitle">
+						MINI COUNTRYMAN.
+					</h2>
+					<p className="departmentText">MINI's unique SUV.</p>
+				</div>
+
 			<div className="logostory">
 				<div className="pic">
 				</div>

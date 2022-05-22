@@ -1,35 +1,40 @@
 .Department {
 	background: rgb(117, 136, 128);
-	
-	figure {
+	color: rgb(254, 255, 226);
+	text-shadow: 2px 2px 5px rgb(0, 88, 62);
 
+	.departmentBanner {
+		width: 100%;
+		height: 200px;
+		border-bottom: 5px solid rgb(254, 255, 226);
+		margin: 100px 0px;
+		.departmentTitle {
+			font: bold 70px/1 'Arapey';
+		}
+		.departmentText {
+			font: 40px/1 'Arapey';
+		}
 	}
 	.logostory {
 		overflow: hidden;
 		.pic {
 			width: 400px;
-			height: 250px;
-			background-image: url(../../src_assets/Logo.001.jpeg);
+			height: 200px;
+			background-image: url(../../src_assets/logo.png);
 			background-size: contain;
-			position: relative;
-			top: 90px;
 		}
 		.story {
 			position: relative;
-			bottom: 230px;
+			bottom: 200px;
 			left: 450px;
 			.storyTitle {
 				font: bold 30px/1 'Arapey';
-				color: rgb(254, 255, 226);
-				text-shadow: 2px 2px 5px rgb(0, 88, 62);
+
 				margin-bottom: 10px;
-
-
 			}
-			.storyText{
+			.storyText {
 				font: bold 18px/1.2 'Arapey';
-				color: rgb(254, 255, 226);
-				text-shadow: 2px 2px 5px rgb(0, 88, 62);
+
 				margin-bottom: 40px;
 			}
 		}
@@ -64,16 +69,14 @@
 				h2 {
 					margin-top: 5px;
 					font: bold 50px/1 'Arapey';
-					color: rgb(254, 255, 226);
-					text-shadow: 2px 2px 5px rgb(0, 88, 62);
+
 					position: relative;
 					left: -130%;
 					top: -400px;
 				}
 				p {
 					font: 30px/1.2 'Arapey';
-					color: rgb(254, 255, 226);
-					text-shadow: 2px 2px 5px rgb(0, 88, 62);
+
 					margin-bottom: 20px;
 					position: relative;
 					left: -130%;
@@ -85,10 +88,8 @@
 					top: -200px;
 					.since {
 						font: bold 50px/1 'Arapey';
-						color: rgb(254, 255, 226);
 						background: rgb(78, 119, 107);
 						box-shadow: 12px 12px 2px 1px rgba(136, 180, 144, 0.726);
-
 					}
 					.history {
 						font: 25px/1 'Arapey';
