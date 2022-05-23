@@ -1,12 +1,10 @@
 .Join {
-	background: rgb(117, 136, 128);
-	color: rgb(254, 255, 226);
-	text-shadow: 2px 2px 5px rgb(0, 88, 62);
+	color: #000;
 
 	.stepBox {
 		.campaignTitle {
 			font: bold 70px/1 'Arapey';
-			color: rgb(254, 255, 226);
+			color: #000;
 			margin-top: 50px;
 			text-transform: uppercase;
 		}
@@ -14,7 +12,7 @@
 			font: 25px/1.2 'Arapey';
 			margin: 20px 0px;
 		}
-		.selectCar{
+		.selectCar {
 			font: 70px/1 'Arapey';
 			margin: 50px 0px;
 			text-decoration: underline;
@@ -126,7 +124,7 @@
 					}
 				}
 			}
-			&::after{
+			&::after {
 				content: '';
 				display: block;
 				clear: both;
@@ -135,7 +133,7 @@
 				float: left;
 				position: absolute;
 				left: 30%;
-				
+
 				input[type='reset'] {
 					width: 200px;
 					height: 40px;

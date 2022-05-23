@@ -1,7 +1,7 @@
 footer {
 	width: 100%;
-	border-top: 1px solid rgb(254, 255, 226);
-	background: rgb(117, 136, 128);
+	border-top: 1px solid #000;
+    color: #000;
 	.inner {
 		width: 1180px;
 		margin: 0px auto;
@@ -9,30 +9,26 @@ footer {
 		padding: 50px;
 		h1 {
 			font: 30px/1.2 'Playfair Display SC';
-			color: rgb(254, 255, 226);
-			text-shadow: 2px 2px 5px rgb(0, 88, 62);
+
 			text-align: left;
 			letter-spacing: 2px;
 		}
 		p {
 			font: 12px/1.2 'Playfair Display SC';
-			color: rgb(254, 255, 226);
-			text-shadow: 2px 2px 5px rgb(0, 88, 62);
+
 			text-align: left;
 			letter-spacing: 2px;
 		}
 		address {
 			font: 12px/1.2 'Playfair Display SC';
-			color: rgb(254, 255, 226);
-			text-shadow: 2px 2px 5px rgb(0, 88, 62);
+
 			text-align: left;
 			letter-spacing: 2px;
 		}
 		a {
             margin-right: 20px;
 			font: 18px/1.2 'Playfair Display SC';
-			color: rgb(254, 255, 226);
-			text-shadow: 2px 2px 5px rgb(0, 88, 62);
+			color: #000;
 			text-align: left;
 			letter-spacing: 2px;
 		}

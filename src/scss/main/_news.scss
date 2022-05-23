@@ -2,11 +2,12 @@
 	width: 100%;
 	height: 100vh;
 	padding: 50px;
-	background: rgb(254, 255, 226);
+	color: #000;
+	text-shadow: 2px 2px 7px rgb(255, 255, 255);
+	border: 1px solid #000;
 	h1 {
 		font: bold 80px/1 'Playfair Display SC';
-		color: rgb(253, 255, 203);
-		text-shadow: 2px 2px 5px rgb(0, 88, 62);
+		color: #000;
 		text-align: center;
 		.underline {
 			text-decoration: underline;
@@ -37,14 +38,11 @@
 			}
 			h2 {
 				font: bold 40px/1 'Arapey';
-				color: rgb(253, 255, 203);
-				text-shadow: 2px 2px 5px rgb(0, 88, 62);
 				margin-bottom: 20px;
 			}
 			span{
 				font: 20px/1 'Arapey';
-				color: rgb(253, 255, 203);
-				text-shadow: 2px 2px 5px rgb(0, 88, 62);
+
 			}
 		}
 		.textBox1 {
@@ -52,8 +50,7 @@
 			height: 40%;
 			h2 {
 				font: bold 40px/1 'Playfair Display SC';
-				color: rgb(253, 255, 203);
-				text-shadow: 2px 2px 5px rgb(0, 88, 62);
+
 				margin-bottom: 20px;
 			}
 			span {
@@ -75,9 +72,9 @@
 				width: 100%;
 				height: 100%;
 				font: bold 50px/1 'Playfair Display SC';
-				color: rgb(78, 119, 107);
-				background: rgb(246, 255, 204);
-				box-shadow: 12px 12px 2px 1px rgba(165, 197, 106, 0.726);
+				color: #000;
+				text-shadow: 2px 2px 7px #fff;
+				border: 2px solid ;
 				transition: 1s;
 
 				&:hover{

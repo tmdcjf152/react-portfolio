@@ -2,13 +2,11 @@ html{
 	height: 100%;
 .Location {
 	height: 100%;
-	background: rgb(117, 136, 128);
-	color: rgb(254, 255, 226);
-	text-shadow: 2px 2px 5px rgb(0, 88, 62);
+    color: #000;
 	.locationBanner {
 		width: 100%;
 		height: 200px;
-		border-bottom: 5px solid rgb(254, 255, 226);
+		border-bottom: 5px solid #000;
 		margin: 100px 0px;
 
 		.bannerTitle {
@@ -33,7 +31,7 @@ html{
 				height: 350px;
 				background: url(../../../public/img/location/showroom1.jpeg);
 				background-size: cover;
-				box-shadow: 12px 12px 2px 1px rgba(136, 180, 144, 0.726);
+				box-shadow: 12px 12px 2px 1px #ddd;
 			}
 			.showRoomText1 {
 				position: relative;
@@ -58,9 +56,9 @@ html{
 				height: 350px;
 				background: url(../../../public/img/location/showroom2.jpeg);
 				background-size: cover;
-				box-shadow: 12px 12px 2px 1px rgba(136, 180, 144, 0.726);
+				box-shadow: 12px 12px 2px 1px #ddd;
 				position: relative;
-				left: 50%;
+				left: 48%;
 			}
 			.showRoomText2 {
 				position: relative;
@@ -85,7 +83,7 @@ html{
 				height: 350px;
 				background: url(../../../public/img/location/showroom3.jpeg);
 				background-size: cover;
-				box-shadow: 12px 12px 2px 1px rgba(136, 180, 144, 0.726);
+				box-shadow: 12px 12px 2px 1px #ddd;
 			}
 			.showRoomText3 {
 				position: relative;
