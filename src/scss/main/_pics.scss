@@ -86,3 +86,110 @@
 		}
 	}
 }
+
+
+
+@media screen and (max-width: 1024px) {
+	#pics {
+		h1 {
+			font: bold 90px/1 'Playfair Display SC';
+		}
+		.picBox {
+			.Box1 {
+
+				.picTitle {
+					font: bold 35px/1 'Arapey';
+				}
+				.picText {
+					font: 20px/1 'Arapey';
+				}
+			}
+		
+
+			a {
+			position: relative;
+			top: 20px;
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	#pics {
+		border: none;
+		padding: 0vw;
+		h1 {
+			font: bold 70px/1 'Playfair Display SC';
+		}
+		.picBox {
+			padding: 10px;
+			.Box1 {
+				width: 40%;
+				.picTitle {
+					font: bold 30px/1 'Arapey';
+				}
+				.picText {
+					font: bold 20px/1 'Arapey';
+				}
+				.textBox1 {
+					width: 100%;
+					height: 20%;
+				}
+				.textBox2 {
+					width: 100%;
+					height: 20%;
+				}
+				.textBox3 {
+					width: 100%;
+					height: 20%;
+				}
+			}
+			.Box2 {
+				width: 60%;
+				height: 100%;
+			}
+
+		}
+	}
+}
+
+@media screen and (max-width: 425px) {
+	#pics {
+		border: none;
+		padding: 0vw;
+		h1 {
+			font: bold 65px/1 'Playfair Display SC';
+		}
+		.picBox {
+			padding: 10px;
+			.Box1 {
+				width: 100%;
+				height: 50%;
+				.picTitle {
+					font: bold 20px/1 'Arapey';
+				}
+				.picText {
+					font: bold 15px/1 'Arapey';
+				}
+				.textBox1 {
+					width: 100%;
+					height: 40%;
+				}
+				.textBox2 {
+					width: 100%;
+					height: 40%;
+				}
+				.textBox3 {
+					width: 100%;
+					height: 40%;
+				}
+			}
+			.Box2 {
+				width: 100%;
+				height: 50%;
+			}
+
+		}
+	}
+}

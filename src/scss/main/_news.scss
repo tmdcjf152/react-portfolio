@@ -27,12 +27,12 @@
 			height: 50%;
 			padding: 50px;
 			float: left;
-			img{
+			img {
 				width: 100%;
 				height: 100%;
 				object-fit: contain;
 				transition: 1s;
-				&:hover{
+				&:hover {
 					transform: scale(1.2);
 				}
 			}
@@ -40,9 +40,8 @@
 				font: bold 40px/1 'Arapey';
 				margin-bottom: 20px;
 			}
-			span{
+			span {
 				font: 20px/1 'Arapey';
-
 			}
 		}
 		.textBox1 {
@@ -69,15 +68,16 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
+				text-align: center;
 				width: 100%;
 				height: 100%;
-				font: bold 50px/1 'Playfair Display SC';
+				font: bold 30px/1 'Playfair Display SC';
 				color: #000;
 				text-shadow: 2px 2px 7px #fff;
-				border: 2px solid ;
+				border: 2px solid;
 				transition: 1s;
 
-				&:hover{
+				&:hover {
 					text-decoration: underline;
 					transform: scale(1.1);
 				}
@@ -85,3 +85,240 @@
 		}
 	}
 }
+
+@media screen and (max-width: 1024px) {
+	#news {
+		#newsBox {
+			article {
+				img {
+					position: relative;
+					bottom: 30px;
+				}
+				h2 {
+					font: bold 20px/1 'Arapey';
+					margin-bottom: 20px;
+				}
+				span {
+					font: 20px/1 'Arapey';
+				}
+			}
+			.textBox1 {
+				h2 {
+					font: bold 30px/1 'Playfair Display SC';
+					margin-bottom: 20px;
+				}
+				span {
+					font: 20px/1 'Arapey';
+				}
+				img {
+					transform: scale(1.4);
+				}
+			}
+			.textBox2 {
+				a {
+					font: bold 30px/1 'Playfair Display SC';
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#news {
+		padding: 10px;
+		border: none;
+		h1 {
+			font: bold 60px/1 'Playfair Display SC';
+		}
+		#newsBox {
+			padding: 5px;
+			article {
+				width: 50%;
+				padding: 30px;
+				img {
+					bottom: 50px;
+				}
+				h2 {
+					font: bold 25px/1 'Arapey';
+					margin-bottom: 5px;
+				}
+				span {
+					font: 15px/1 'Arapey';
+				}
+			}
+			.textBox1 {
+				width: 60%;
+				height: 40%;
+				h2 {
+					font: bold 25px/1 'Playfair Display SC';
+	
+					margin-bottom: 20px;
+				}
+				span {
+					font: 20px/1 'Arapey';
+				}
+				img {
+					width: 600px;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+			.textBox2 {
+				width: 40%;
+				height: 40%;
+				a {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					text-align: center;
+					width: 100%;
+					height: 100%;
+					font: bold 30px/1 'Playfair Display SC';
+					color: #000;
+					text-shadow: 2px 2px 7px #fff;
+					border: 2px solid;
+					transition: 1s;
+	
+					&:hover {
+						text-decoration: underline;
+						transform: scale(1.1);
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 425px) {
+	#news {
+
+		margin-top: 50px;
+		padding: 0px;
+border: none;
+		h1 {
+			font: bold 40px/1 'Playfair Display SC';
+		
+		}
+		#newsBox {
+
+			article {
+				width: 100%;
+				height: 30%;
+				padding: 10px;
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: contain;
+					transition: 1s;
+					&:hover {
+						transform: scale(1.2);
+					}
+				}
+				h2 {
+					font: bold 17px/1 'Arapey';
+					margin-bottom: 20px;
+				}
+				span {
+					font: 13px/1 'Arapey';
+				}
+			}
+			.textBox1 {
+				width: 60%;
+				height: 40%;
+				h2 {
+					font: bold 20px/1 'Playfair Display SC';
+					margin-top: 30px;
+				}
+				span {
+					font: 15px/1 'Arapey';
+				}
+				img {
+					width: 600px;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+			.textBox2 {
+				width: 40%;
+				height: 40%;
+				a {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					text-align: center;
+					width: 100%;
+					height: 100%;
+					font: bold 30px/1 'Playfair Display SC';
+					color: #000;
+					text-shadow: 2px 2px 7px #fff;
+					border: 2px solid;
+					transition: 1s;
+	
+					&:hover {
+						text-decoration: underline;
+						transform: scale(1.1);
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 375px) {
+	#news {
+		h1 {
+			font: bold 35px/1 'Playfair Display SC';
+		}
+		#newsBox {
+			article {
+				width: 100%;
+				h2 {
+					font: bold 20px/1 'Arapey';
+					margin-bottom: 20px;
+				}
+				span {
+					font: 13px/1 'Arapey';
+				}
+			}
+			.textBox1 {
+				width: 60%;
+				height: 40%;
+				h2 {
+					font: bold 20px/1 'Playfair Display SC';
+					margin-top: 30px;
+				}
+				span {
+					font: 15px/1 'Arapey';
+				}
+				img {
+					width: 600px;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+			.textBox2 {
+				width: 40%;
+				height: 40%;
+				a {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					text-align: center;
+					width: 100%;
+					height: 100%;
+					font: bold 30px/1 'Playfair Display SC';
+					color: #000;
+					text-shadow: 2px 2px 7px #fff;
+					border: 2px solid;
+					transition: 1s;
+	
+					&:hover {
+						text-decoration: underline;
+						transform: scale(1.1);
+					}
+				}
+			}
+		}
+	}
+}
+

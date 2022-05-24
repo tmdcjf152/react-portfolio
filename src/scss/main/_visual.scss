@@ -148,8 +148,9 @@ figure {
 @media screen and (max-width: 425px) {
 	main {
 		width: 100%;
+		overflow: hidden;
 		figure {
-			width: 125%;
+			width: 100%;
 			height: 500px;
 			.swiper {
 				width: 100%;
@@ -180,9 +181,9 @@ figure {
 @media screen and (max-width: 375px) {
 	main {
 		width: 100%;
-		
+		overflow: hidden;
 		figure {
-			width: 136%;
+			width: 100%;
 			height: 400px;
 		}
 	}
