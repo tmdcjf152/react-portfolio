@@ -109,7 +109,7 @@
 	#As {
 
 		h1 {
-			font: bold 45px/1 'Playfair Display SC';
+			font: bold 40px/1 'Playfair Display SC';
 		}
 		.asBox{
 
@@ -119,14 +119,14 @@
 			.box2{
 				width: 100%;
 				height: 100%;
-				padding: 50px;
+				padding: 30px;
 	
 				h2{
-					font: bold 35px/1 'Playfair Display SC';
+					font: bold 30px/1 'Playfair Display SC';
 					margin-bottom: 30px;
 				}
 				p{
-					font: bold 25px/1 'Arapey';		
+					font: bold 20px/1 'Arapey';		
 				}
 				a{
 					display: flex;
@@ -140,7 +140,7 @@
 					background: #000;
 					box-shadow: 12px 12px 2px 1px #ddd;
 					position: relative;
-					top: 100px;
+					top: 30px;
 					transition: 1s;
 					&:hover{
 						transform: scale(1.2);

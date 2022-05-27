@@ -1,7 +1,7 @@
 import { Route, Switch } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { setYoutube, setMembers, setFlickr } from './redux/action';
+import { setYoutube, setFlickr } from './redux/action';
 import axios from 'axios';
 
 //common
@@ -36,13 +36,6 @@ function App() {
 		});
 	};
 
-	const fetchMembers = async () => {
-		const url = path + '/DB/member.json';
-		await axios.get(url).then((json) => {
-			dispatch(setMembers(json.data.members));
-		});
-	};
-
 	const fetchFlickr = async () => {
 		const key = '2b04d14206c0e0aa5938cef71f040bfc';
 		const method_interest = 'flickr.favorites.getList';
@@ -58,7 +51,6 @@ function App() {
 
 	useEffect(() => {
 		fetchYoutube();
-		fetchMembers();
 		fetchFlickr();
 	}, []);
 	return (
