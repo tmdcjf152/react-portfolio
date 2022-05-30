@@ -3,8 +3,6 @@
 	height: 100vh;
 	padding: 3vw;
 	color: #000;
-	text-shadow: 2px 2px 7px rgb(255, 255, 255);
-	border: 1px solid #000;
 	h1 {
 		text-align: center;
 		font: bold 80px/1 'Playfair Display SC';
@@ -23,7 +21,6 @@
 			.imgBox {
 				width: 100%;
 				height: 50%;
-				background: #ddd;
 				img {
 					width: 100%;
 					height: 100%;
@@ -84,7 +81,7 @@
 					height: 25%;
 					transition: 1s;
 					cursor: pointer;
-					
+
 					img {
 						width: 100%;
 						height: 100%;
@@ -103,68 +100,54 @@
 	}
 }
 
-
-
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 	#vids {
-		padding: 2vw;
-		border: none
 		h1 {
-			text-align: center;
-			font: bold 65px/1 'Playfair Display SC';
-	
-			margin-bottom: 30px;
+			margin-bottom: 50px;
 		}
 		.vidBox {
 			width: 100%;
 			height: 100%;
 			display: flex;
-	
+			flex-wrap: wrap;
 			.box1 {
+				.imgBox {
+					img {
+						padding: 0px;
+					}
+				}
 				.accTextBox {
-					padding: 10px;
 					h2 {
 						font: bold 30px/1 'Playfair Display SC';
 					}
 					a {
-						width: 200px;
-						height: 30px;
-						font: bold 20px/1 'Arapey';
+						width: 250px;
+						height: 40px;
+						margin: 0 auto;
+						margin-top: 70px;
+						font: bold 30px/1 'Arapey';
 					}
 				}
 			}
 			.box2 {
-				width: 50%;
-				height: 90%;
-				display: flex;
-				justify-content: space-between;
-	
+				height: 80%;
 				ul {
-					width: 100%;
-					height: 100%;
 					&:hover li:nth-of-type(1) {
-						transform: translateX(0%);
+						transform: none;
 					}
 					&:hover li:nth-of-type(2) {
-						transform: translateX(0%);
+						transform: none;
 					}
 					&:hover li:nth-of-type(3) {
-						transform: translateX(0%);
+						transform: none;
 					}
 					&:hover li:nth-of-type(4) {
-						transform: translateX(0%);
+						transform: none;
 					}
 					li {
-						width: 100%;
-						height: 20%;
-						transition: 1s;
-						cursor: pointer;
-						
-						img {
-							width: 100%;
-							height: 100%;
-						}
+						width: 70%;
+						margin: 0 auto;
+						margin-bottom: 10px;
 						&:nth-of-type(2) {
 							position: relative;
 							left: 0%;
@@ -179,50 +162,53 @@
 		}
 	}
 }
-@media screen and (max-width: 425px) {
-	#vids {
 
+@media screen and (max-width: 768px) {
+	#vids {
 		h1 {
-			font: bold 45px/1 'Playfair Display SC';
+			font-size: 60px;
 		}
 		.vidBox {
 			.box1 {
-				.imgBox{
-					display: none;
-				}
 				.accTextBox {
-					padding: 5px;
 					h2 {
 						font: bold 30px/1 'Playfair Display SC';
-						margin-top: 150px;
 					}
 					a {
-						width: 150px;
+						width: 250px;
 						height: 40px;
-						font: bold 20px/1 'Arapey';
+						margin: 0 auto;
+						margin-top: 70px;
+						font: bold 30px/1 'Arapey';
 					}
 				}
 			}
 			.box2 {
-				width: 50%;
-				height: 90%;
-				display: flex;
-				justify-content: space-between;
-	
+				height: 80%;
 				ul {
-					width: 100%;
-					height: 100%;
+					&:hover li:nth-of-type(1) {
+						transform: none;
+					}
+					&:hover li:nth-of-type(2) {
+						transform: none;
+					}
+					&:hover li:nth-of-type(3) {
+						transform: none;
+					}
+					&:hover li:nth-of-type(4) {
+						transform: none;
+					}
 					li {
-
-						img {
-							width: 100%;
-							height: 100%;
-						}
+						width: 70%;
+						margin: 0 auto;
+						margin-bottom: 10px;
 						&:nth-of-type(2) {
-
+							position: relative;
+							left: 0%;
 						}
 						&:nth-of-type(4) {
-
+							position: relative;
+							left: 0%;
 						}
 					}
 				}
@@ -230,4 +216,69 @@
 		}
 	}
 }
-@media screen and (max-width: 375px) {}
+
+@media screen and (max-width: 425px) {
+	#vids {
+		h1 {
+			font: bold 40px/1 'Playfair Display SC';
+		}
+
+		.vidBox {
+			.box1 {
+				width: 100%;
+				height: 50%;
+				.imgBox {
+					height: 200px;
+					margin-bottom: 20px;
+					img {
+						padding: 0px;
+					}
+				}
+				.accTextBox {
+					h2 {
+						font: bold 25px/1 'Playfair Display SC';
+					}
+					a {
+						width: 150px;
+						height: 30px;
+						margin-top: 30px;
+						font: bold 20px/1 'Arapey';
+					}
+				}
+			}
+			.box2 {
+				width: 100%;
+				height: 50%;
+
+				ul {
+					width: 100%;
+					height: 100%;
+					padding: 0px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-wrap: wrap;
+					li {
+						width: 50%;
+						height: 35%;
+						transition: 1s;
+						cursor: pointer;
+						margin: 0px;
+						img {
+							width: 100%;
+							height: 100%;
+						}
+						&:nth-of-type(2) {
+							position: relative;
+							left: 0%;
+						}
+						&:nth-of-type(4) {
+							position: relative;
+							left: 0%;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -3,8 +3,6 @@
 	height: 100vh;
 	padding: 50px;
 	color: #000;
-	text-shadow: 2px 2px 7px rgb(255, 255, 255);
-	border: 1px solid #000;
 	h1 {
 		font: bold 80px/1 'Playfair Display SC';
 		color: #000;
@@ -17,6 +15,8 @@
 		width: 100%;
 		height: 100%;
 		padding: 25px;
+		display: flex;
+		flex-wrap: wrap;
 		&::after {
 			content: '';
 			display: block;
@@ -55,11 +55,6 @@
 			span {
 				font: 25px/1 'Arapey';
 			}
-			img {
-				width: 600px;
-				height: 100%;
-				object-fit: cover;
-			}
 		}
 		.textBox2 {
 			width: 40%;
@@ -88,35 +83,38 @@
 
 @media screen and (max-width: 1024px) {
 	#news {
+		height: 100%;
+		padding: 0px;
+		h1 {
+			font: bold 60px/1 'Playfair Display SC';
+			margin-top: 50px;
+		}
 		#newsBox {
+			padding: 0px;
 			article {
-				img {
-					position: relative;
-					bottom: 30px;
-				}
+				width: 50%;
+				height: 100%;
 				h2 {
-					font: bold 20px/1 'Arapey';
-					margin-bottom: 20px;
+					font: bold 30px/1 'Arapey';
+					margin-bottom: 10px;
 				}
 				span {
 					font: 20px/1 'Arapey';
 				}
 			}
 			.textBox1 {
+				width: 100%;
+				height: 40%;
 				h2 {
-					font: bold 30px/1 'Playfair Display SC';
-					margin-bottom: 20px;
+					font: bold 35px/1 'Playfair Display SC';
 				}
 				span {
 					font: 20px/1 'Arapey';
 				}
-				img {
-					transform: scale(1.4);
-				}
 			}
 			.textBox2 {
 				a {
-					font: bold 30px/1 'Playfair Display SC';
+					height: 200px;
 				}
 			}
 		}
@@ -125,64 +123,41 @@
 
 @media screen and (max-width: 768px) {
 	#news {
-		padding: 10px;
-		border: none;
+		height: 100%;
+		padding: 0px;
 		h1 {
 			font: bold 60px/1 'Playfair Display SC';
+			margin-top: 50px;
 		}
 		#newsBox {
-			padding: 5px;
+			padding: 0px;
 			article {
 				width: 50%;
-				padding: 30px;
-				img {
-					bottom: 50px;
-				}
+				height: 100%;
 				h2 {
-					font: bold 25px/1 'Arapey';
-					margin-bottom: 5px;
-				}
-				span {
-					font: 15px/1 'Arapey';
-				}
-			}
-			.textBox1 {
-				width: 60%;
-				height: 40%;
-				h2 {
-					font: bold 25px/1 'Playfair Display SC';
-	
-					margin-bottom: 20px;
+					font: bold 30px/1 'Arapey';
+					margin-bottom: 10px;
 				}
 				span {
 					font: 20px/1 'Arapey';
 				}
-				img {
-					width: 600px;
-					height: 100%;
-					object-fit: cover;
+			}
+			.textBox1 {
+				width: 100%;
+				height: 100%;
+				h2 {
+					font: bold 35px/1 'Playfair Display SC';
+				}
+				span {
+					font: 20px/1 'Arapey';
 				}
 			}
 			.textBox2 {
-				width: 40%;
-				height: 40%;
+				width: 50%;
+				height: 100%;
 				a {
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					text-align: center;
-					width: 100%;
-					height: 100%;
-					font: bold 30px/1 'Playfair Display SC';
-					color: #000;
-					text-shadow: 2px 2px 7px #fff;
-					border: 2px solid;
-					transition: 1s;
-	
-					&:hover {
-						text-decoration: underline;
-						transform: scale(1.1);
-					}
+					height: 150px;
+					font-size: 20px;
 				}
 			}
 		}
@@ -191,134 +166,45 @@
 
 @media screen and (max-width: 425px) {
 	#news {
-
-		margin-top: 50px;
-		padding: 0px;
-border: none;
 		h1 {
 			font: bold 40px/1 'Playfair Display SC';
-		
 		}
 		#newsBox {
-
 			article {
 				width: 100%;
-				height: 30%;
 				padding: 10px;
-				img {
-					width: 100%;
-					height: 100%;
-					object-fit: contain;
-					transition: 1s;
-					&:hover {
-						transform: scale(1.2);
-					}
-				}
+				margin-top: 20px;
 				h2 {
-					font: bold 17px/1 'Arapey';
-					margin-bottom: 20px;
-				}
-				span {
-					font: 13px/1 'Arapey';
-				}
-			}
-			.textBox1 {
-				width: 60%;
-				height: 40%;
-				h2 {
-					font: bold 20px/1 'Playfair Display SC';
-					margin-top: 30px;
+					font: bold 25px/1 'Arapey';
+					margin-bottom: 10px;
 				}
 				span {
 					font: 15px/1 'Arapey';
 				}
-				img {
-					width: 600px;
-					height: 100%;
-					object-fit: cover;
-				}
 			}
-			.textBox2 {
-				width: 40%;
-				height: 40%;
-				a {
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					text-align: center;
-					width: 100%;
-					height: 100%;
-					font: bold 30px/1 'Playfair Display SC';
-					color: #000;
-					text-shadow: 2px 2px 7px #fff;
-					border: 2px solid;
-					transition: 1s;
-	
-					&:hover {
-						text-decoration: underline;
-						transform: scale(1.1);
-					}
-				}
-			}
-		}
-	}
-}
-
-@media screen and (max-width: 375px) {
-	#news {
-		h1 {
-			font: bold 35px/1 'Playfair Display SC';
-		}
-		#newsBox {
-			article {
+			.textBox1 {
 				width: 100%;
-				h2 {
-					font: bold 20px/1 'Arapey';
-					margin-bottom: 20px;
-				}
-				span {
-					font: 13px/1 'Arapey';
-				}
-			}
-			.textBox1 {
-				width: 60%;
 				height: 40%;
+				padding-top: 30px;
+				padding-left: 30px;
 				h2 {
-					font: bold 20px/1 'Playfair Display SC';
-					margin-top: 30px;
+					font: bold 25px/1 'Playfair Display SC';
 				}
 				span {
 					font: 15px/1 'Arapey';
 				}
-				img {
-					width: 600px;
-					height: 100%;
-					object-fit: cover;
-				}
 			}
 			.textBox2 {
-				width: 40%;
-				height: 40%;
+				width: 100%;
+				height: 100%;
+				padding: 0px;
 				a {
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					text-align: center;
-					width: 100%;
+					width: 70%;
 					height: 100%;
-					font: bold 30px/1 'Playfair Display SC';
-					color: #000;
-					text-shadow: 2px 2px 7px #fff;
-					border: 2px solid;
-					transition: 1s;
-	
-					&:hover {
-						text-decoration: underline;
-						transform: scale(1.1);
-					}
+					margin: 0 auto;
+					font-size: 15px;
 				}
 			}
 		}
 	}
 }
-

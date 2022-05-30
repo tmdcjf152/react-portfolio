@@ -25,7 +25,7 @@ function News() {
 					<article className='textBox3'>
 						<h2>1. COUNTRYMAN</h2>
 						<span>
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, cupiditate?
+						￦ 40,300,000 ~
 						</span>
 						<img src={countryMan} alt="" />
 					</article>
@@ -34,7 +34,7 @@ function News() {
 
 						<h2>2. CLUBMAN</h2>
 						<span>
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, cupiditate?
+						￦ 37,300,000 ~
 						</span>
 						<img src={clubMan} alt="" />
 					</article>
@@ -42,7 +42,7 @@ function News() {
 					<article className='textBox5'>
 						<h2>3. MINI 5-DOOR</h2>
 						<span>
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, cupiditate?
+						￦ 34,100,000 ~
 						</span>
 						<img src={mini5Door} alt="" />
 					</article>

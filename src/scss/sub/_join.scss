@@ -1,188 +1,355 @@
 .Join {
 	color: #000;
-
-	.stepBox {
-		.campaignTitle {
-			font: bold 70px/1 'Arapey';
-			color: #000;
-			margin-top: 50px;
-			text-transform: uppercase;
-		}
-		.stepTitle {
-			font: 25px/1.2 'Arapey';
-			margin: 20px 0px;
-		}
-		.selectCar {
-			font: 70px/1 'Arapey';
-			margin: 50px 0px;
-			text-decoration: underline;
-		}
-	}
-	.carCategory {
-		margin: 100px 0px;
-		&::after {
-			content: '';
-			display: block;
-			clear: both;
-		}
-		li {
-			width: 250px;
-			height: 120px;
-			margin-left: 20px;
-			margin-bottom: 20px;
-			padding: 20px;
-			float: left;
-			background: #ccc;
-			font: bold 20px/1 'Arapey';
-			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-			cursor: pointer;
-			.categoryNameMINI {
-				position: relative;
-				top: 40px;
-				font-size: 30px;
+	.inner {
+		margin-bottom: 200px;
+		.stepBox {
+			.campaignTitle {
+				font: bold 70px/1 'Arapey';
+				color: #000;
+				margin-top: 50px;
+				text-transform: uppercase;
 			}
-			&:hover {
-				&:nth-of-type(1) {
-					background: rgb(24, 21, 160);
-				}
-				&:nth-of-type(2) {
-					background: rgb(163, 14, 14);
-				}
-				&:nth-of-type(3) {
-					background: rgb(12, 78, 37);
-				}
-				&:nth-of-type(4) {
-					background: rgb(134, 114, 76);
-				}
-				&:nth-of-type(5) {
-					background: rgb(206, 255, 71);
-				}
-				&:nth-of-type(6) {
-					background: #ff41b6;
-				}
-				&:nth-of-type(7) {
-					background: rgb(88, 230, 255);
-				}
+			.stepTitle {
+				font: 25px/1.2 'Arapey';
+				margin: 20px 0px;
 			}
-			.categoryName {
-				position: relative;
-				top: 40px;
+			.selectCar {
+				font: 70px/1 'Arapey';
+				margin: 50px 0px;
+				text-decoration: underline;
 			}
 		}
-	}
-	fieldset {
-		border: none;
-		legend {
-			font: bold 70px/1 'Arapey';
-			text-decoration: underline;
-			margin-bottom: 40px;
-		}
-		tbody {
-			width: 100%;
-			border: none;
-
-			tr {
-				th {
-					display: block;
-					text-align: center;
-					width: 100%;
-					padding-top: 30px;
-					font: bold 30px/1 'Arapey';
-					text-align: left;
-				}
-				td {
-					display: block;
-					width: 100%;
-					padding: 10px;
-
-					input[type='text'] {
-						width: 300px;
-						height: 40px;
-						border: none;
-						border: 1px solid #ddd;
-						margin-right: 10px;
-						text-align: center;
-						cursor: pointer;
-					}
-					input[type='tel'] {
-						width: 300px;
-						height: 40px;
-						border: none;
-						border: 1px solid #ddd;
-						margin-right: 10px;
-						text-align: center;
-						cursor: pointer;
-					}
-					select {
-						width: 300px;
-						height: 40px;
-						border: none;
-						border: 1px solid #ddd;
-						margin-right: 10px;
-						text-align: center;
-						cursor: pointer;
-					}
-				}
-			}
+		.carCategory {
+			margin: 100px 0px;
 			&::after {
 				content: '';
 				display: block;
 				clear: both;
 			}
-			.btn {
+			li {
+				width: 250px;
+				height: 120px;
+				margin-left: 20px;
+				margin-bottom: 20px;
+				padding: 20px;
 				float: left;
-				position: absolute;
-				left: 30%;
-
-				input[type='reset'] {
-					width: 200px;
-					height: 40px;
-					border: none;
-					border: 1px solid #ddd;
-					margin-right: 30px;
-					text-align: center;
-					cursor: pointer;
-					font: bold 20px/1 'Arapey';
+				background: #ccc;
+				font: bold 20px/1 'Arapey';
+				box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+				cursor: pointer;
+				.categoryNameMINI {
+					position: relative;
+					top: 40px;
+					font-size: 30px;
 				}
-				input[type='submit'] {
-					width: 200px;
-					height: 40px;
-					border: none;
-					border: 1px solid #ddd;
-					text-align: center;
-					cursor: pointer;
-					font: bold 20px/1 'Arapey';
+				&:hover {
+					&:nth-of-type(1) {
+						background: rgb(24, 21, 160);
+					}
+					&:nth-of-type(2) {
+						background: rgb(163, 14, 14);
+					}
+					&:nth-of-type(3) {
+						background: rgb(12, 78, 37);
+					}
+					&:nth-of-type(4) {
+						background: rgb(134, 114, 76);
+					}
+					&:nth-of-type(5) {
+						background: rgb(206, 255, 71);
+					}
+					&:nth-of-type(6) {
+						background: #ff41b6;
+					}
+					&:nth-of-type(7) {
+						background: rgb(88, 230, 255);
+					}
+				}
+				.categoryName {
+					position: relative;
+					top: 40px;
 				}
 			}
 		}
-		.agree {
-			width: 600px;
-			padding: 30px;
-			border: 1px solid #ddd;
-			position: absolute;
-			left: 50%;
-			bottom: 100px;
-			text-align: center;
-			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-			.fieldGroup {
-				font: bold 50px/1 'Arapey';
+		fieldset {
+			border: none;
+			legend {
+				font: bold 70px/1 'Arapey';
+				text-decoration: underline;
 				margin-bottom: 40px;
 			}
-			.fieldGroupDescription {
+			.showBox {
 				width: 100%;
-				font: 20px/1.5 'Arapey';
-				margin-bottom: 40px;
-			}
-			.agreement {
-				text-align: left;
-				.th {
-					margin-bottom: 20px;
-					span {
-						font: bold 19px/1 'Arapey';
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				.tableBox {
+					width: 50%;
+					tbody {
+						width: 100%;
+						border: none;
+
+						tr {
+							th {
+								display: block;
+								text-align: center;
+								width: 100%;
+								padding-top: 30px;
+								font: bold 30px/1 'Arapey';
+								text-align: left;
+							}
+							td {
+								display: block;
+								width: 100%;
+								padding: 10px;
+
+								input[type='text'] {
+									width: 300px;
+									height: 40px;
+									border: none;
+									border: 1px solid #ddd;
+									margin-right: 10px;
+									text-align: center;
+									cursor: pointer;
+								}
+								input[type='tel'] {
+									width: 300px;
+									height: 40px;
+									border: none;
+									border: 1px solid #ddd;
+									margin-right: 10px;
+									text-align: center;
+									cursor: pointer;
+								}
+								select {
+									width: 300px;
+									height: 40px;
+									border: none;
+									border: 1px solid #ddd;
+									margin-right: 10px;
+									text-align: center;
+									cursor: pointer;
+								}
+							}
+						}
+						&::after {
+							content: '';
+							display: block;
+							clear: both;
+						}
+						.btn {
+							float: left;
+							position: absolute;
+							left: 30%;
+
+							input[type='reset'] {
+								width: 200px;
+								height: 40px;
+								border: none;
+								border: 1px solid #ddd;
+								margin-right: 30px;
+								text-align: center;
+								cursor: pointer;
+								font: bold 20px/1 'Arapey';
+							}
+							input[type='submit'] {
+								width: 200px;
+								height: 40px;
+								border: none;
+								border: 1px solid #ddd;
+								text-align: center;
+								cursor: pointer;
+								font: bold 20px/1 'Arapey';
+							}
+						}
 					}
-					input[type='checkbox'] {
-						margin-right: 10px;
-						cursor: pointer;
+				}
+				.agree {
+					width: 50%;
+					padding: 30px;
+					border: 1px solid #ddd;
+					text-align: center;
+					box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+					.fieldGroup {
+						font: bold 50px/1 'Arapey';
+						margin-bottom: 40px;
+					}
+					.fieldGroupDescription {
+						width: 100%;
+						font: 20px/1.5 'Arapey';
+						margin-bottom: 40px;
+					}
+					.agreement {
+						text-align: left;
+						.th {
+							margin-bottom: 20px;
+							span {
+								font: bold 19px/1 'Arapey';
+							}
+							input[type='checkbox'] {
+								margin-right: 10px;
+								cursor: pointer;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
+	.Join {
+		.inner {
+		
+
+
+			fieldset {
+
+
+				.showBox {
+	
+					.tableBox {
+	
+						tbody {
+	
+
+		
+							.btn {
+								float: left;
+								position: absolute;
+								bottom: -5%;
+								left: 20%;
+	
+								input[type='reset'] {
+									width: 200px;
+									height: 40px;
+									border: none;
+									border: 1px solid #ddd;
+									margin-right: 30px;
+									text-align: center;
+									cursor: pointer;
+									font: bold 20px/1 'Arapey';
+								}
+								input[type='submit'] {
+									width: 200px;
+									height: 40px;
+									border: none;
+									border: 1px solid #ddd;
+									text-align: center;
+									cursor: pointer;
+									font: bold 20px/1 'Arapey';
+								}
+							}
+						}
+					}
+					.agree {
+						width: 50%;
+						padding: 30px;
+						border: 1px solid #ddd;
+						text-align: center;
+						box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+						.fieldGroup {
+							font: bold 50px/1 'Arapey';
+							margin-bottom: 40px;
+						}
+						.fieldGroupDescription {
+							width: 100%;
+							font: 20px/1.5 'Arapey';
+							margin-bottom: 40px;
+						}
+						.agreement {
+							text-align: left;
+							.th {
+								margin-bottom: 20px;
+								span {
+									font: bold 19px/1 'Arapey';
+								}
+								input[type='checkbox'] {
+									margin-right: 10px;
+									cursor: pointer;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 425px) {
+		.Join {
+		.inner {
+		
+
+
+			fieldset {
+
+
+				.showBox {
+	
+					.tableBox {
+	
+						tbody {
+							.btn {
+								float: left;
+								position: absolute;
+								bottom: -5%;
+								left: 20%;
+								input[type='reset'] {
+									width: 200px;
+									height: 40px;
+									border: none;
+									border: 1px solid #ddd;
+									margin-right: 30px;
+									text-align: center;
+									cursor: pointer;
+									font: bold 20px/1 'Arapey';
+								}
+								input[type='submit'] {
+									width: 200px;
+									height: 40px;
+									border: none;
+									border: 1px solid #ddd;
+									text-align: center;
+									cursor: pointer;
+									font: bold 20px/1 'Arapey';
+								}
+							}
+						}
+					}
+					.agree {
+						width: 100%;
+						padding: 30px;
+						border: 1px solid #ddd;
+						text-align: center;
+						box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+						.fieldGroup {
+							font: bold 50px/1 'Arapey';
+							margin-bottom: 40px;
+						}
+						.fieldGroupDescription {
+							width: 100%;
+							font: 20px/1.5 'Arapey';
+							margin-bottom: 40px;
+						}
+						.agreement {
+							text-align: left;
+							.th {
+								margin-bottom: 20px;
+								span {
+									font: bold 19px/1 'Arapey';
+								}
+								input[type='checkbox'] {
+									margin-right: 10px;
+									cursor: pointer;
+								}
+							}
+						}
 					}
 				}
 			}

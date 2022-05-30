@@ -81,12 +81,15 @@ figure {
 	}
 }
 
-@media screen and (max-width: 1179px) {
+@media screen and (max-width: 1024px) {
 	figure {
+
+
 		.swiper-slide {
 			.pricepic {
 				h1 {
-					font: bold 70px/1 'Arapey';
+					width: 100%;
+					font:60px/1 'Playfair Display SC';
 				}
 				.price {
 					font: 35px/1.4 'Arapey';
@@ -99,46 +102,24 @@ figure {
 	}
 }
 
-@media screen and (max-width: 1024px) {
-}
-
 @media screen and (max-width: 768px) {
 	figure {
-		.swiper-slide {
-			.pricepic {
-				left: -40px;
-				h1 {
-					font: bold 50px/1 'Arapey';
-				}
-				.price {
-					font: 30px/1.4 'Arapey';
-				}
-				.carOption {
-					font: 20px/1.4 'Arapey';
-				}
-			}
-		}
-	}
-}
 
-@media screen and (max-width: 600px) {
-	figure {
+
 		.swiper-slide {
 			.pricepic {
 				h1 {
-					width: 500px;
-					padding-left: 150px;
-					font: bold 30px/1 'Arapey';
+					width: 100%;
+					font:45px/1 'Playfair Display SC';
+					right: 220px;
 				}
 				.price {
-					bottom: 240px;
-					left: 20px;
-					font: 20px/1.4 'Arapey';
+					font: 35px/1.4 'Arapey';
+					left: 40px;
 				}
 				.carOption {
-					bottom: 220px;
-					left: 20px;
-					font: 17px/1.4 'Arapey';
+					font: 20px/1.4 'Arapey';
+					left: 40px;
 				}
 			}
 		}
@@ -146,45 +127,24 @@ figure {
 }
 
 @media screen and (max-width: 425px) {
-	main {
-		width: 100%;
-		overflow: hidden;
-		figure {
-			width: 100%;
-			height: 500px;
-			.swiper {
-				width: 100%;
-				height: 500px;
-			}
-			.swiper-slide {
-				.pricepic {
-					top: 65%;
-					left:0px;
-					h1 {
-						width: 900px;
-						font: 40px/1 'Arapey';
-					}
-					.price {
-						left: 25px;
-						font: 25px/1.4 'Arapey';
-					}
-					.carOption {
-						left: 25px;
-						font: 15px/1.4 'Arapey';
-					}
+	figure {
+		.swiper-slide {
+			.pricepic {
+				h1 {
+					width: 600px;
+					font:28px/1 'Playfair Display SC';
+					right: 230px;
+				}
+				.price {
+					font: 20px/1.4 'Arapey';
+					left: 30px;
+				}
+				.carOption {
+					font: 20px/1.4 'Arapey';
+					left: 30px;
 				}
 			}
 		}
 	}
 }
 
-@media screen and (max-width: 375px) {
-	main {
-		width: 100%;
-		overflow: hidden;
-		figure {
-			width: 100%;
-			height: 400px;
-		}
-	}
-}

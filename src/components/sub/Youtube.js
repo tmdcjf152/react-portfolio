@@ -64,22 +64,24 @@ function Youtube() {
 				</div>
 
 
-
-				{vidData.map((vid, idx) => {
-		
-					return (
-						<article
-							key={idx}
-							onClick={() => {
-								pop.current.open();
-								setIndex(idx);
-							}}>
-							<div className='pic'>
-								<img src={vid.snippet.thumbnails.standard.url} />
-							</div>
-						</article>
-					);
-				})}
+<div className='videoBox'>
+	
+					{vidData.map((vid, idx) => {
+			
+						return (
+							<article
+								key={idx}
+								onClick={() => {
+									pop.current.open();
+									setIndex(idx);
+								}}>
+								<div className='pic'>
+									<img src={vid.snippet.thumbnails.standard.url} />
+								</div>
+							</article>
+						);
+					})}
+</div>
 			</Layout>
 			<Popup ref={pop}>
 				{vidData.length !== 0 && (

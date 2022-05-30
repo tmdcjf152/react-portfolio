@@ -5,7 +5,6 @@
 	overflow: hidden;
 	color: #fff;
 	text-shadow: 2px 2px 7px #000;
-	border: 1px solid #000;
 	h1 {
 		font: bold 100px/1 'Playfair Display SC';
 	}
@@ -91,24 +90,64 @@
 
 @media screen and (max-width: 1024px) {
 	#pics {
-		h1 {
-			font: bold 90px/1 'Playfair Display SC';
-		}
-		.picBox {
-			.Box1 {
+		height: 100%;
+		overflow: hidden;
+		color: #fff;
+		text-shadow: 2px 2px 7px #000;
 
+		.picBox {
+			flex-wrap: wrap;
+			.Box1 {
+				width: 100%;
 				.picTitle {
-					font: bold 35px/1 'Arapey';
+					color: #fff;
+					text-shadow: 2px 2px 4px #000;
 				}
 				.picText {
-					font: 20px/1 'Arapey';
+					font: bold 20px/1 'Arapey';
+					color: #fff;
+					text-shadow: 2px 2px 4px #000;
+					margin-bottom: 20px;
 				}
 			}
-		
+			.Box2 {
+				width: 100%;
+			}
+			.Box3 {
+				width: 33%;
+				padding: 10px;
 
+				li {
+					width: 100%;
+					height: 100%;
+					padding: 10px;
+					img {
+						width: 100%;
+						height: 100%;
+						transition: 0.5s;
+						&:hover {
+							transform: scale(1.1);
+						}
+					}
+				}
+			}
 			a {
-			position: relative;
-			top: 20px;
+				display: block;
+				width: 200px;
+				height: 30px;
+				margin: 0 auto;
+				margin-bottom: 20px;
+				font: bold 25px/1 'Arapey';
+				color: #fff;
+				background: #000;
+				box-shadow: 12px 12px 2px 1px #aaa;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				transition: 1s;
+				&:hover {
+					transform: scale(1.1);
+				}
 			}
 		}
 	}
@@ -117,79 +156,58 @@
 
 @media screen and (max-width: 768px) {
 	#pics {
-		border: none;
-		padding: 0vw;
 		h1 {
-			font: bold 70px/1 'Playfair Display SC';
+			font: bold 70px/1 'Playfair Display SC'; 
 		}
 		.picBox {
-			padding: 10px;
 			.Box1 {
-				width: 40%;
 				.picTitle {
-					font: bold 30px/1 'Arapey';
+					font-size: 30px;
 				}
 				.picText {
-					font: bold 20px/1 'Arapey';
-				}
-				.textBox1 {
-					width: 100%;
-					height: 30%;
-				}
-				.textBox2 {
-					width: 100%;
-					height: 30%;
-				}
-				.textBox3 {
-					width: 100%;
-					height: 20%;
+					font: bold 18px/1 'Arapey';
 				}
 			}
-			.Box2 {
-				width: 60%;
-				height: 100%;
-			}
-
 		}
 	}
 }
 
 @media screen and (max-width: 425px) {
 	#pics {
-		border: none;
-		padding: 0vw;
-		h1 {
-			font: bold 65px/1 'Playfair Display SC';
+		padding: 0px;
+		h1{
+			position: relative;
+			right: 30%;
 		}
 		.picBox {
-			padding: 10px;
-			.Box1 {
-				width: 100%;
-				height: 50%;
-				.picTitle {
-					font: bold 20px/1 'Arapey';
-				}
-				.picText {
-					font: bold 15px/1 'Arapey';
-				}
-				.textBox1 {
-					width: 100%;
-					height: 40%;
-				}
-				.textBox2 {
-					width: 100%;
-					height: 40%;
-				}
-				.textBox3 {
-					width: 100%;
-					height: 40%;
-				}
-			}
 			.Box2 {
 				width: 100%;
-				height: 50%;
 			}
-
+			.Box3 {
+				width: 50%;
+				padding: 0px;
+				li {
+					padding: 5px;
+				}
+			}
+			a {
+				display: block;
+				width: 150px;
+				height: 20px;
+				margin: 0 auto;
+				margin-bottom: 20px;
+				font: bold 20px/1 'Arapey';
+				color: #fff;
+				background: #000;
+				box-shadow: 6px 6px 2px 1px #aaa;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				transition: 1s;
+				&:hover {
+					transform: scale(1.1);
+				}
+			}
 		}
 	}
 }

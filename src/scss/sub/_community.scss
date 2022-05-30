@@ -35,14 +35,18 @@
 				border-bottom: 1px solid #000;
 			}
 			textarea {
-				width: 500px;
+				width: 80%;
 				resize: none;
 				text-align: center;
 			}
 			button {
-				width: 250px;
+				width: 150px;
 				height: 30px;
 				margin-top: 20px;
+				margin-right: 20px;
+				&:nth-of-type(2){
+					margin-right: 0px;
+				}
 			}
 			span {
 				display: block;
@@ -82,6 +86,7 @@
 				}
 				.btns {
 					width: 100%;
+
 					button {
 						width: 100px;
 						height: 20px;
@@ -90,11 +95,205 @@
 						color: #fff;
 						background: #000;
 						box-shadow: 8px 8px 2px 1px #ddd;
-						position: relative;
-						left: 300px;
 					}
 				}
 			}
 		}
+	}
+}
+
+
+@media screen and (max-width: 1024px) {
+	.Community {
+	
+		.Box {
+			flex-wrap: wrap;
+			.inputBox {
+				textarea {
+					width: 80%;
+				}
+				button {
+					width: 100px;
+					height: 30px;
+					margin-top: 20px;
+					margin-right: 20px;
+					&:nth-of-type(2){
+						margin-right: 0px;
+					}
+				}
+				span {
+					font: 15px/1 'Arapey';
+				}
+			}
+	
+			.showBox {
+
+				.showBoxTitle {
+					margin-bottom: 10px;
+				}
+				article {
+					p {
+						padding: 10px;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	.Community {
+		.communityBanner {
+			.bannerTitle {
+				font: bold 50px/1 'Arapey';
+			}
+			.bannerText {
+				font: 35px/1 'Arapey';
+			}
+		}
+		.Box {
+			display: flex;
+			flex-wrap: wrap;
+			.inputBox {
+				width: 100%;
+				h2 {
+					font: bold 30px/1 'Arapey';
+				}
+				button {
+					width: 100px;
+					height: 30px;
+					margin-top: 20px;
+					margin-right: 10px;
+					font: bold 15px/1 'Arapey';
+					&:nth-of-type(2){
+						margin-right: 0px;
+					}
+				}
+				span {
+					display: block;
+					width: 100%;
+					margin-top: 20px;
+					font: 15px/1 'Arapey';
+				}
+			}
+			.showBox {
+				width: 100%;
+				margin-top: 20px;
+				.showBoxTitle {
+					text-align: center;
+					font: bold 30px/1 'Arapey';
+	
+					margin-bottom: 30px;
+				}
+				article {
+					border-bottom: 2px solid #000;
+					margin-bottom: 10px;
+					padding: 20px;
+					h2 {
+						width: 100%;
+						color: #fff;
+						margin-bottom: 10px;
+						padding: 5px;
+						font-family: 'Arapey';
+						background: #000;
+						box-shadow: 8px 8px 2px 1px #ddd;
+					}
+					p {
+						font: 20px/1 'Arapey';
+						padding: 20px;
+					}
+					.btns {
+						width: 100%;
+	
+						button {
+							width: 100px;
+							height: 20px;
+							margin-right: 10px;
+							font: 15px/1 'Arapey';
+							color: #fff;
+							background: #000;
+							box-shadow: 8px 8px 2px 1px #ddd;
+						}
+					}
+				}
+			}
+	
+		}
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.Community {
+
+		.Box {
+			display: flex;
+			flex-wrap: wrap;
+			.inputBox {
+				width: 100%;
+				h2 {
+					font: bold 20px/1 'Arapey';
+				}
+				button {
+					width: 100px;
+					height: 30px;
+					margin-top: 20px;
+					margin-right: 10px;
+					font: bold 15px/1 'Arapey';
+					&:nth-of-type(2){
+						margin-right: 0px;
+					}
+				}
+				span {
+					display: block;
+					width: 100%;
+					margin-top: 20px;
+					font: 15px/1 'Arapey';
+				}
+			}
+			.showBox {
+				width: 100%;
+				margin-top: 20px;
+				.showBoxTitle {
+					text-align: center;
+					font: bold 30px/1 'Arapey';
+	
+					margin-bottom: 30px;
+				}
+				article {
+					border-bottom: 2px solid #000;
+					margin-bottom: 10px;
+					padding: 20px;
+					h2 {
+						width: 100%;
+						color: #fff;
+						margin-bottom: 10px;
+						padding: 5px;
+						font-family: 'Arapey';
+						background: #000;
+						box-shadow: 8px 8px 2px 1px #ddd;
+					}
+					p {
+						font: 20px/1 'Arapey';
+						padding: 20px;
+					}
+					.btns {
+						width: 100%;
+	
+						button {
+							width: 100px;
+							height: 20px;
+							margin-right: 10px;
+							font: 15px/1 'Arapey';
+							color: #fff;
+							background: #000;
+							box-shadow: 8px 8px 2px 1px #ddd;
+						}
+					}
+				}
+			}
+	
+		}
+		
 	}
 }

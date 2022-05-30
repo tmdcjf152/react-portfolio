@@ -1,100 +1,332 @@
 .Department {
 	color: #000;
-
-	.departmentBanner {
+	figure{
+		height: 100px
+	}
+	.inner {
 		width: 100%;
-		height: 200px;
-		border-bottom: 5px solid #000;
-		margin: 100px 0px;
-		.departmentTitle {
-			font: bold 70px/1 'Arapey';
-		}
-		.departmentText {
-			font: 40px/1 'Arapey';
-		}
-	}
-	.logostory {
-		overflow: hidden;
-		.pic {
-			width: 400px;
+		padding: 3vw;
+		margin-bottom: 100px;
+		.departmentBanner {
+			width: 100%;
 			height: 200px;
-			background-image: url(../../src_assets/logo.png);
-			background-size: contain;
-		}
-		.story {
-			position: relative;
-			bottom: 200px;
-			left: 450px;
-			.storyTitle {
-				font: bold 30px/1 'Arapey';
-				color: #000;
-				text-shadow: 2px 2px 7px rgb(255, 255, 255);
-				margin-bottom: 10px;
+			border-bottom: 5px solid #000;
+			margin: 100px 0px;
+			.departmentTitle {
+				font: bold 70px/1 'Arapey';
+				margin-top: 40px;
 			}
-			.storyText {
-				font: bold 18px/1.2 'Arapey';
-				color: #000;
-				text-shadow: 2px 2px 7px rgb(255, 255, 255);
-				margin-bottom: 40px;
+			.departmentText {
+				font: 40px/1 'Arapey';
+			}
+		}
+		.logostory {
+			display: flex;
+			overflow: hidden;
+			.pic {
+				width: 400px;
+				height: 200px;
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+			.story {
+				width: 50%;
+				position: relative;
+				.storyTitle {
+					font: bold 30px/1 'Arapey';
+					color: #000;
+					padding-left: 50px;
+					margin-bottom: 10px;
+				}
+				.storyText {
+					font: bold 18px/1.2 'Arapey';
+					color: #000;
+					padding-left: 50px;
+					margin-bottom: 20px;
+				}
+			}
+		}
+		.memberList {
+			overflow: hidden;
+			li {
+				width: 100%;
+				padding: 10px;
+				margin: 0 auto;
+				.listBox {
+					width: 100%;
+					height: 100%;
+					margin-top: 100px;
+					display: flex;
+					justify-content: space-between;
+					.department_pic {
+						width: 30%;
+						height: 100%;
+						transition: 1s;
+						margin: 0 auto;
+						&:hover {
+							transform: scale(1.2);
+						}
+						background: #000;
+						box-shadow: 12px 12px 2px 1px #ddd;
+						img {
+							width: 100%;
+							height: 100%;
+							padding: 10px;
+							border-radius: 10px;
+						}
+					}
+					.profile {
+						width: 30%;
+						padding-left: 100px;
+						h2 {
+							margin-top: 5px;
+							font: bold 50px/1 'Arapey';
+						}
+						p {
+							font: 30px/1.2 'Arapey';
+
+							margin-bottom: 20px;
+						}
+					}
+					#history {
+						width: 30%;
+						.since {
+							font: bold 50px/1 'Arapey';
+							background: #000;
+							color: #fff;
+						}
+						.history {
+							font: 25px/1 'Arapey';
+							color: #000;
+							margin-bottom: 20px;
+						}
+					}
+				}
 			}
 		}
 	}
-	.memberList {
-		overflow: hidden;
-		li {
-			width: 25%;
-			padding: 10px;
-			margin: 0 auto;
-			.inner {
+}
+
+@media screen and (max-width: 1024px) {
+	.Department {
+
+		color: #000;
+		.inner {
+			width: 100%;
+			margin-bottom: 100px;
+			.departmentBanner {
 				width: 100%;
-				height: 600px;
-				margin-top: 100px;
-				.department_pic {
-					width: 300px;
-					height: 400px;
-					transition: 1s;
-					&:hover {
-						transform: scale(1.2);
-					}
-					background: #000;
-					box-shadow: 12px 12px 2px 1px #ddd;
+				height: 200px;
+				border-bottom: 5px solid #000;
+				margin: 100px 0px;
+				.departmentTitle {
+					font: bold 70px/1 'Arapey';
+					margin-top: 40px;
+				}
+				.departmentText {
+					font: 40px/1 'Arapey';
+				}
+			}
+			.logostory {
+				display: flex;
+				overflow: hidden;
+				.pic {
+					width: 400px;
+					height: 200px;
 					img {
 						width: 100%;
 						height: 100%;
-						padding: 10px;
-						border-radius: 10px;
-						box-shadow: 12px 12px 2px 1px #ddd;
 					}
 				}
-				h2 {
-					margin-top: 5px;
-					font: bold 50px/1 'Arapey';
-
+				.story {
+					width: 50%;
 					position: relative;
-					left: -130%;
-					top: -400px;
-				}
-				p {
-					font: 30px/1.2 'Arapey';
-
-					margin-bottom: 20px;
-					position: relative;
-					left: -130%;
-					top: -390px;
-				}
-				#history {
-					position: relative;
-					right: -800px;
-					top: -200px;
-					.since {
-						font: bold 50px/1 'Arapey';
-						background: #000;
-						color: #fff;
-					}
-					.history {
-						font: 25px/1 'Arapey';
+					.storyTitle {
+						font: bold 30px/1 'Arapey';
 						color: #000;
-						text-shadow: 2px 2px 7px rgb(255, 255, 255);
+						padding-left: 50px;
+						margin-bottom: 10px;
+					}
+					.storyText {
+						font: bold 18px/1.2 'Arapey';
+						color: #000;
+						padding-left: 50px;
+						margin-bottom: 20px;
+					}
+				}
+			}
+			.memberList {
+				overflow: hidden;
+				li {
+					width: 100%;
+					padding: 10px;
+					margin: 0 auto;
+					.listBox {
+						width: 100%;
+						height: 100%;
+						margin-top: 100px;
+						display: flex;
+						justify-content: space-between;
+						.department_pic {
+							width: 30%;
+							height: 100%;
+							transition: 1s;
+							margin: 0 auto;
+							&:hover {
+								transform: scale(1.2);
+							}
+							background: #000;
+							box-shadow: 12px 12px 2px 1px #ddd;
+							img {
+								width: 100%;
+								height: 100%;
+								padding: 10px;
+								border-radius: 10px;
+							}
+						}
+						.profile {
+							width: 30%;
+							padding-left: 100px;
+							h2 {
+								margin-top: 5px;
+								font: bold 50px/1 'Arapey';
+							}
+							p {
+								font: 30px/1.2 'Arapey';
+
+								margin-bottom: 20px;
+							}
+						}
+						#history {
+							width: 30%;
+							.since {
+								font: bold 50px/1 'Arapey';
+								background: #000;
+								color: #fff;
+							}
+							.history {
+								font: 25px/1 'Arapey';
+								color: #000;
+								margin-bottom: 20px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.Department {
+		.inner {
+			.departmentBanner {
+				.departmentTitle {
+					font: bold 50px/1 'Arapey';
+				}
+				.departmentText {
+					font: 35px/1 'Arapey';
+				}
+			}
+			.logostory {
+				display: flex;
+				flex-wrap: wrap;
+				overflow: hidden;
+				.pic {
+					width: 100%;
+					height: 300px;
+					img {
+						width: 100%;
+						height: 100%;
+					}
+				}
+				.story {
+					width: 100%;
+					position: relative;
+					.storyTitle {
+						font: bold 25px/1 'Arapey';
+						color: #000;
+						padding-left: 50px;
+						margin-bottom: 10px;
+					}
+					.storyText {
+						font: bold 15px/1.2 'Arapey';
+						color: #000;
+						padding-left: 50px;
+						margin-bottom: 20px;
+					}
+				}
+			}
+			.memberList {
+				li {
+					.listBox {
+						.profile {
+							width: 30%;
+							padding-left: 60px;
+							h2 {
+								font: bold 40px/1 'Arapey';
+							}
+							p {
+								font: 25px/1.2 'Arapey';
+							}
+						}
+						#history {
+							width: 30%;
+							.since {
+								font: bold 40px/1 'Arapey';
+							}
+							.history {
+								font: 20px/1 'Arapey';
+								margin-bottom: 20px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.Department {
+
+		.inner {
+			padding: 20px;
+			.logostory {
+				.pic {
+					height: 200px;
+				}
+				.story {
+					.storyTitle {
+						font: bold 20px/1 'Arapey';
+					}
+					.storyText {
+						font: bold 12px/1.2 'Arapey';
+					}
+				}
+			}
+			.memberList {
+				li {
+					.listBox {
+						.profile {
+							padding-left: 0px;
+							h2 {
+								font: bold 30px/1 'Arapey';
+							}
+							p {
+								font: 20px/1.2 'Arapey';
+							}
+						}
+						#history {
+							.since {
+								font: bold 30px/1 'Arapey';
+							}
+							.history {
+								font: 15px/1 'Arapey';
+							}
+						}
 					}
 				}
 			}

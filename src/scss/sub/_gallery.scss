@@ -1,7 +1,6 @@
 .Gallery {
 	overflow: hidden;
-    color: #000;
-
+	color: #000;
 	.galleryBanner {
 		width: 100%;
 		height: 200px;
@@ -17,204 +16,203 @@
 	.carprice {
 		width: 100%;
 		height: 100%;
-		
+
 		.pricepic {
 			width: 100%;
 			height: 100%;
-			position: relative;
-			left: -31.5%;
-			top: -100px;
-			
+			display: flex;
 			img {
 				width: 100%;
 				height: 100%;
-				position: relative;
-				top: 100px;
-				left: 31.5%;
 			}
-			h1 {
-				width: 100%;
-				padding-left: 250px;
-				padding-top: 20px;
-				font: bold 90px/1 'Arapey';
-				color: #000;
-				position: absolute;
-				bottom: 75%;
-				left: 12%;
-			}
-			.price {
-				width: 100%;
-				padding-left: 250px;
-				font: 35px/1 'Arapey';
+			.priceTextBox {
+				width: 30%;
+				h1 {
+					width: 100%;
 
-				position: absolute;
-				bottom: 75%;
-				left: 12%;
-			}
-			.carOption {
-				width: 100%;
-				padding-left: 250px;
-				padding-top: 20px;
-				font: 25px/1.4 'Arapey';
+					font: bold 90px/1 'Arapey';
+					color: #000;
+				}
+				.price {
+					width: 100%;
+					font: 35px/1 'Arapey';
+				}
+				.carOption {
+					width: 100%;
 
-				position: absolute;
-				bottom: 60%;
-				left: 12%;
-
-				span {
-					margin-right: 20px;
+					padding-top: 20px;
+					font: 25px/1.4 'Arapey';
+					span {
+						margin-right: 20px;
+					}
 				}
 			}
 		}
-		h2 {
+		.advantageBox {
 			width: 100%;
-			font: bold 50px/1 'Arapey';
-
-			text-align: center;
-			position: relative;
-			bottom: 250px;
-			margin-bottom: 30px;
-			margin-top: 350px;
-		}
-		.forLife {
+			height: 400px;
+			h2 {
+				width: 100%;
+				font: bold 50px/1 'Arapey';
+				text-align: center;
+				margin-top: 200px;
+			}
 			width: 100%;
-			font: 25px/1 'Arapey';
-
-			text-align: center;
-			position: relative;
-			bottom: 250px;
-		}
-		&::after {
-			content: '';
-			display: block;
-			clear: both;
-		}
-		.carAdvantages {
-			width: 100px;
-			height: 100px;
-			span {
-				font: 50px/1 'Arapey';
-			}
-			.steat {
-				width: 100px;
-				height: 100px;
+			margin: 0 auto;
+			.forLife {
+				width: 100%;
+				font: 25px/1 'Arapey';
 				text-align: center;
-				padding: 20px;
-				position: relative;
-				bottom: 150px;
-				left: 200px;
 			}
-			.camera {
-				width: 100px;
-				height: 100px;
-				text-align: center;
-				padding: 20px;
-				position: relative;
-				bottom: 250px;
-				left: 400px;
+			&::after {
+				content: '';
+				display: block;
+				clear: both;
 			}
-			.performance {
-				width: 100px;
+			.carAdvantages {
+				width: 100%;
 				height: 100px;
-				text-align: center;
-				padding: 20px;
-				position: relative;
-				bottom: 350px;
-				left: 600px;
-			}
-			.zero {
-				width: 100px;
-				height: 100px;
-				text-align: center;
-				padding: 20px;
-				position: relative;
-				bottom: 450px;
-				left: 900px;
+				display: flex;
+				justify-content: space-around;
+				span {
+					font: 50px/1 'Arapey';
+				}
+				.steat {
+					width: 100px;
+					height: 100px;
+					text-align: center;
+					padding: 20px;
+				}
+				.camera {
+					width: 100px;
+					height: 100px;
+					text-align: center;
+					padding: 20px;
+				}
+				.performance {
+					width: 100px;
+					height: 100px;
+					text-align: center;
+					padding: 20px;
+				}
+				.zero {
+					width: 100px;
+					height: 100px;
+					text-align: center;
+					padding: 20px;
+				}
 			}
 		}
 	}
 	.carpic {
 		margin-bottom: 200px;
 		.pic1 {
-			width: 800px;
-			height: 400px;
-			background-image: url(../../src_assets/trunk1.png);
-			background-size: cover;
-			position: relative;
-			right: 25%;
-			h3 {
-				padding: 10px;
-				font: bold 40px/1 'Arapey';
-				background: #000;
-				box-shadow: 12px 12px 2px 1px #ddd;
-				position: relative;
-				top: 50px;
-				left: 100%;
-			}
-			p {
-				padding: 30px;
-				text-align: left;
-				font: 24px/1 'Arapey';
-
-				position: relative;
-				top: 60px;
-				left: 100%;
+			width: 100%;
+			height: 100%;
+			margin-bottom: 100px;
+			.trunk {
+				width: 100%;
+				height: 100%;
+				h3 {
+					padding: 10px;
+					font: bold 40px/1 'Arapey';
+					color: #fff;
+					background: #000;
+					box-shadow: 12px 12px 2px 1px #ddd;
+				}
+				p {
+					width: 70%;
+					padding: 0px;
+					text-align: left;
+					font: 24px/1 'Arapey';
+				}
 			}
 		}
 		.pic2 {
-			width: 800px;
-			height: 400px;
-			background-image: url(../../src_assets/trunk2.png);
-			background-size: cover;
-			position: relative;
-			left: 55%;
+			width: 100%;
+			height: 100%;
+			margin-bottom: 100px;
 			transform: scaleX(-1);
 			h3 {
 				padding: 10px;
 				text-align: right;
 				font: bold 40px/1 'Arapey';
+				color: #fff;
 				background: #000;
 				box-shadow: 12px 12px 2px 1px #ddd;
-				position: relative;
-				top: 50px;
-				left: 100%;
 				transform: scaleX(-1);
 			}
 			p {
+				width: 100%;
 				padding: 30px;
 				text-align: left;
 				font: 24px/1 'Arapey';
-
-				position: relative;
-				top: 60px;
-				left: 100%;
 				transform: scaleX(-1);
 			}
 		}
 		.pic3 {
-			width: 800px;
-			height: 400px;
-			background-image: url(../../src_assets/trunk3.png);
-			background-size: cover;
-			position: relative;
-			right: 25%;
+			width: 100%;
+			height: 100%;
+			margin-bottom: 100px;
 			h3 {
 				padding: 10px;
 				font: bold 40px/1 'Arapey';
+				color: #fff;
 				background: #000;
 				box-shadow: 12px 12px 2px 1px #ddd;
-				position: relative;
-				top: 50px;
-				left: 100%;
 			}
 			p {
 				padding: 30px;
 				text-align: left;
 				font: 24px/1 'Arapey';
+			}
+		}
+	}
 
-				position: relative;
-				top: 60px;
-				left: 100%;
+	.design {
+		.designTitle {
+			display: block;
+			width: 100%;
+			text-align: center;
+			font: bold 50px/1 'Arapey';
+		}
+		.designText {
+			display: block;
+			width: 100%;
+			text-align: center;
+			font: 24px/1 'Arapey';
+
+			margin: 20px;
+		}
+	}
+	ul {
+		&::after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+		li {
+			width: 33%;
+			float: left;
+			padding: 20px;
+
+			.inner {
+				width: 100%;
+				transition: 1s;
+				filter: grayscale(1);
+				&:hover {
+					transform: scale(1.1);
+					filter: grayscale(0);
+				}
+				.pic {
+					width: 100%;
+					height: 250px;
+					img {
+						width: 100%;
+						box-shadow: 12px 12px 2px 1px #ddd;
+					}
+				}
 			}
 		}
 	}
@@ -244,7 +242,7 @@
 			height: 300px;
 			background: url(../../../public/img/gallery/seat.jpeg);
 			background-size: cover;
-            box-shadow: 12px 12px 2px 1px #ddd;
+			box-shadow: 12px 12px 2px 1px #ddd;
 			margin-bottom: 200px;
 			margin-right: 20px;
 			.seatTitle {
@@ -265,7 +263,7 @@
 			height: 300px;
 			background: url(../../../public/img/gallery/internal1.jpeg);
 			background-size: cover;
-            box-shadow: 12px 12px 2px 1px #ddd;
+			box-shadow: 12px 12px 2px 1px #ddd;
 			margin-bottom: 200px;
 			margin-right: 20px;
 			.internalTitle {
@@ -286,7 +284,7 @@
 			height: 300px;
 			background: url(../../../public/img/gallery/bonnet.jpeg);
 			background-size: cover;
-            box-shadow: 12px 12px 2px 1px #ddd;
+			box-shadow: 12px 12px 2px 1px #ddd;
 			margin-bottom: 200px;
 			.bonnetTitle {
 				font: bold 20px/1 'Arapey';
@@ -306,7 +304,7 @@
 			height: 300px;
 			background: url(../../../public/img/gallery/back.jpeg);
 			background-size: cover;
-            box-shadow: 12px 12px 2px 1px #ddd;
+			box-shadow: 12px 12px 2px 1px #ddd;
 			margin-bottom: 200px;
 			margin-right: 40px;
 			.backTitle {
@@ -325,7 +323,7 @@
 			height: 300px;
 			background: url(../../../public/img/gallery/car1.jpeg);
 			background-size: cover;
-            box-shadow: 12px 12px 2px 1px #ddd;
+			box-shadow: 12px 12px 2px 1px #ddd;
 			margin-bottom: 200px;
 			.carTitle {
 				font: bold 20px/1 'Arapey';
@@ -341,49 +339,805 @@
 			}
 		}
 	}
-	.design {
-		.designTitle {
-			display: block;
-			width: 100%;
-			text-align: center;
-			font: bold 50px/1 'Arapey';
-		}
-		.designText {
-			display: block;
-			width: 100%;
-			text-align: center;
-			font: 24px/1 'Arapey';
+}
 
-			margin: 20px;
+@media screen and (max-width: 1024px) {
+	.Gallery {
+		overflow: hidden;
+		color: #000;
+		.galleryBanner {
+			width: 100%;
+			height: 200px;
+			border-bottom: 5px solid #000;
+			margin: 100px 0px;
+			.bannerTitle {
+				font: bold 70px/1 'Arapey';
+			}
+			.bannerText {
+				font: 40px/1 'Arapey';
+			}
+		}
+		.carprice {
+			width: 100%;
+			height: 100%;
+
+			.pricepic {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				img {
+					width: 100%;
+					height: 100%;
+				}
+				.priceTextBox {
+					width: 30%;
+					h1 {
+						width: 100%;
+
+						font: bold 90px/1 'Arapey';
+						color: #000;
+					}
+					.price {
+						width: 100%;
+						font: 35px/1 'Arapey';
+					}
+					.carOption {
+						width: 100%;
+
+						padding-top: 20px;
+						font: 25px/1.4 'Arapey';
+						span {
+							margin-right: 20px;
+						}
+					}
+				}
+			}
+			.advantageBox {
+				width: 100%;
+				height: 400px;
+				h2 {
+					width: 100%;
+					font: bold 50px/1 'Arapey';
+					text-align: center;
+					margin-top: 200px;
+				}
+				width: 100%;
+				margin: 0 auto;
+				.forLife {
+					width: 100%;
+					font: 25px/1 'Arapey';
+					text-align: center;
+				}
+				&::after {
+					content: '';
+					display: block;
+					clear: both;
+				}
+				.carAdvantages {
+					width: 100%;
+					height: 100px;
+					display: flex;
+					justify-content: space-around;
+					span {
+						font: 50px/1 'Arapey';
+					}
+					.steat {
+						width: 100px;
+						height: 100px;
+						text-align: center;
+						padding: 20px;
+					}
+					.camera {
+						width: 100px;
+						height: 100px;
+						text-align: center;
+						padding: 20px;
+					}
+					.performance {
+						width: 100px;
+						height: 100px;
+						text-align: center;
+						padding: 20px;
+					}
+					.zero {
+						width: 100px;
+						height: 100px;
+						text-align: center;
+						padding: 20px;
+					}
+				}
+			}
+		}
+		.carpic {
+			margin-bottom: 200px;
+			.pic1 {
+				width: 100%;
+				height: 100%;
+				margin-bottom: 100px;
+				.trunk {
+					width: 100%;
+					height: 100%;
+					h3 {
+						padding: 10px;
+						font: bold 40px/1 'Arapey';
+						color: #fff;
+						background: #000;
+						box-shadow: 12px 12px 2px 1px #ddd;
+					}
+					p {
+						width: 70%;
+						padding: 0px;
+						text-align: left;
+						font: 24px/1 'Arapey';
+					}
+				}
+			}
+			.pic2 {
+				width: 100%;
+				height: 100%;
+				margin-bottom: 100px;
+				transform: scaleX(-1);
+				h3 {
+					padding: 10px;
+					text-align: right;
+					font: bold 40px/1 'Arapey';
+					color: #fff;
+					background: #000;
+					box-shadow: 12px 12px 2px 1px #ddd;
+					transform: scaleX(-1);
+				}
+				p {
+					width: 100%;
+					padding: 30px;
+					text-align: left;
+					font: 24px/1 'Arapey';
+					transform: scaleX(-1);
+				}
+			}
+			.pic3 {
+				width: 100%;
+				height: 100%;
+				margin-bottom: 100px;
+				h3 {
+					padding: 10px;
+					font: bold 40px/1 'Arapey';
+					color: #fff;
+					background: #000;
+					box-shadow: 12px 12px 2px 1px #ddd;
+				}
+				p {
+					padding: 30px;
+					text-align: left;
+					font: 24px/1 'Arapey';
+				}
+			}
+		}
+
+		.design {
+			.designTitle {
+				display: block;
+				width: 100%;
+				text-align: center;
+				font: bold 50px/1 'Arapey';
+			}
+			.designText {
+				display: block;
+				width: 100%;
+				text-align: center;
+				font: 24px/1 'Arapey';
+
+				margin: 20px;
+			}
+		}
+		ul {
+			&::after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+
+			li {
+				width: 33%;
+				float: left;
+				padding: 20px;
+
+				.inner {
+					width: 100%;
+					transition: 1s;
+					filter: grayscale(1);
+					&:hover {
+						transform: scale(1.1);
+						filter: grayscale(0);
+					}
+					.pic {
+						width: 100%;
+						height: 250px;
+						img {
+							width: 100%;
+							box-shadow: 12px 12px 2px 1px #ddd;
+						}
+					}
+				}
+			}
+		}
+		.internal {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			text-align: center;
+			.feature {
+				display: block;
+				width: 100%;
+				font: bold 50px/1 'Arapey';
+			}
+			.featureText {
+				display: block;
+				width: 100%;
+				font: 24px/1 'Arapey';
+
+				margin-top: 30px;
+				margin-bottom: 100px;
+			}
+
+			.seatPic {
+				width: 300px;
+				height: 300px;
+				background: url(../../../public/img/gallery/seat.jpeg);
+				background-size: cover;
+				box-shadow: 12px 12px 2px 1px #ddd;
+				margin-bottom: 200px;
+				margin-right: 20px;
+				.seatTitle {
+					font: bold 20px/1 'Arapey';
+
+					position: relative;
+					top: 310px;
+				}
+				.seatText {
+					font: 15px/1 'Arapey';
+
+					position: relative;
+					top: 310px;
+				}
+			}
+			.internalPic {
+				width: 400px;
+				height: 300px;
+				background: url(../../../public/img/gallery/internal1.jpeg);
+				background-size: cover;
+				box-shadow: 12px 12px 2px 1px #ddd;
+				margin-bottom: 200px;
+				margin-right: 20px;
+				.internalTitle {
+					font: bold 20px/1 'Arapey';
+
+					position: relative;
+					top: 310px;
+				}
+				.internalText {
+					font: 15px/1 'Arapey';
+
+					position: relative;
+					top: 310px;
+				}
+			}
+			.bonnetPic {
+				width: 300px;
+				height: 300px;
+				background: url(../../../public/img/gallery/bonnet.jpeg);
+				background-size: cover;
+				box-shadow: 12px 12px 2px 1px #ddd;
+				margin-bottom: 200px;
+				.bonnetTitle {
+					font: bold 20px/1 'Arapey';
+
+					position: relative;
+					top: 310px;
+				}
+				.bonnetText {
+					font: 15px/1 'Arapey';
+
+					position: relative;
+					top: 310px;
+				}
+			}
+			.backPic {
+				width: 500px;
+				height: 300px;
+				background: url(../../../public/img/gallery/back.jpeg);
+				background-size: cover;
+				box-shadow: 12px 12px 2px 1px #ddd;
+				margin-bottom: 200px;
+				margin-right: 40px;
+				.backTitle {
+					font: bold 20px/1 'Arapey';
+					position: relative;
+					top: 310px;
+				}
+				.backText {
+					font: 15px/1 'Arapey';
+					position: relative;
+					top: 310px;
+				}
+			}
+			.carPic {
+				width: 500px;
+				height: 300px;
+				background: url(../../../public/img/gallery/car1.jpeg);
+				background-size: cover;
+				box-shadow: 12px 12px 2px 1px #ddd;
+				margin-bottom: 200px;
+				.carTitle {
+					font: bold 20px/1 'Arapey';
+
+					position: relative;
+					top: 310px;
+				}
+				.carText {
+					font: 15px/1 'Arapey';
+
+					position: relative;
+					top: 310px;
+				}
+			}
 		}
 	}
+}
 
-	ul {
-		&::after {
-			content: '';
-			display: block;
-			clear: both;
+@media screen and (max-width: 768px) {
+	.Gallery {
+		.galleryBanner {
+			width: 100%;
+			height: 200px;
+			border-bottom: 5px solid #000;
+			margin: 100px 0px;
+			.bannerTitle {
+				font: bold 50px/1 'Arapey';
+			}
+			.bannerText {
+				font: 40px/1 'Arapey';
+			}
 		}
 
-		li {
-			width: 33%;
-			float: left;
-			padding: 20px;
-
-			.inner {
-				width: 100%;
-				transition: 1s;
-				filter: grayscale(1);
-				&:hover {
-					transform: scale(1.1);
-					filter: grayscale(0);
-				}
-				.pic {
+		.carpic {
+			img {
+				width: 90%;
+			}
+		}
+		.carprice {
+			.pricepic {
+				display: flex;
+				flex-wrap: wrap;
+				img {
 					width: 100%;
-					height: 250px;
-					img {
+					height: 100%;
+				}
+				.priceTextBox {
+					width: 100%;
+					h1 {
+						font: bold 70px/1 'Arapey';
+						color: #000;
+					}
+					.price {
+						font: 35px/1 'Arapey';
+					}
+					.carOption {
+						padding-top: 20px;
+						font: 25px/1.4 'Arapey';
+						span {
+							margin-right: 20px;
+						}
+					}
+				}
+			}
+			.advantageBox {
+				width: 100%;
+				height: 400px;
+				h2 {
+					width: 100%;
+					font: bold 50px/1 'Arapey';
+					text-align: center;
+					margin-top: 200px;
+				}
+				width: 100%;
+				margin: 0 auto;
+				.forLife {
+					width: 100%;
+					font: 25px/1 'Arapey';
+					text-align: center;
+				}
+				&::after {
+					content: '';
+					display: block;
+					clear: both;
+				}
+				.carAdvantages {
+					width: 100%;
+					height: 100px;
+					display: flex;
+					justify-content: space-around;
+					flex-wrap: wrap;
+					span {
+						font: 50px/1 'Arapey';
+					}
+					.steat {
+						width: 50%;
+						height: 100px;
+						text-align: center;
+						padding: 20px;
+					}
+					.camera {
+						width: 50%;
+						height: 100px;
+						text-align: center;
+						padding: 20px;
+					}
+					.performance {
+						width: 50%;
+						height: 100px;
+						text-align: center;
+						padding: 20px;
+					}
+					.zero {
+						width: 50%;
+						height: 100px;
+						text-align: center;
+						padding: 20px;
+					}
+				}
+			}
+		}
+
+		.internal {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			text-align: center;
+			.feature {
+				display: block;
+				width: 100%;
+				font: bold 50px/1 'Arapey';
+			}
+			.featureText {
+				display: block;
+				width: 100%;
+				font: 24px/1 'Arapey';
+
+				margin-top: 30px;
+				margin-bottom: 100px;
+			}
+
+			.seatPic {
+				width: 35%;
+				height: 300px;
+				background: url(../../../public/img/gallery/seat.jpeg);
+				background-size: cover;
+				box-shadow: 12px 12px 2px 1px #ddd;
+				margin-bottom: 200px;
+				margin-right: 20px;
+				.seatTitle {
+					font: bold 20px/1 'Arapey';
+
+					position: relative;
+					top: 310px;
+				}
+				.seatText {
+					font: 15px/1 'Arapey';
+
+					position: relative;
+					top: 310px;
+				}
+			}
+			.internalPic {
+				width: 400px;
+				height: 300px;
+				background: url(../../../public/img/gallery/internal1.jpeg);
+				background-size: cover;
+				box-shadow: 12px 12px 2px 1px #ddd;
+				margin-bottom: 200px;
+				margin-right: 20px;
+				.internalTitle {
+					font: bold 20px/1 'Arapey';
+
+					position: relative;
+					top: 310px;
+				}
+				.internalText {
+					font: 15px/1 'Arapey';
+
+					position: relative;
+					top: 310px;
+				}
+			}
+			.bonnetPic {
+				width: 35%;
+				height: 300px;
+				background: url(../../../public/img/gallery/bonnet.jpeg);
+				background-size: cover;
+				box-shadow: 12px 12px 2px 1px #ddd;
+				margin-bottom: 200px;
+				margin-right: 30px;
+				.bonnetTitle {
+					font: bold 20px/1 'Arapey';
+
+					position: relative;
+					top: 310px;
+				}
+				.bonnetText {
+					font: 15px/1 'Arapey';
+
+					position: relative;
+					top: 310px;
+				}
+			}
+			.backPic {
+				width: 45%;
+				height: 300px;
+				background: url(../../../public/img/gallery/back.jpeg);
+				background-size: cover;
+				box-shadow: 12px 12px 2px 1px #ddd;
+				margin-bottom: 200px;
+				margin-right: 40px;
+				.backTitle {
+					font: bold 20px/1 'Arapey';
+					position: relative;
+					top: 310px;
+				}
+				.backText {
+					font: 15px/1 'Arapey';
+					position: relative;
+					top: 310px;
+				}
+			}
+			.carPic {
+				width: 500px;
+				height: 300px;
+				background: url(../../../public/img/gallery/car1.jpeg);
+				background-size: cover;
+				box-shadow: 12px 12px 2px 1px #ddd;
+				margin-bottom: 200px;
+				.carTitle {
+					font: bold 20px/1 'Arapey';
+
+					position: relative;
+					top: 310px;
+				}
+				.carText {
+					font: 15px/1 'Arapey';
+
+					position: relative;
+					top: 310px;
+				}
+			}
+		}
+		.design {
+			.designTitle {
+				display: block;
+				width: 100%;
+				text-align: center;
+				font: bold 50px/1 'Arapey';
+			}
+			.designText {
+				display: block;
+				width: 100%;
+				text-align: center;
+				font: 24px/1 'Arapey';
+
+				margin: 20px;
+			}
+		}
+
+		ul {
+			&::after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+
+			li {
+				width: 33%;
+				float: left;
+				padding: 20px;
+
+				.inner {
+					width: 100%;
+					transition: 1s;
+					filter: grayscale(1);
+					&:hover {
+						transform: scale(1.1);
+						filter: grayscale(0);
+					}
+					.pic {
 						width: 100%;
-						box-shadow: 12px 12px 2px 1px #ddd;
+						height: 250px;
+						img {
+							width: 100%;
+							box-shadow: 12px 12px 2px 1px #ddd;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.Gallery {
+		.galleryBanner {
+			.bannerTitle {
+				font: bold 40px/1 'Arapey';
+			}
+			.bannerText {
+				font: 30px/1 'Arapey';
+			}
+		}
+
+		.carpic {
+		}
+		.carprice {
+			.pricepic {
+				.priceTextBox {
+					h1 {
+						font: bold 50px/1 'Arapey';
+					}
+					.price {
+						font: 30px/1 'Arapey';
+					}
+					.carOption {
+						font: 25px/1.4 'Arapey';
+						span {
+							margin-right: 20px;
+						}
+					}
+				}
+			}
+			.advantageBox {
+				h2 {
+					font: bold 40px/1 'Arapey';
+				}
+				.forLife {
+					font: 20px/1 'Arapey';
+				}
+				.carAdvantages {
+					span {
+						font: 30px/1 'Arapey';
+					}
+				}
+			}
+		}
+
+		.internal {
+			.feature {
+				font: bold 30px/1 'Arapey';
+			}
+			.featureText {
+				font: 20px/1 'Arapey';
+				margin-bottom: 50px;
+			}
+
+			.seatPic {
+				width: 100%;
+				height: 250px;
+				background: url(../../../public/img/gallery/seat.jpeg);
+				background-size: cover;
+				box-shadow: 12px 12px 2px 1px #ddd;
+				margin-bottom: 200px;
+				margin-right: 20px;
+				.seatTitle {
+					font: bold 20px/1 'Arapey';
+				}
+				.seatText {
+					font: 15px/1 'Arapey';
+				}
+			}
+			.internalPic {
+				width: 100%;
+				height: 250px;
+				background: url(../../../public/img/gallery/internal1.jpeg);
+				background-size: cover;
+				box-shadow: 12px 12px 2px 1px #ddd;
+				margin-bottom: 200px;
+				margin-right: 20px;
+				.internalTitle {
+					font: bold 20px/1 'Arapey';
+
+					position: relative;
+					top: 310px;
+				}
+				.internalText {
+					font: 15px/1 'Arapey';
+
+					position: relative;
+					top: 310px;
+				}
+			}
+			.bonnetPic {
+				width: 100%;
+				height: 250px;
+				background: url(../../../public/img/gallery/bonnet.jpeg);
+				background-size: cover;
+				box-shadow: 12px 12px 2px 1px #ddd;
+				margin-bottom: 200px;
+				margin-right: 30px;
+				.bonnetTitle {
+					font: bold 20px/1 'Arapey';
+
+					position: relative;
+					top: 310px;
+				}
+				.bonnetText {
+					font: 15px/1 'Arapey';
+
+					position: relative;
+					top: 310px;
+				}
+			}
+			.backPic {
+				width: 100%;
+				height: 250px;
+				background: url(../../../public/img/gallery/back.jpeg);
+				background-size: cover;
+				box-shadow: 12px 12px 2px 1px #ddd;
+				margin-bottom: 200px;
+				margin-right: 40px;
+				.backTitle {
+					font: bold 20px/1 'Arapey';
+					position: relative;
+					top: 310px;
+				}
+				.backText {
+					font: 15px/1 'Arapey';
+					position: relative;
+					top: 310px;
+				}
+			}
+			.carPic {
+				width: 100%;
+				height: 250px;
+				background: url(../../../public/img/gallery/car1.jpeg);
+				background-size: cover;
+				box-shadow: 12px 12px 2px 1px #ddd;
+				margin-bottom: 200px;
+				.carTitle {
+					font: bold 20px/1 'Arapey';
+
+					position: relative;
+					top: 310px;
+				}
+				.carText {
+					font: 15px/1 'Arapey';
+
+					position: relative;
+					top: 310px;
+				}
+			}
+		}
+		.design {
+			.designTitle {
+				font: bold 30px/1 'Arapey';
+			}
+			.designText {
+				font: 18px/1 'Arapey';
+				margin-top: 10px;
+			}
+		}
+		ul {
+			li {
+				width: 50%;
+				float: left;
+				padding: 10px;
+
+				.inner {
+					.pic {
+						width: 100%;
+						height: 100px;
+						img {
+							box-shadow: none;
+						}
 					}
 				}
 			}
